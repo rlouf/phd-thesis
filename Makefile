@@ -2,6 +2,6 @@ all: thesis
 
 thesis:
 	pdflatex main.tex
-	bibtex thesis
+	bibtex main
 	pdflatex main.tex
 	pdflatex main.tex
