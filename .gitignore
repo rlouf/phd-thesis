@@ -5,5 +5,7 @@
 *.lot
 *.out
 *.toc
+*.bbl
+*.blg
 
 main.pdf
