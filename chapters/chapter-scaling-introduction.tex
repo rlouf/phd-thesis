@@ -7,12 +7,70 @@ an integral part of geography theory.} \\ \medskip
 --- David Harvey (1969)~\cite{Harvey:1969} 
 \end{flushright}
 
-Allometric scaling laws present themselves in the form of a power-law
+
+Another possibility is to look at the way
+the system behaves when we change its size. That is, trying to see whether there
+exists a function $f$ such that the quantity $Y$ varies as
+
+\begin{equation}
+    Y = f(S)
+\end{equation}
+
+where $S$ is the size of the system. If the function $f$ is relatively
+simple---as power law are--- this hints at universal underlying behaviours that
+are responsible for the behaviour of the system. Functional laws are are a trace
+of the behaviour of the underlying system. The identification of functional laws
+has several prerequisites however. The first one, is to be able to identify the
+system. While this is trivial in the case of animals (it is fairly easy for us
+to isolate an elephant, or a cat from its environment to measure its mass and
+its metabolic rate), it is a much more difficult task in the case of cities.
+Indeed, cities do not have fixed boundaries, the geographical limits of the
+object studied evolves with time, as people are born and die, change residence
+and as companies do the same. Traditionnally, people have relied on the
+definition given by statistical agencies of the respective countries they were
+studying---and we will do the same in the next chapter. We will however see, in
+the chapter concluding this part, that the problem of delineating cities is a
+sensible issue and affects greatly scaling analyses. A second issue, rarely---if
+ever---mentionned in the literature, is the necessity to define the set of
+cities to study. Scaling laws are essentially cross-sectional relationships,
+studying the All studies take it as a given that we should look for scaling laws
+does it make sense to mix French cities, Ukrainian, Canadian and Korean, etc
+cities and plot, say, their total GDP as a function of the population? Would we
+then observe a neat scaling relationship? Intuitively, one can see that this is
+very unlikely to happen, as different countries have different levels of wealth,
+and this should be reflected in the wealth of their cities. Therefore, plotting
+cities from different countries together is likely to introduce important
+deviations to the pure scaling relations which are not due to the fact that
+cities in different countries do not follow the same processes, but rather
+because of systemic differences at the country level. As a matter of fact, most
+studies limit themselves to a single country. This question of the relation
+between scaling relationships and countries will be dealt with partially in the
+concluding chapter.  Finally, the last prerequisite is to know wht to use as
+$S$, the size of the system. All studies plot quantities as a function of the
+population size of cities, but we could also consider that the size of the city
+is its spatial footprint, measured by its surface area $A$, or the total volume
+of its buildings, etc. So why the population size? Behind this choice is implied
+the realisation that cities are more than roads and buildings, cities are the
+people who inhabit them. People are responsible for the changes in wealth,
+employment, number of patents. People need new roads, and it is people who build
+them. People need electricity, and again it is people who run electric cables
+between buildings. Inhabitants in a city are the elements that interact
+constantly, and in their actions and interactions are reponsible for the
+collective mechanisms that act on a larger scale on the city as a whole. In a
+sense, in the use of the population $P$ to measure the size of a city as a
+system hides the understanding that cities are the people that inhabit them.
+
+
+Allometric scaling laws are, in a sense, the easiest way to probe a system in a
+quantitative way. Assuming 
+
+present themselves in the form of a power-law
 relationship between various quantities $Y$ and the population size $P$ of
 cities \emph{in a given system of cities} 
 
 \begin{equation}
     Y = Y_0\,P^{\,\beta}
+    \label{eq:scaling_definition}
 \end{equation}
 
 where the exponent $\beta$ can be different from $1$. This type of scaling
@@ -56,32 +114,7 @@ veracity of this prophecy. Thanks to the wider availability of data through
 statistical agencies, but also the availability of 'new data' (such as mobile
 phone data), empirical measurements of scaling laws have multiplied,
 and now concern quantities as diverse as the total surface area, the number of
-patents, the quantity of $CO_2$, the number of phone contacts of individuals,
-etc. Yet, despite the current empirical wealth, different theoretical
-interpretations of these scaling laws are currently in competition, between the
-transversal interpretation put forth by geographers~\cite{Pumain:2006} and the
-longitudinal interpretations more recently defended by
-physicists~\cite{Bettencourt:2013, Louf:2014_smog}. 
-
-In this introductory chapter, I will begin with a brief, non exhaustive
-historical review of the empirical results on scaling relationships. I will then
-discuss the existing theoretical frameworks. I will argue that the various
-interpretations given to scaling laws are not necessarily incompatible with one
-another, but rather they provide different explanations to different phenomena.
-This will lay the ground for our contribution to the debate, and a theoretical
-interpretation of the scalings related to the mobility of people, and an estimate for the scaling exponent of the surface area.
-
-
-\section{A brief history of allometric scaling and cities}
-\label{sec:a_brief_history_of_allometric_scaling_and_cities}
-
-In this section, I will proceed to give an historical overview of scaling
-relationships in the literature. Rather than an exposition that is linear in
-time, I deliberately chose to classify the proposed relationship in various
-categories in order to emphasize the variety of variables that have been
-studied, as well as the curious waves of interest and disinterest in the
-history.
-
+patents, the quantity of $CO_2$, the number of phone contacts of individuals, etc. Yet, despite the current empirical wealth, different theoretical interpretations of these scaling laws are currently in competition, between the transversal interpretation put forth by geographers~\cite{Pumain:2006} and the longitudinal interpretations more recently defended by physicists~\cite{Bettencourt:2013, Louf:2014_smog}.  In this introductory chapter, I will begin with a brief, non exhaustive historical review of the empirical results on scaling relationships. I will then discuss the existing theoretical frameworks. I will argue that the various interpretations given to scaling laws are not necessarily incompatible with one another, but rather they provide different explanations to different phenomena.  This will lay the ground for our contribution to the debate, and a theoretical interpretation of the scalings related to the mobility of people, and an estimate for the scaling exponent of the surface area.  \section{A brief history of allometric scaling and cities} \label{sec:a_brief_history_of_allometric_scaling_and_cities} In this section, I will proceed to give an historical overview of scaling relationships in the literature. Rather than an exposition that is linear in time, I deliberately chose to classify the proposed relationship in various categories in order to emphasize the variety of variables that have been studied, as well as the curious waves of interest and disinterest in the history.  
 \subsection{Surface area}
 \label{sub:surface_area}
 
@@ -313,28 +346,92 @@ more fundamental problem in the study of urban systems (this is also the reason
 why we cannot trust the exact value of scaling exponent, and cannot compare them
 from one system of cities to another).
 
-\section{Different phenomena, different explanations}
-\label{sec:different_phenomena_different_explanations}
-
-Before moving on to the models proposed to explain scaling laws, I believe that
-it is important to understand. 
-    
-\cite{Pumain:2006} for an interpretation of scaling laws in terms of
-innovation waves etc.
-
-\cite{Bettencourt:2013} for the latest model to date.
-
-
-\subsection{What can scalings tell us about cities and systems of
+\section{What can scalings tell us about cities and systems of
 cities?}
 \label{sub:what_can_scalings_tell_us_about_cities_and_systems_of_cities_}
 
-\paragraph{On cities} Scalings are, by essence, cross-sectionnal studies of cities. Scaling studies
-and their conclusions are usually structured around several assuptions. The
-first assumption, implied by the use of city population as the dependent
-variable, is that the population count of a city (and not its surface area, or the
-number of buildings, the length of its streets, etc.) is the appropriate variable to
-account for its size. The second assumption, never really stated, is that the
+Before moving on to the models proposed to explain scaling laws, 
+it is important to understand what exactly scaling laws can tell us about
+cities. Scaling laws are, by essence, cross-sectionnal studies of cities. As
+opposed to a dynamical study where one would follow the evolution of single
+cities over time, scaling laws tells us about the behaviour of an
+\emph{ensemble} of cities at a give point in time. Two main questions emerge
+from a review of the existing literature:
+
+\begin{enumerate}
+    \item Do scalings tell us something about the growth of cities?
+    \item Is the differentiation between cities implied by scalings due to
+        intra-urban processes, or inter-urban processes?
+\end{enumerate}
+
+I will try to anwer these questions in the next two subsections.
+
+\subsection{Scaling, not growth}
+\label{sub:scaling_not_growth}
+
+In the paper that became the reference in terms of
+scalings~\cite{Bettencourt:2007}, Bettencourt and co-authors proposed a simple
+model to model urban growth. Assume a given resource, whose quantity is noted
+$Y$. If it requires $R$ units of resources to maintain an individual, and $E$ to
+create a new individual, then assuming all resources are allocated, we have
+
+\begin{equation}
+    Y = R\,P + E\,\frac{\mathrm{d}P}{\mathrm{d}t}
+    \label{eq:growth_resource_allocation}
+\end{equation}
+
+Assuming that the resource scales with population as in
+Eq.~\ref{eq:scaling_definition}, we have for the growth rate
+
+\begin{equation}
+    \frac{\mathrm{d}P}{\mathrm{d}t} = \left(\frac{Y_0}{E}\right) P^{\,\beta} -
+\left(\frac{R}{E}\right)P 
+    \end{equation}
+
+Equation whose solutions exhibit different qualitative behaviours depending on
+the value of the exponent $\beta$. For $\beta < 1$, the total population
+eventually reaches a finite limiting size; for $\beta = 1$ the solution reduces
+to an exponential, and for $\beta > 1$ the equation leads to a
+faster-than-exponential growth.\\
+Denise Pumain rightfully questioned the link between scaling exponents and city
+growth~\cite{Pumain:2012}. The objection she raises is on the ground of the link
+between scalings and time evolution of the system, an implicit assumption in the
+derivation of the previous differential equation. Put simply, the assumption is:
+given a city with population $P$ at an instant $t$, which evolves in a system of
+city which follows the law $Y = Y_0\,P^\beta$ at an instant $t$. If the
+population of all cities evolve between $t$ and $t+1$, then the same scaling law
+still holds---although the population of all cities have changed. She refutes
+this hypothesis on two grounds: the first one, that scaling are not properties
+of cities, but rather of the system of cities to which the cities belong and its
+particular processes of redistribution leading to a spatial differentiation
+between cities.  I will discuss this point in the next subsection. The next
+argument is based on a misunderstanding of the role of the ergodic hypothesis in
+equilibrium statistical mechanics. Pumain states that the previously explicited
+hypothesis is based on an assumed equivalence between longitudinal trajectories and
+cross-sectional measures, itself based on the egodic hypothesis. The ergodic
+hypothesis is used in statistical physics to use time averages and averages over
+statistical ensembles interchangeably. It states, roughly, that a system can
+reach all possible states when the time of the experiment tends to $\infty$. If
+it is verified then the time averages that we perform in experiments are equal
+to averages over many independent realisations of the same system (used in
+computations). Besides the fact that cities and systems are systems of cities
+are out-of-equilibrium systems, Pumain does not explicit what averages she is
+refering to. The ergodic objection does not hold in this case, although it does
+raise interesting questions in the case of the out-of-equilibrium model
+presented in the previous chapter. But still, the critique is justified, and
+scalings have indeed little to do with city growth.
+
+Furthermore, the growth rate predicted by their differential equation strongly
+depends on the size of the city considered. It is however an empirical fact that
+the relative growth rate of cities $\mathrm{d}P / P$ should be independent (or
+weakly dependent on) city size.
+
+\subsection{A property of cities, or systems of cities?}
+\label{sub:a_property_of_cities_or_systems_of_cities_}
+
+
+
+The second assumption, never really stated, is that the
 processes responsible for the city-wide value of the quantity being studied
 occur over time-scales that are at most of the same order of the time-scales
 over which population changes. A very fast increase in population size, for
@@ -368,4 +465,28 @@ theory for instance). This is not an attack, this is just to point out that no
 side is free form reproaches, and time wasted on criticising one another for
 improper use of the literature would be put to better use if spent on teaching
 these things to one another.
+
+
+\section{Different phenomena, different explanations}
+\label{sec:different_phenomena_different_explanations}
+    
+Recent wrks pretend explaining the origin of scalings in cities. However,
+as should be clear from the literature reviews, scaling realtionships span
+different phenomena that sometimes have very little to do with one another.
+Rather than looking for a pseudo-universal interpretation of scaling laws, 
+
+\cite{Pumain:2006} for an interpretation of scaling laws in terms of
+innovation waves etc.
+
+\cite{Bettencourt:2013} for the latest model to date.
+
+The link between Eq.~\ref{eq:growth_resource_equation} is at best metaphorical.
+But a metaphor is not a theory, and fancy language is not a substitute for a
+real understanding of the system. As Einstein, Podolksy and Rosen succintly put
+it in their famous critique of quantum mechanics~\cite{Einstein:1935}:
+
+\begin{quote}
+    In a complete theory there is an element corresponding to each element of
+    reality.
+\end{quote}
 
