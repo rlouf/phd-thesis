@@ -55,15 +55,16 @@
 %	PRE-CONTENT THESIS PAGES
 %----------------------------------------------------------------------------------------
 
-\include{frontback/Titlepage} % Main title page
-\include{frontback/Titleback} % Back of the title page
-\cleardoublepage\include{frontback/Dedication} % Dedication page
-\cleardoublepage\include{frontback/Abstract} % Abstract page
-\cleardoublepage\include{frontback/Publication} % Publications from the thesis page
-\cleardoublepage\include{frontback/Acknowledgments} % Acknowledgements page
+\include{frontback/titlepage} % Main title page
+\include{frontback/titleback} % Back of the title page
+\cleardoublepage\include{frontback/opening} % Opening
+\cleardoublepage\include{frontback/dedication} % Dedication page
+\cleardoublepage\include{frontback/abstract} % Abstract page
+\cleardoublepage\include{frontback/publication} % Publications from the thesis page
+\cleardoublepage\include{frontback/acknowledgments} % Acknowledgements page
 
 \pagestyle{scrheadings} % Show chapter titles as headings
-\cleardoublepage\include{frontback/Contents} % Contents, list of figures/tables/listings and acronyms
+\cleardoublepage\include{frontback/contents} % Contents, list of figures/tables/listings and acronyms
 
 \cleardoublepage
 
@@ -86,6 +87,8 @@ systems that I attempt to solve in the rest of the manuscript.} % Text on the Pa
 
 \part{Introduction} % First part of the thesis
 
+
+\include{chapters/chapter-intro-studying-cities}
 \include{chapters/chapter-intro-revolutions} % Chapter 1
 \include{chapters/chapter-intro-methodology}
 \include{chapters/chapter-intro-outline}
@@ -120,7 +123,8 @@ as systems.} % Text on the Part 2 page describing the content in Part 2
 
 \part{Scaling in cities} % Second part of the thesis
 
-\include{chapters/chapter-scaling} % Chapter 2
+\include{chapters/chapter-scaling-introduction} % Chapter 2
+\include{chapters/chapter-scaling-mobility}
 
 %------------------------------------------------
 
@@ -193,9 +197,9 @@ outline some possible future axes of research.} % Text on the Part 2 page descri
 %	POST-CONTENT THESIS PAGES
 %----------------------------------------------------------------------------------------
 
-\cleardoublepage\include{frontback/Bibliography} % Bibliography
-\cleardoublepage\include{frontback/Colophon} % Colophon
-\cleardoublepage\include{frontback/Declaration} % Declaration
+\cleardoublepage\include{frontback/bibliography} % Bibliography
+\cleardoublepage\include{frontback/colophon} % Colophon
+\cleardoublepage\include{frontback/declaration} % Declaration
 
 %----------------------------------------------------------------------------------------
 
