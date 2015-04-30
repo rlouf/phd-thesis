@@ -90,8 +90,9 @@ The utility is assumed to be an increasing function of $Z$ so
     \frac{\partial U}{\partial Z} > 0
 \end{equation}
 
-The budget constraint on an household living at $i$ (location $\vec{x}$) and
-working at the firm $j$ (which is located at $\vec{y}$) is given by the equation
+The budget constraint on an household living at $i$ (of coordinates $\vec{x}$)
+and working at the firm located at $j$ (of coordinates $\vec{y}$) is given by the
+equation
 
 \begin{equation}
     Z = W\left(j\right)
@@ -110,7 +111,14 @@ further specify the commuting cost
 \end{equation}
 
 where $t$ the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
-\vec{x} \right|$ the euclidean distance between home and work.\\
+\vec{x} \right|$ the euclidean distance between home and work. The surplus $Z$
+finally reads
+
+\begin{equation}
+    Z = W\left(j\right)
+      - C_R\left(i\right)
+      - t\,d_E\left(i,j\right)
+\end{equation} 
 
 
 \subsection{Firms}
@@ -119,55 +127,80 @@ where $t$ the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
 The second type of agents taken into consideration in the model are the firms.
 It is assumed that all firms employ the same number of individuals, which
 amounts to having a fixed number of firm $M$ (once the number of households is
-fixed). The profit earned by a firm $j$ located at $\vec{y}$ reads, in a general
+fixed). The profit earned by a firm  located at $j$ reads, in a general
 form
 
 \begin{equation}
-    \Pi = P(\vec{y}) - C_R(\vec{y}) -  W
+    \Pi = G\left(j\right) 
+        - C_R\left(j\right) 
+        -  W\left(j\right)
 \end{equation}
 
 where $G$ is the total gain realised by the firm selling its production, $C_R$
-the rent paid by the firm, and $W$ the total wage paid to its employees---a
-constant in the model.\\
+the rent paid by the firm, and $W$ the total wage paid to its employees---which
+only depends on the location $j$.\\
 
 To take agglomeration economies into account, Fujita and Ogawa define the
 locational potential $F$ defined by
 
 \begin{equation}
-    F\left(\vec{y}\right) = \int_{\mathcal{C}}
-    b(\vec{x})\,e^{-\alpha\,\left|\vec{y}-\vec{x}\right|}\:\mathrm{d}\vec{x}
+    F\left(j\right) = \int_{\mathcal{C}} b(\vec{x})\,e^{-\alpha\,\left|\vec{y}-\vec{x}\right|}\:\mathrm{d}\vec{x}
 \end{equation}
 
-where the integral runs over the entire city's spatial extent $\mathcal{C}$
+where $b(\vec{x})$ is the density of firms at $\vec{x}$. The integral runs over
+the entire city's spatial extent $\mathcal{C}$. One can easily see that the
+higher the density of firms in a radius of $1/\alpha$ around a firm, the higher
+the locational potential is going to be. Balanced by the constraint imposed by
+the rent, which prevents too many firms from agglomerating at the same location,
+the locational potential likely is the term responsible for the existence of
+polycentric transition in the model. Indeed,the authors further write the total
+gain $G$ as a multiple of $F$:
 
 \begin{equation}
-    \Pi\left(\vec{r}\right) = p_0\,f(L_f, A_f)\,F(\vec{o}) - R(\vec{r})\,A_f - W(\vec{r})
+    G(j) = \beta\,F(j)
 \end{equation}
 
-It is further assumed that each firm is trying to choose the location $\vec{r}$
-that maximises its profit
+where $\beta$ integrates both the productivity of the employees and the effect
+of the locational potential.\graffito{For the sake of clarity, I have again
+simplified the terms that are `assumed out' in the original model.} The profit
+of companies therefore reads
+
+\begin{equation}
+    \Pi = \beta\, \int_{\mathcal{C}} b(\vec{x})\,e^{-\alpha\,\left|\vec{y}-\vec{x}\right|}\:\mathrm{d}\vec{x}
+        - C_R\left(j\right)
+        - W\left(j\right)
+\end{equation}
+
 
 \subsection{Equilibrium conditions}
 \label{sub:equilibrium_conditions}
 
-It is further assumed that the goal of each household is to maximise their
-utility under the budget constraint.\\
+Once the budget constraints have been explicited, one needs to further define
+the equilibrium conditions to be able to solve the model.\\
+
+Fujita and Ogawa first assume that the goal of each household is to maximise
+their utility under the budget constraint.\\
 
 [Explicit calculations here]\\
 
-If one further assumes that all available lots have the same size (we note this
-amounts in not expliciting the land-size dependence of the rent), maximising the
-utility under constraint in fact amount to maximising the surplus $Z$. In other
-words, each households is assumed to choose the residence location $\vec{h}$ and
-the job location $\vec{o}$ that maximise the quantity $Z$.
+In other words, the maximisation of utility under budget constraints is
+equivalent to chosing the residential location $i$ and the job location $j$ so
+as to maximise $Z$. In other words, the maximimsation of utility in this
+particular is equivalent to performing a cost-benefit analysis.\\
+
+Regarding the firms, the authors assume that each firm will choose the location
+$j$ that maximises its profit.
+
 They then specify equilibrium conditions and go on testing the values of
 parameters for which the different type of urban structures (monocentric,
 polycentric transition). They discuss critical values of the parameter for which
 there occurs a structural transition.
 
+
 \subsection{Results}
 \label{sub:results}
 
+The results of this model, given its intricacy, are somewhat disapointing.
 Derive the conditions for the existence of the monocentric and polycentric
 patterns. Numerical exploration to determine the range of parameters for which
 each configuration occurs.
