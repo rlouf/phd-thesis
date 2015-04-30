@@ -89,8 +89,7 @@ around 9000 US cities between 1994 and 2010.\\
 As cities grow, they evolve from a monocentric organisation where all
 the activities are concentrated in the same geographical area
 --usually the central business district-- to a more distributed,
-polycentric organisation
-~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}. Traditional
+polycentric organisation~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}. Traditional
 approaches in spatial economics have attempted to describe the
 phenomenon within the framework of equilibrium models of the city~\cite{Fujita:1982,Fujita:book1999}. These models are traditionally
 based on the concept of agglomeration economies --to explain why
@@ -132,6 +131,133 @@ facts. The model we propose is by essence dynamical and describes the
 evolution of cities' organisation as their population increases. We
 focus on car congestion --mainly due to journey-to-work commutes --
 and its effect on the job location choice for individuals.
+
+\section{Fujita and Ogawa}
+\label{sec:fujita_and_ogawa}
+
+We take some liberties with the model: make it 2-dimensionals, get rid of the
+composite commodity to maximise an amount of money.
+
+The model is \emph{static}, in the sense that the number of firms and
+individuals are fixed at the origin of time, and the equilibrium solution is
+then searched for. The model is also \emph{one-dimensional}. They consider the
+interaction between two types of actors: households and firms.\\
+
+\subsection{Households}
+\label{sub:households}
+
+F\&O assume that there are $N$ households in the city. The utility function of each household is given by the function
+
+\begin{equation}
+    U_i = U(A_i, Z_i)
+\end{equation}
+
+where $A_i$ is the land occupied by the household $i$, and $Z_i$ is an amount of
+composite commodity (expressed in monetary units), that is all the `surplus'
+that is not expressed in the budget constraint---basically, the money you have
+left at the end of the month once you have paid your rent,  bills and gas.
+It is assumed that every household has the same utility function, and that it is
+an increasing function of the surface area occupied and the composite commodity.
+This is expressed in the condition:
+
+\begin{align}
+    \frac{\partial U}{\partial A} &> 0\\
+    \frac{\partial U}{\partial Z} &> 0
+\end{align}
+
+The budget constraint on an household living at $\vec{h}$ and working at
+$\vec{o}$ is given by the equation
+
+\begin{equation}
+    Z = W\left(\vec{o}\right)-C_R(\vec{h})-C_T(\vec{o}-\vec{h})
+\end{equation} 
+
+where $W(\vec{o})$ is the wage earned at $\vec{o}$, $C_R(\vec{h})$ the total rent 
+paid at $\vec{h}$ and $C_T(\vec{o}-\vec{h})$ the cost of commuting
+between home and work. This equation is very general, and will be our starting
+point for the model presented in the next section. The authors
+of~\cite{Fujita:1982} further write the budget constraint in the form
+
+\begin{equation}
+    Z = W\left(\vec{o}\right) - R(\vec{h})\,S - t \left| \vec{o} - \vec{h} \right|
+\end{equation}
+
+where $R$ is the rent per unit area, $t$ the commuting cost per unit distance,
+and $\left| \vec{o} - \vec{h} \right|$ the euclidean distance between home and
+work.\\
+
+It is further assumed that the goal of each household is to maximise their
+utility under the budget constraint.\\
+
+[Explicit calculations here]\\
+
+If one further assumes that all available lots have the same size (we note this
+amounts in not expliciting the land-size dependence of the rent), maximising the
+utility under constraint in fact amount to maximising the surplus $Z$. In other
+words, each households is assumed to choose the residence location $\vec{h}$ and
+the job location $\vec{o}$ that maximise the quantity $Z$.
+
+
+\subsection{Firms}
+\label{sub:firms}
+
+There are $M$ identical firms in the city. Assume that the amount of land $A_f$ and of
+labour $L_f$ is a constant fixed at the city level.
+
+\begin{equation}
+    \Pi = G(\vec{r}, L) - C_R(\vec{x}) -  W(\vec{x}, L)
+\end{equation}
+
+where $G$ is the gain realised by the firm selling its production. 
+
+The locational potential
+
+\begin{equation}
+    F\left(\vec{r}\right) = \int_{\mathcal{C}}
+    b(\vec{s})\,e^{-\alpha\,\left|\vec{s}-\vec{r}\right|}
+\end{equation}
+
+where the integral runs over the entire city's spatial extent $\mathcal{C}$
+
+\begin{equation}
+    \Pi\left(\vec{r}\right) = p_0\,f(L_f, A_f)\,F(\vec{o}) - R(\vec{r})\,A_f - W(\vec{r})
+\end{equation}
+
+It is further assumed that each firm is trying to choose the location $\vec{r}$
+that maximises its profit
+
+\subsection{Equilibrium conditions}
+\label{sub:equilibrium_conditions}
+
+They then specify equilibrium conditions and go on testing the values of
+parameters for which the different type of urban structures (monocentric,
+polycentric transition). They discuss critical values of the parameter for which
+there occurs a structural transition.
+
+Here are our points of contention:
+
+\begin{itemize}
+    \item The model is 1-D
+    \item It is an equilibrium model (although if it worked we would have an
+        intepretation problem on our hand rather than a faulty model)
+    \item The effect of changes in terms of population size on the city
+        structure is not studied.
+    \item Congestion is not taken into account.
+    \item Too complex, we do not understand really what is the process
+        responsible for the transition.
+    \item Because it is too complex (for a 1D model!), it does not make any
+        prediction (beyond the existence of polycentric solutions, which is a
+        weak prediction!)
+\end{itemize}
+
+
+Here is what we propose:
+
+\begin{itemize}
+    \item An out-of-equilibrium model
+    \item Prediction of the number of centers as a function of population
+    \item Explains the polycentric transition by the effects of congestion
+\end{itemize}
 
 According to Fujita and Ogawa's classical model~\cite{Fujita:1982} in
 spatial economics, an individual living at location $i$ will choose to
@@ -291,8 +417,8 @@ Having established that cities will eventually adopt a polycentric
 structure, we can wonder how the number of subcenters varies with the
 population. We compute the value of the population at which 
 the $k^{th}$ center appears. We still assume that we are in the attractivity-driven regime and that, so far, $k-1$
-centers have emerged with $\eta_{1} \geq \eta_{2} \geq ... \geq
-\eta_{k-1}$~\cite{SM}, with a number of commuters $T(1), T(2), ...,
+centers have emerged with $\eta_{1} \geq \eta_{2} \geq \ldots \geq
+\eta_{k-1}$~\cite{SM}, with a number of commuters $T(1), T(2), \ldots,
 T(k-1)$, respectively. The next worker $i$ will choose the center $k$ if
 \begin{equation}
 Z_{ik} > \max_{j \in \left[1,k-1\right]} Z_{ij}
@@ -381,7 +507,7 @@ in order to get the employment density~\cite{Marlay:2010}. Use these data in
 order to assess the employment density in 2000 MSAs. Use population data at the
 same level in order to assess population density in 2000 MSAs.
 Plot at several levels of the threshold and show the many different centers.
-Propose a method to compute the number of centers (exponential, Loubar...).\\
+Propose a method to compute the number of centers (exponential, Loubar, etc.).\\
         \subsubsection{Counting the number of centers}
         \label{ssub:counting_the_number_of_centers}
         
@@ -426,7 +552,7 @@ scales sublinearly with its population.\\
 \includegraphics[width=0.5\textwidth]{gfx/chapter-monocentric/5.pdf}
 \caption{Scatter plot of the estimated number of subcenters versus the
   population for about 9000 cities with population over 100 people in
-  the US. The red dots represent the average population for a given
+  the U.S. The red dots represent the average population for a given
   number of subcenters. We fit this average with a power-law
   dependence (represented by a red dashed line) giving an exponent
   $\delta=1.56\pm 0.15$ ($r^2=0.87$). See the Supplementary Material~\cite{SM} for more details on the computation of $k$ and the robustness of the results. \label{fig:data}}
@@ -462,5 +588,5 @@ are out of reach within the current methods.
 All methods to measure the number of centers do not consider the spatial
 contiguity of different areal units. It might be that we find different areal
 nits that are in fact part of the same center [Show example]. So all these
-methods do not output a 'real' number of centers, but rather provide values that
+methods do not output a `real' number of centers, but rather provide values that
 are coherent across urban areas and allow their comparison.
