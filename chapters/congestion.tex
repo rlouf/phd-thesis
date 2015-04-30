@@ -14,12 +14,7 @@ around 9000 US cities between 1994 and 2010.\\
 As cities grow, they evolve from a monocentric organisation where all
 the activities are concentrated in the same geographical area
 --usually the central business district-- to a more distributed,
-polycentric organisation~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}. Traditional
-approaches in spatial economics have attempted to describe the
-phenomenon within the framework of equilibrium models of the city~\cite{Fujita:1982,Fujita:book1999}. These models are traditionally
-based on the concept of agglomeration economies --to explain why
-economical activities tend to group-- and the spatial distribution of
-wages and rents across the urban space. However, these approaches fail
+polycentric organisation~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}.  However, these approaches fail
 at giving a satisfactory quantitative
 account~\cite{Bouchaud:2008,Batty:2008} of the polycentric transition
 of cities. First, they describe a city as being in an equilibrium
@@ -60,86 +55,87 @@ and its effect on the job location choice for individuals.
 \section{Fujita and Ogawa}
 \label{sec:fujita_and_ogawa}
 
-We take some liberties with the model: make it 2-dimensionals, get rid of the
-composite commodity to maximise an amount of money.
+In line with the tradition of economic geography~\cite{Fujita:2001}, the model
+of Fujita and Ogawa~\cite{Fujita:1982} is based on the concept of agglomeration
+economies---to explain why economical activities tend to group---and the spatial
+distribution of wages and rents across the urban space. They consider that
+cities are constituted of two kinds of actors: the firms, who tend to
+concentrate to maximise their production, and the households, who try to
+minimise their rent and commuting cost. In the following, I will present the
+model with somewhat simplified notations\graffito{In particular, I dropped the
+explicit mention of land consumption, and labour force since they are `assumed
+out' of the model.} focusing on the hypotheses and the results.\\ 
 
 The model is \emph{static}, in the sense that the number of firms and
-individuals are fixed at the origin of time, and the equilibrium solution is
-then searched for. The model is also \emph{one-dimensional}. They consider the
-interaction between two types of actors: households and firms.\\
+individuals are fixed. It is an \emph{equilibrium} model, considering the the
+city is the realisation of a general optimum. The original model is also
+\emph{one-dimensional}, although the hypothesis of one-dimensionality is not
+fundamental, and only necessary to make the calculations easier. Because I will
+not try to solve the model, I will write equations in the 2D case.
 
-\subsection{Households}
+\subsection{Households} 
 \label{sub:households}
 
-F\&O assume that there are $N$ households in the city. The utility function of each household is given by the function
+Fujita and Ogawa assume that there is a fixed number $N$ of households in the
+city. The households are considered identical, in the sense that they all have
+the same utility function and the same budget constraint. The utility function
+of each household is given by the function $U = U(Z)$ where $Z$ is the surplus
+of money that is left after budgetary constraints (expressed in monetary units).
+Basically the money one has left at the end of the month, once the rent, bills
+and petrol (or transportation card) are paid. 
+
+The utility is assumed to be an increasing function of $Z$ so
 
 \begin{equation}
-    U_i = U(A_i, Z_i)
+    \frac{\partial U}{\partial Z} > 0
 \end{equation}
 
-where $A_i$ is the land occupied by the household $i$, and $Z_i$ is an amount of
-composite commodity (expressed in monetary units), that is all the `surplus'
-that is not expressed in the budget constraint---basically, the money you have
-left at the end of the month once you have paid your rent,  bills and gas.
-It is assumed that every household has the same utility function, and that it is
-an increasing function of the surface area occupied and the composite commodity.
-This is expressed in the condition:
-
-\begin{align}
-    \frac{\partial U}{\partial A} &> 0\\
-    \frac{\partial U}{\partial Z} &> 0
-\end{align}
-
-The budget constraint on an household living at $\vec{h}$ and working at
-$\vec{o}$ is given by the equation
+The budget constraint on an household living at $i$ (location $\vec{x}$) and
+working at the firm $j$ (which is located at $\vec{y}$) is given by the equation
 
 \begin{equation}
-    Z = W\left(\vec{o}\right)-C_R(\vec{h})-C_T(\vec{o}-\vec{h})
+    Z = W\left(j\right)
+      - C_R\left(i\right)
+      - C_T\left(i,j\right)
 \end{equation} 
 
-where $W(\vec{o})$ is the wage earned at $\vec{o}$, $C_R(\vec{h})$ the total rent 
-paid at $\vec{h}$ and $C_T(\vec{o}-\vec{h})$ the cost of commuting
-between home and work. This equation is very general, and will be our starting
-point for the model presented in the next section. The authors
-of~\cite{Fujita:1982} further write the budget constraint in the form
+where $W\left(j\right)$ is the wage earned at $j$, $C_R\left(i\right)$ the total
+rent paid at $i$ and $C_T\left(i,j\right)$ the cost of commuting between
+home and work. This equation is very general, and will be our starting point for
+the model presented in the next section. The authors of~\cite{Fujita:1982}
+further specify the commuting cost
 
 \begin{equation}
-    Z = W\left(\vec{o}\right) - R(\vec{h})\,S - t \left| \vec{o} - \vec{h} \right|
+    C_T\left(i,j\right) = t\,d_E(i,j) = t\,\left|\vec{y}-\vec{x}\left|
 \end{equation}
 
-where $R$ is the rent per unit area, $t$ the commuting cost per unit distance,
-and $\left| \vec{o} - \vec{h} \right|$ the euclidean distance between home and
-work.\\
-
-It is further assumed that the goal of each household is to maximise their
-utility under the budget constraint.\\
-
-[Explicit calculations here]\\
-
-If one further assumes that all available lots have the same size (we note this
-amounts in not expliciting the land-size dependence of the rent), maximising the
-utility under constraint in fact amount to maximising the surplus $Z$. In other
-words, each households is assumed to choose the residence location $\vec{h}$ and
-the job location $\vec{o}$ that maximise the quantity $Z$.
+where $t$ the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
+\vec{x} \right|$ the euclidean distance between home and work.\\
 
 
 \subsection{Firms}
 \label{sub:firms}
 
-There are $M$ identical firms in the city. Assume that the amount of land $A_f$ and of
-labour $L_f$ is a constant fixed at the city level.
+The second type of agents taken into consideration in the model are the firms.
+It is assumed that all firms employ the same number of individuals, which
+amounts to having a fixed number of firm $M$ (once the number of households is
+fixed). The profit earned by a firm $j$ located at $\vec{y}$ reads, in a general
+form
 
 \begin{equation}
-    \Pi = G(\vec{r}, L) - C_R(\vec{x}) -  W(\vec{x}, L)
+    \Pi = P(\vec{y}) - C_R(\vec{y}) -  W
 \end{equation}
 
-where $G$ is the gain realised by the firm selling its production. 
+where $G$ is the total gain realised by the firm selling its production, $C_R$
+the rent paid by the firm, and $W$ the total wage paid to its employees---a
+constant in the model.\\
 
-The locational potential
+To take agglomeration economies into account, Fujita and Ogawa define the
+locational potential $F$ defined by
 
 \begin{equation}
-    F\left(\vec{r}\right) = \int_{\mathcal{C}}
-    b(\vec{s})\,e^{-\alpha\,\left|\vec{s}-\vec{r}\right|}
+    F\left(\vec{y}\right) = \int_{\mathcal{C}}
+    b(\vec{x})\,e^{-\alpha\,\left|\vec{y}-\vec{x}\right|}\:\mathrm{d}\vec{x}
 \end{equation}
 
 where the integral runs over the entire city's spatial extent $\mathcal{C}$
@@ -154,11 +150,32 @@ that maximises its profit
 \subsection{Equilibrium conditions}
 \label{sub:equilibrium_conditions}
 
+It is further assumed that the goal of each household is to maximise their
+utility under the budget constraint.\\
+
+[Explicit calculations here]\\
+
+If one further assumes that all available lots have the same size (we note this
+amounts in not expliciting the land-size dependence of the rent), maximising the
+utility under constraint in fact amount to maximising the surplus $Z$. In other
+words, each households is assumed to choose the residence location $\vec{h}$ and
+the job location $\vec{o}$ that maximise the quantity $Z$.
 They then specify equilibrium conditions and go on testing the values of
 parameters for which the different type of urban structures (monocentric,
 polycentric transition). They discuss critical values of the parameter for which
 there occurs a structural transition.
 
+\subsection{Results}
+\label{sub:results}
+
+Derive the conditions for the existence of the monocentric and polycentric
+patterns. Numerical exploration to determine the range of parameters for which
+each configuration occurs.
+
+
+A lot can be said about this model and its assumptions. In the following, I will
+try to stick to the objections that are relevant for the model we present in the
+next section.
 Here are our points of contention:
 
 \begin{itemize}
