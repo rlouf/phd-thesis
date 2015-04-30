@@ -14,23 +14,7 @@ around 9000 US cities between 1994 and 2010.\\
 As cities grow, they evolve from a monocentric organisation where all
 the activities are concentrated in the same geographical area
 --usually the central business district-- to a more distributed,
-polycentric organisation~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}.  However, these approaches fail
-at giving a satisfactory quantitative
-account~\cite{Bouchaud:2008,Batty:2008} of the polycentric transition
-of cities. First, they describe a city as being in an equilibrium
-characterised by static spatial distributions of households and business
-firms. However, the equilibrium assumption is unsupported as cities
-are out-of-equilibrium systems and their
-dynamics is of particular interest for practical
-applications~\cite{Batty:2008}. Second, these models integrate so many
-interactions and variables that it is difficult to understand the
-hierarchy of processes governing the evolution of cities, which ones are fundamental and which ones a irrelevant. Yet, traffic congestion is not
-explicitly taken into account in the existing models, despite being
-mentioned in the economics literature as a possible reason for the
-polycentric transition~\cite{McMillen:2003}. Lastly, the models do
-not make any quantitative prediction and are therefore unsupported by
-data.\\ 
-We present in this Letter a stochastic, out-of-equilibrium model of the
+polycentric organisation~\cite{Kemper:1974,Odland:1978,Mills:1972,Griffith_PG:1981,Dokmeci:1994,McMillen:2003,Pereira:2013,Roth:2011}.  We present in this Letter a stochastic, out-of-equilibrium model of the
 city which relies on the assumption that the polycentric structure of
 large cities might find its origin in congestion, irrespective of the
 particular local economic details. We are able to reproduce many
@@ -62,9 +46,7 @@ distribution of wages and rents across the urban space. They consider that
 cities are constituted of two kinds of actors: the firms, who tend to
 concentrate to maximise their production, and the households, who try to
 minimise their rent and commuting cost. In the following, I will present the
-model with somewhat simplified notations\graffito{In particular, I dropped the
-explicit mention of land consumption, and labour force since they are `assumed
-out' of the model.} focusing on the hypotheses and the results.\\ 
+model, focusing on the hypotheses.\\ 
 
 The model is \emph{static}, in the sense that the number of firms and
 individuals are fixed. It is an \emph{equilibrium} model, considering the the
@@ -107,16 +89,25 @@ the model presented in the next section. The authors of~\cite{Fujita:1982}
 further specify the commuting cost
 
 \begin{equation}
-    C_T\left(i,j\right) = t\,d_E(i,j) = t\,\left|\vec{y}-\vec{x}\left|
+    C_T\left(i,j\right) = t\,d_E(i,j) = t\,\left|\vec{y}-\vec{x}\right|
 \end{equation}
 
 where $t$ the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
-\vec{x} \right|$ the euclidean distance between home and work. The surplus $Z$
+\vec{x} \right|$ the euclidean distance between home and work. The total rent
+cost is further written as
+
+\begin{equation}
+    C_R\left(i\right) = R(i)\,S_h
+\end{equation}
+
+where $R(i)$ is the rent per unit surface at $i$, and $S_h$ the surface area
+used by households, which becomes a parameter of the model.
+The surplus $Z$
 finally reads
 
 \begin{equation}
     Z = W\left(j\right)
-      - C_R\left(i\right)
+      - R\left(i\right)\,S_h
       - t\,d_E\left(i,j\right)
 \end{equation} 
 
@@ -133,12 +124,12 @@ form
 \begin{equation}
     \Pi = G\left(j\right) 
         - C_R\left(j\right) 
-        -  W\left(j\right)
+        -  W\left(j\right)\,L_f
 \end{equation}
 
 where $G$ is the total gain realised by the firm selling its production, $C_R$
-the rent paid by the firm, and $W$ the total wage paid to its employees---which
-only depends on the location $j$.\\
+the rent paid by the firm, and $L_f$ the total number of employees per firm---a
+paramter of the model.\\
 
 To take agglomeration economies into account, Fujita and Ogawa define the
 locational potential $F$ defined by
@@ -161,69 +152,94 @@ gain $G$ as a multiple of $F$:
 \end{equation}
 
 where $\beta$ integrates both the productivity of the employees and the effect
-of the locational potential.\graffito{For the sake of clarity, I have again
-simplified the terms that are `assumed out' in the original model.} The profit
+of the locational potential. The rent, as
+in the case of households, is written $C_R(j) = R(j)\,S_f$ where $S_f$, the
+surface needed by firms, is a parameter of the model. The profit
 of companies therefore reads
 
 \begin{equation}
     \Pi = \beta\, \int_{\mathcal{C}} b(\vec{x})\,e^{-\alpha\,\left|\vec{y}-\vec{x}\right|}\:\mathrm{d}\vec{x}
-        - C_R\left(j\right)
+        - R\left(j\right)\,S_f
         - W\left(j\right)
 \end{equation}
 
 
-\subsection{Equilibrium conditions}
+\subsection{Equilibrium conditions and results}
 \label{sub:equilibrium_conditions}
 
 Once the budget constraints have been explicited, one needs to further define
-the equilibrium conditions to be able to solve the model.\\
-
-Fujita and Ogawa first assume that the goal of each household is to maximise
-their utility under the budget constraint.\\
+the equilibrium conditions to be able to solve the model. First, the goal of
+each household is to maximise their utility under the budget constraint.\\
 
 [Explicit calculations here]\\
 
 In other words, the maximisation of utility under budget constraints is
 equivalent to chosing the residential location $i$ and the job location $j$ so
-as to maximise $Z$. In other words, the maximimsation of utility in this
-particular is equivalent to performing a cost-benefit analysis.\\
+as to maximise $Z$. In other words, the maximisation of utility in this
+particular is equivalent to performing a cost-benefit analysis. The firms have
+no utility function, and choose to be a the location $j$ that maximises their
+profit.\\
 
-Regarding the firms, the authors assume that each firm will choose the location
-$j$ that maximises its profit.
+A further constraint is given by the bid-rent curve and goes as follows. The authors define two intermediate functions, $\Psi(\vec{x})$ and $\Phi(\vec{x})$ which are
+respectively the bid rent function of households and of firms, defined as
 
-They then specify equilibrium conditions and go on testing the values of
-parameters for which the different type of urban structures (monocentric,
-polycentric transition). They discuss critical values of the parameter for which
-there occurs a structural transition.
+\begin{align}
+    \Psi\left(\vec{x}\right) &= \max_{\vec{x}} \left\{ \frac{1}{S_h} \left[W(\vec{x} ) - Z -
+    t\,d_E\left(\vec{x}-\vec{y}\right)\right] | U(Z)\right\}\\
+    \Phi\left(\vec{x}\right) &= \frac{1}{S_f} \left[\beta\,F(\vec{y}) - \Pi -
+W(\vec{y})\right]
+\end{align}
 
-
-\subsection{Results}
-\label{sub:results}
+$\Psi(\vec{x})$ represents the maximum rent that the households could pay to be
+located at $\vec{x}$ while still having a utility value $U$. $\Phi(\vec{y})$ is
+the maximum rent that firms could pay to be located at $\vec{y}$. At
+equilibrium, it is assumed that whoever's bid rent function is maximum at
+$\vec{x}$ will be located at $\vec{x}$.\\
 
 The results of this model, given its intricacy, are somewhat disapointing.
-Derive the conditions for the existence of the monocentric and polycentric
-patterns. Numerical exploration to determine the range of parameters for which
-each configuration occurs.
+Unsurprisingly, the authors are not able to derive an analytical solution for
+their model. What they do, however, is deriving the conditions on the parameters
+for the existence of monocentric and polycentric organisations of activities,
+using numerical methods.
+
+\section{Problems with the Fujita and Ogawa model}
+\label{sec:problems_with_the_fujita_and_ogawa_model}
+
+This approach fails at giving a satisfactory quantitative account  of the
+polycentric transition of cities. A lot can be said about the details of the
+model and its assumptions. We choose here to only discuss the issues that we
+feel are the most important, and that we will try to adress in our model. 
+
+\paragraph{It is an equilibrium model.} In line with the rest of Urban
+Economics~\cite{Fujita:2001, Fujita:2013}, they describe a city as being in
+an equilibrium characterised by static spatial distributions of households and
+business firms. However, the equilibrium assumption is unsupported as cities are
+out-of-equilibrium systems and their dynamics is of particular interest for
+practical applications~\cite{Batty:2008}.\\
+
+\paragraph{It is too complex.} It integrates so many interactions and
+variables that it is difficult to understand the hierarchy of processes
+governing the evolution of cities, which ones are fundamental and which ones a
+irrelevant. A model is only interesting when it
+provides a simple structure to understand empirical results, whether it
+reproduces them, or provides well-understood limiting case.\graffito{Limiting
+case models are often called `null models'} 
+
+\paragraph{It does not make any prediction.} Worse, due to its complexity, the
+model is unsolvable, and does not make any prediction. At best it shows that
+polycentric configurations are \emph{possible}. Yet, there are [possibly? Look
+at literature in economics] that admit polycentric activity profiles as a
+solution. The model is thefore unsupported by data.\\ 
+
+We also note that the model does not take the congestion into account in the
+commuting cost (which is only a function of the distance). However, it is
+mentioned in the economics literature as being a possible cause of the
+polycentric transition of cities~\cite{McMillen:2003}. 
 
 
-A lot can be said about this model and its assumptions. In the following, I will
-try to stick to the objections that are relevant for the model we present in the
-next section.
-Here are our points of contention:
+\section{Modeling the polycentric transition}
+\label{sec:an_out_of_equilibrium_model_}
 
-\begin{itemize}
-    \item The model is 1-D
-    \item It is an equilibrium model (although if it worked we would have an
-        intepretation problem on our hand rather than a faulty model)
-    \item The effect of changes in terms of population size on the city
-        structure is not studied.
-    \item Congestion is not taken into account.
-    \item Too complex, we do not understand really what is the process
-        responsible for the transition.
-    \item Because it is too complex (for a 1D model!), it does not make any
-        prediction (beyond the existence of polycentric solutions, which is a
-        weak prediction!)
-\end{itemize}
 
 
 Here is what we propose:
