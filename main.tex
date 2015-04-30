@@ -34,7 +34,7 @@
                 ]{scrreprt} 
                 
 % Includes the file which contains all the document configurations and packages - make sure to edit this file
-\input{classicthesis-config}
+\input{config}
 
 \begin{document}
 
@@ -88,10 +88,10 @@ systems that I attempt to solve in the rest of the manuscript.} % Text on the Pa
 \part{Introduction} % First part of the thesis
 
 
-\include{chapters/chapter-intro-studying-cities}
-\include{chapters/chapter-intro-revolutions} % Chapter 1
-\include{chapters/chapter-intro-methodology}
-\include{chapters/chapter-intro-outline}
+\include{chapters/cities}
+\include{chapters/quantitative-revolutions} % Chapter 1
+\include{chapters/methodology}
+\include{chapters/outline}
 
 \cleardoublepage % Empty page before the start of the next part
 
@@ -108,7 +108,7 @@ available data.} % Text on the Part 2 page describing the content in Part 2
 
 \part{The (end of the) monocentric city} % Second part of the thesis
 
-\include{chapters/chapter-monocentric} % Chapter 2
+\include{chapters/monocentric} % Chapter 2
 
 %------------------------------------------------
 
@@ -121,10 +121,11 @@ discuss some results, Zahavi's constant and Newman and Kenworthy's famous curve.
 Finally, we show that scalings pose the question of how we should define cities
 as systems.} % Text on the Part 2 page describing the content in Part 2
 
-\part{Scaling in cities} % Second part of the thesis
+\part{Scaling and cities} % Second part of the thesis
 
-\include{chapters/chapter-scaling-introduction} % Chapter 2
-\include{chapters/chapter-scaling-mobility}
+\include{chapters/scaling-introduction} % Chapter 2
+\include{chapters/mobility-to-scaling}
+\include{chapters/scaling-implications}
 
 %------------------------------------------------
 
@@ -138,9 +139,9 @@ properties of neighbourhoods of different classes. We revisit the poor
 center/rich suburb distinction. Finally, we propose a new measure of segregation
 that takes space into account.} % Text on the Part 2 page describing the content in Part 2
 
-\part{Socio-spatial stratification} % Second part of the thesis
+\part{Stratification} % Second part of the thesis
 
-\include{chapters/chapter-segregation} % Chapter 2
+\include{chapters/segregation} % Chapter 2
 
 %------------------------------------------------
 
@@ -154,7 +155,7 @@ properties of the underlying city or country.} % Text on the Part 2 page describ
 
 \part{Urban Networks} % Second part of the thesis
 
-\include{chapters/chapter-networks} % Chapter 2
+\include{chapters/networks} % Chapter 2
 
 
 %------------------------------------------------
@@ -168,9 +169,9 @@ law finds a natural explanation in when considering the motion of people.} % Tex
 
 \part{Systems of cities} % Second part of the thesis
 
-\include{chapters/chapter-systems-blend} % The metropolitan blend 
-\include{chapters/chapter-systems-zipf} % Some work on Zipf
-\include{chapters/chapter-systems-solving-mystery} % A model to explain Zipf's law
+\include{chapters/metropolitan-blend} % The metropolitan blend 
+\include{chapters/zipf} % Some work on Zipf
+\include{chapters/solving-mystery} % A model to explain Zipf's law
 
 %------------------------------------------------
 
@@ -179,7 +180,7 @@ outline some possible future axes of research.} % Text on the Part 2 page descri
 
 \part{Conclusion} % Second part of the thesis
 
-\include{chapters/chapter-conclusion} % Chapter 2
+\include{chapters/conclusion} % Chapter 2
 
 
 %----------------------------------------------------------------------------------------
