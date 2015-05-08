@@ -1,13 +1,32 @@
+INTRODUCTION
+	New data?
+		Trajectory Mobile phone data
+		Precision --> Cell Tower and Census Block
+			IRIS/Mobile Phone Paris
+			Idem smaller aire urbain with fewer antennas
+		Better for aggregate quantities, evolution in time (Louail et al.)
+		: Access to the time dimension. And to *all* trips
+
 POLYCENTRICITY
+	How strong polycentric pattern 
+		Desnity from the center of gravity
+		Thresholded figure shwing several centers (Los Angeles!)
+	Extract the number of centers from 2000 MSA
 	Fujita et Ogawa
 		Calculation maximisation of utility (look at Brueckner, Glaeser papers).
 		Have a look at AMM theory
 			Download Fujita, Venables, etc
+			Download Fujita, Thisse
 
-
+SCALING
+	Interpretation
+		Plot scaling of wages and scaling of income
+		: Illustrate the effect of flows in the system of cities
+		: on scalings.
 
 SEGREGATION
 	Add figures
+	Add figures on Earth Moving distance?
 
 
 APPENDIX
