@@ -25,16 +25,6 @@ data from around 9000 cities in the US between 1994 and 2010.
 
 %\section{The model}
 
-Following recent interdisciplinary efforts to construct a quantitative
-description of cities and their
-evolution~\cite{Makse:1995,Zanette:1997,Marsili:1998a,Marsili:1998b,Batty:book2005,Bettencourt:2007,Batty:2008},
-we deliberately omit certain details and focus instead on basic
-processes. We thereby aim at building a minimal model which captures
-the complexity of the system and is able to account for --qualitative as well as quantitive-- stylized
-facts. The model we propose is by essence dynamical and describes the
-evolution of cities' organisation as their population increases. We
-focus on car congestion --mainly due to journey-to-work commutes --
-and its effect on the job location choice for individuals.
 
 \section{Fujita and Ogawa}
 \label{sec:fujita_and_ogawa}
@@ -227,7 +217,8 @@ case models are often called `null models'}
 
 \paragraph{It does not make any prediction.} Worse, due to its complexity, the
 model is unsolvable, and does not make any prediction. At best it shows that
-polycentric configurations are \emph{possible}. Yet, there are [possibly? Look
+polycentric configurations are \emph{possible}. Yet, there are possibly different
+models[possibly? Loo
 at literature in economics] that admit polycentric activity profiles as a
 solution. The model is thefore unsupported by data.\\ 
 
@@ -236,75 +227,109 @@ commuting cost (which is only a function of the distance). However, it is
 mentioned in the economics literature as being a possible cause of the
 polycentric transition of cities~\cite{McMillen:2003}. 
 
-
 \section{Modeling the polycentric transition}
 \label{sec:an_out_of_equilibrium_model_}
 
+Following recent interdisciplinary efforts to construct a quantitative
+description of cities and their
+evolution~\cite{Makse:1995,Zanette:1997,Marsili:1998a,Marsili:1998b,Batty:book2005,Bettencourt:2007,Batty:2008},
+we deliberately omit certain details and focus instead on basic processes. We
+thereby aim at building a minimal model which captures the complexity of the
+system and is able to account for --qualitative as well as quantitive-- stylized
+facts. 
+The model we propose is by essence dynamical and describes the evolution
+of cities' organisation as their population increases. We focus on car
+congestion -- mainly due to journey-to-work commutes -- and its effect on the job
+location choice for individuals.\\
 
+\subsection{Decoupling the choice of household and job}
+\label{sub:decoupling_the_choice_of_household_and_job}
 
-Here is what we propose:
+The time scales involved in the evolution of cities are usually such that the
+employment turnover rate is larger than the relocation rate of households. On a
+short time scale, we can thus focus on the process of job-seeking alone, leaving
+aside the problem of the choice of residence. In other words, we assume the
+coupling between both processes to be negligible: we assume that each inhabitant
+newly added to the city has a random residence location and we concentrate on
+understanding how such an inhabitant chooses its job location.\\
 
-\begin{itemize}
-    \item An out-of-equilibrium model
-    \item Prediction of the number of centers as a function of population
-    \item Explains the polycentric transition by the effects of congestion
-\end{itemize}
-
-According to Fujita and Ogawa's classical model~\cite{Fujita:1982} in
-spatial economics, an individual living at location $i$ will choose to
-work at the location $j$ which maximises the net income after
-deduction of the rent and commuting costs~\cite{Fujita:1982}
-%
-\begin{equation}
-Z_0=W(j)-C_R(i)-C_T(i,j)
-\end{equation} 
-%
-where $W(j)$ is the average wage paid by business firms located at $j$
-(and thus varies from a location to another), $C_R(i)$ is the land
-rent at $i$, and $C_T(i,j)$ is the commuting cost between $i$ and
-$j$. The wage and the land rent result from the interplay between
-household and companies locations, agglomeration effects being taken
-into account. The commuting cost, on the other hand, does not usually take congestion 
-into account and is taken proportional to the euclidean distance
-$C_T(i,j) = t\, d_{ij}$ (where $t$ is the transportation cost per unit
-of distance) in most studies.
-
-The time scales involved in the evolution of cities are usually such
-that the employment turnover rate is larger than the relocation
-rate of households. On a short time scale, we can thus focus on the
-process of job-seeking alone, leaving aside the problem of the choice of
-residence. In other words, we assume the coupling between both processes to be negligible: we assume that each
-inhabitant newly added to the city has a random residence location and
-we concentrate on understanding how such an inhabitant chooses its job
-among a pool of $N_c$ potential activity centers (which we suppose are also
-randomly distributed among the city). The active subcenters are then defined as the subset of potential centers which have a non zero incoming number of
-individuals. As a result of these assumptions, a worker living at $i$
+As a result of this assumptions, a worker living at $i$
 will choose to work at the center $j$ such that the quantity
-%
+ 
 \begin{equation}
-Z_{ij} = W(j) - C_T(i,j)
+    Z_{ij} = W(j) - C_T(i,j)
+    \label{eq:Z_workers_general}
 \end{equation}
-%
-is maximum. \\
-We now discuss the form of the two terms $W(j)$ and
-$C_T$. The problem of determining the (spatial) variations of the
-average wage $W(j)$ at location $j$ is very reminiscent of some
-problems encountered in fundamental physics. Indeed, the wage depends
-on many different factors, ranging from the type of company, the
-education level of the inhabitant, the level of aglomeration, etc.,
-and in this respect is not too different from quantities that can be
-measured in a large atom made of a large number of interacting
+
+is maximum. Doing so, we give up any hope to describe the spatial structure of the rent
+distribution, or the alledged scaling between rent prices and population size in
+cities.
+
+\subsection{Decoupling the dynamics of residence and work locations}
+\label{sub:decoupling_the_dynamics_of_}
+
+Another difficulty with the Fujita-Ogawa model is the strong coupling between
+the behaviour of firms and individuals. The empirical literature on the
+behaviour of firms points to a tendency of similar industries to cluster
+geographically~\cite{Marcon:2003, Duranton:2005, Marcon:2009}, and a higher
+profit of industries located in Urban environments~\cite{Melo:2009}. Although
+theoretical attempts at explaining these behaviours have been
+proposed~\cite{Duranton:2004}, the models are yet to be developped in an
+out-of-equilibrium framework.\\
+
+Here, we decide to simplify the problem by assuming that firms indeed cluster
+into specific locations, that we call activity centers. Each worker can then
+choose among a pool of $N_c$ potential activity centers (which we suppose are
+also randomly distributed among the city). The active subcenters are then
+defined as the subset of potential centers which have a non zero incoming number
+of individuals. We thus assume that the existence of activity centers is defined
+by the willingness of workers to work in the possible locations.\\
+
+
+We now discuss the form of the wage $W(j)$ and the commuting cost $C_T$ that are
+present in equation~\ref{eq:Z_workers_general}. 
+
+\subsection{Determining the wage}
+\label{sub:determining_the_wage}
+
+The problem of determining the (spatial) variations of the average wage $W(j)$
+at location $j$ is very reminiscent of some problems encountered in fundamental
+physics. Indeed, the wage depends on many different factors, ranging from the
+type of company, the education level of the inhabitant, the level of
+aglomeration, etc., and in this respect is not too different from quantities
+that can be measured in a large atom made of a large number of interacting
 particles. In this situation, physicists found out that although it is possible
-to write down the corresponding equations, not only is it
-impossible to solve them, but also not really useful. In fact they
-found out~\cite{Dyson:1962} that a statistical description of these
-systems, relying on random matrices could lead to predictions which agree with experimental results. We wish to import in spatial economics
-this idea of replacing a complex quantity such as wages --which depends on
-so many factors and interactions-- by a random one. We therefore decide to
-account for the interaction between activity centers and people by
-taking the wage as proportional to a random variable $\eta_j \in \left[ 0,1\right]$
-such that $W(j) = s\, \eta_j$ where $s$ defines the maximum attainable
-average wage in the considered city.
+to write down the corresponding equations, not only is it impossible to solve
+them, but also not really useful. In fact they found out~\cite{Dyson:1962} that
+a statistical description of these systems, relying on random matrices could
+lead to predictions which agree with experimental results.\\
+
+We wish to import in spatial economics this idea of replacing a complex quantity
+such as wages --which depends on so many factors and interactions-- by a random
+one. The problem is not so much that we cannot write down the equations that
+determine the wage that an individual could get in a given company. Even if we
+could, the sheer number of people living in a urban area would surely prevent us
+from solving these equations. And even if we could solve them, the resulting
+information would be too overwhelming to really allow us to understand the
+large-scale behaviour of the system as a whole. We thus need an \emph{effective}
+theory of cities.
+We therefore decide to account for the interaction between activity centers
+and people by taking the wage as proportional to a random variable $\eta_j \in
+\left[ 0,1\right]$ such that $W(j) = s\, \eta_j$ where $s$ defines the maximum
+attainable average wage in the considered city.\\
+
+We are aware that wages are not determined endogeneously but is rather the
+result of thousands, millions of interactions between firms and individuals. In
+the same way that Dyson did not mean that the interactions between electrons in
+large atoms \emph{are} random, our assumptions does not mean that wages are
+intrisincally randomly determined. What we mean, however, is that in the case of
+systems containing a large number of individuals, one may possibly do \emph{as
+if} they were randomly determined. Although we thereby abandon the possibility
+to describe the dynamics of the wage distribution and the spatial 
+
+\subsection{The commuting cost and congestion}
+\label{sub:the_commuting_cost}
+
 
 As for the transportation cost $C_T(i,j)$, we choose it to be
 proportional to the commuting time between $i$ and $j$. In a typical
@@ -315,11 +340,11 @@ the underlying network and its resilience to congestion. The Bureau of
 Public Road formula~\cite{Branston:1976} proposes a simple form taking
 all these ingredients into account. In our framework, it leads to the following expression for the 
 commuting costs
-%
+
 \begin{equation}
-C_T(i,j) =  t\, d_{ij} \left[ 1 + \left( \frac{T_{ij}}{c} \right)^{\mu} \right]
+    C_T(i,j) =  t\, d_{ij} \left[ 1 + \left( \frac{T_{ij}}{c} \right)^{\mu} \right]
 \end{equation}
-%
+
 where $T_{ij}$ the trafic per unit of time between $i$ and $j$ and $c$
 is the typical capacity of a road (taken constant here). The quantity
 $\mu$ is a parameter quantifying the resilience of the transportation
@@ -327,6 +352,10 @@ network to congestion. We further simplify the problem by assuming
 than the traffic $T_{ij}$ is only a function of the subcenter $j$ and
 therefore write $T_{ij}=T(j)$ the total traffic incoming in subcenter
 $j$ (see Supplementary Material~\cite{SM} for a short discussion).
+
+\subsection{Summary}
+\label{sub:summary}
+
 
 In summary, our model is defined as follows. At each time step, we add
 a new individual $i$ located at random in the city, who will
@@ -340,6 +369,9 @@ Z_{ij} = \eta_j - \frac{d_{ij}}{\ell} \left[ 1 + \left( \frac{T(j)}{c} \right)^{
 %
 is maximum (we omitted irrelevant multiplicative factors). The quantity $\ell = s/t$ is interpreted as the maximum effective
 commuting distance that people can financially withstand. 
+
+\subsection{Monocentric to polycentric transition}
+\label{sub:monocentric_to_polycentric_transition}
 
 
 Depending on the relative importance of wages, distance and congestion, the
@@ -581,3 +613,11 @@ contiguity of different areal units. It might be that we find different areal
 nits that are in fact part of the same center [Show example]. So all these
 methods do not output a `real' number of centers, but rather provide values that
 are coherent across urban areas and allow their comparison.
+
+The model we propose trades-off exhaustivity and complexity for simplicity and
+explanatory power. Although some of the hypothesis we made are debatable, it is
+striking that we manage to make a prediction on the scaling of the number of
+centers with population size. On the other hand, unlike simplistic model, our
+model's ontology is hard-wired into the reality we experience. For this reason,
+its assumptions can be discussed, possibly changed. The model can be improved
+upon in many different ways.
