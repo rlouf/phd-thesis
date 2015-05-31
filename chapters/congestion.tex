@@ -327,7 +327,7 @@ systems containing a large number of individuals, one may possibly do \emph{as
 if} they were randomly determined. Although we thereby abandon the possibility
 to describe the dynamics of the wage distribution and the spatial 
 
-\subsection{The commuting cost and congestion}
+\subsection{Commuting cost and congestion}
 \label{sub:the_commuting_cost}
 
 
@@ -343,6 +343,7 @@ commuting costs
 
 \begin{equation}
     C_T(i,j) =  t\, d_{ij} \left[ 1 + \left( \frac{T_{ij}}{c} \right)^{\mu} \right]
+    \label{eq:commuting_cost}
 \end{equation}
 
 where $T_{ij}$ the trafic per unit of time between $i$ and $j$ and $c$
@@ -373,90 +374,128 @@ commuting distance that people can financially withstand.
 \subsection{Monocentric to polycentric transition}
 \label{sub:monocentric_to_polycentric_transition}
 
-
 Depending on the relative importance of wages, distance and congestion, the
-model predicts the existence of three different regimes: the monocentric
-regime (top Fig.~\ref{fig:model_results}), the distance-driven polycentric (middle Fig.~\ref{fig:model_results}) regime
-and the attractivity-driven polycentric (bottom Fig.~\ref{fig:model_results}) regime. 
+model predicts the existence of three different regimes: the monocentric regime
+(top left Fig.~\ref{fig:model_results}), the distance-driven polycentric (top
+right Fig.~\ref{fig:model_results}) regime and the attractivity-driven
+polycentric (bottom Fig.~\ref{fig:model_results}) regime. 
 
 
 \begin{figure}
-\includegraphics[width=0.4\textwidth]{gfx/chapter-monocentric/1.pdf}
-\includegraphics[width=0.4\textwidth]{gfx/chapter-monocentric/2.pdf}
-\includegraphics[width=0.4\textwidth]{gfx/chapter-monocentric/3.pdf}
-\caption{The monocentric (top), distance-driven polycentric (middle)
-  and attractivity-driven polycentric (bottom) regimes as produced by
-  our model. Each link represents a commuting journey to an activity center. \label{fig:model_results}}
+    \centering
+    \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/1.pdf}
+    \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/2.pdf}
+    \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/3.pdf}
+    \caption{The monocentric (top left), distance-driven polycentric (top right)
+      and attractivity-driven polycentric (bottom) regimes as produced by
+      our model. Each link represents a commuting journey to an activity center. \label{fig:model_results}}
 \end{figure}
+
+The existence of a monocentric regime depends on how $\ell$---the maximum commuting distance that people can
+afford--- compares to the size of the city $L$. Indeed, it is easy to
+see that people located at a distance $d_{ij} > \ell$
+from the most attractive center will not be able to afford commuting to this
+center, and will, according to our model, choose to commute to a closer center.
+As a result, a monocentric regime is only sustainable as long as people's
+residence is drawn close to the most attractive center. In the limit where $\ell
+\gg L$, the attractiveness of a center becomes irrelevant, and a monocentric regime cannot
+exist. In these cases, we end up in the situation shown on the top-right of
+Fig.~\ref{fig:model_results}.\\
 
 
 From now on, we will assume that $\ell$ is large enough so that a
 monocentric state exists for small values of the population. In this
 regime, the value of $\eta$ prevails and the monocentric state evolves
 to an attractivity-driven polycentric structure as the population
-increases (if $\ell$ is too small, the monocentric regime does not
-exist-see the Supplementary material~\cite{SM} for more details on
-these points).  Starting from a small city with a monocentric
-organisation, the traffic is negligible and $Z_{ij}\approx \eta_j$
-which implies that all individual are going to choose the most
-attractive center (with the largest value of $\eta_j$, say
-$\eta_1$). When the number $P$ of households increases, the traffic
-will also increase and some initially less attractive centers (with
-smaller values of $\eta$) might become more attractive, leading to the
-appearance of new subcenters characterized by a non-zero number of
-commuters. More precisely, a new subcenter $j$ will appear when for an
-individual $i$, we have $Z_{ij}>Z_{i1}$. The traffic so far is
-$T(1)=P$ and $T(j)=0$ which leads to the equation
+increases. 
+Starting from a small city with a monocentric
+organisation, the traffic is negligible and 
+
+$$Z_{ij}\approx \eta_j$$
+
+which implies that all individual are going to choose the most attractive
+center, that is the center with the largest value of $\eta_j$, say $\eta_1$.
+When the number $P$ of households increases, the traffic will also increase and
+some initially less attractive centers (with smaller values of $\eta$) might
+become more attractive, leading to the appearance of new subcenters
+characterized by a non-zero number of commuters. More specifically, a new
+subcenter $j$ will appear when for an individual $i$, we have 
+
+$$Z_{ij}>Z_{i1}$$
+
+Because we assume we were in a monocentric state, the traffic so far is such
+that $T(1)=P$ and $T(j)=0$ which leads to the equation
+
 \begin{equation}
-\eta_j-\frac{d_{ij}}{\ell}>\eta_1-\frac{d_{i1}}{\ell}\left[1+\left(\frac{P}{c}\right)^\mu\right]
+    \eta_j-\frac{d_{ij}}{\ell}>\eta_1-\frac{d_{i1}}{\ell}\left[1+\left(\frac{P}{c}\right)^\mu\right]
 \end{equation}
-We assume that there are no spatial
-correlations in the subcenter distribution, so that we can make the
-approximation $d_{ij}\sim d_{i1}\sim L$. The new subcenter will thus
-be such that $\eta_1-\eta_j$ is minimum implying that it will have the
-second largest value denoted by $\eta_j=\eta_2$. For a uniform distribution
-(details of the calculation can be found in the Supplementary
-Material~\cite{SM}, section 2), on average
-$\overline{\eta_1-\eta_2}\simeq 1/N_c$ leading to a critical value for
-the population
-%
+
+We assume that there are no spatial correlations in the subcenter distribution,
+so that we can make the approximation $d_{ij}\sim d_{i1}\sim L$. The new
+subcenter will thus be such that $\eta_1-\eta_j$ is minimum implying that it
+will have the second largest value denoted by $\eta_j=\eta_2$. 
+
+According to order statistics, we have on average for a uniform distribution
+
+$$\overline{\eta_1-\eta_2}\simeq 1/N_c$$
+
+hence a critical value for the population
+
 \begin{equation}
-P^*= c \left( \frac{\ell}{L N_c} \right)^{1/\mu}
+    \boxed{P^*= c \left( \frac{\ell}{L N_c} \right)^{1/\mu}}
+    \label{eq:critical_population}
 \end{equation}
-%
-Whatever the system considered, there will therefore \emph{always} be
-a critical value of the population above which the city becomes
-polycentric (which can be smaller than one, in which case there is no
-monocentric regime at all, see the Supplementary Material~\cite{SM}). The monocentric regime is therefore fundamentally
-unstable with regards to population increase, which is in agreement with the fact that no major city in
-the world exhibits a monocentric structure. We note that the smaller
-the value of $\mu$ (or larger the value of the capacity $c$), the
-larger the critical population value $P^*$ which means that cities
-with a good road system capable of absorbing large traffic display a
-monocentric structure for a longer period of time.
+
+Whatever the system considered, there will \emph{always} be a critical
+value of the population above which the city becomes polycentric. The
+monocentric regime is therefore fundamentally unstable with regards to
+population increase, which is in agreement with the fact that no major city in
+the world exhibits a monocentric structure. We note that the smaller the value
+of $\mu$ (or larger the value of the capacity $c$), the larger the critical
+population value $P^*$ which means that cities with a good road system capable
+of absorbing large traffic should display a monocentric structure for a longer
+period of time.
+
+\section{Number of centers}
+\label{sec:number_of_centers}
 
 
-Having established that cities will eventually adopt a polycentric
-structure, we can wonder how the number of subcenters varies with the
-population. We compute the value of the population at which 
-the $k^{th}$ center appears. We still assume that we are in the attractivity-driven regime and that, so far, $k-1$
-centers have emerged with $\eta_{1} \geq \eta_{2} \geq \ldots \geq
-\eta_{k-1}$~\cite{SM}, with a number of commuters $T(1), T(2), \ldots,
+We have so far established that, because of increased levels of congestion as
+the population grows, all cities will eventually adopt a polycentric
+structure. Although appealing and in agreement with a common observation, the
+prediction given by Eq.~\ref{eq:critical_population} is impossible to test with
+the currently available data. Therefore, we would like to compute what the model
+predicts for the variation of the number of subcenters with population.\\
+
+We compute the value of the population at which 
+the $k^{th}$ center appears. Still in the attractivity-driven regime, we assume
+that so far $k-1$
+centers have emerged with 
+
+$$\eta_{1} \geq \eta_{2} \geq \ldots \geq \eta_{k-1}$$
+
+with a number of commuters $T(1), T(2), \ldots,
 T(k-1)$, respectively. The next worker $i$ will choose the center $k$ if
+
 \begin{equation}
-Z_{ik} > \max_{j \in \left[1,k-1\right]} Z_{ij}
+    Z_{ik} > \max_{j \in \left[1,k-1\right]} Z_{ij}
 \end{equation}
+
 which reads
+
 \begin{equation}
-\eta_k - \frac{d_{ik}}{\ell} > \max_{j \in \left[1,k-1\right]} \left\{
-\eta_j - \frac{d_{ij}}{\ell} \left[ 1 + \left(
-  \frac{T(j)}{c}\right)^\mu\right] \right\}
+    \eta_k - \frac{d_{ik}}{\ell} > \max_{j \in \left[1,k-1\right]} \left\{
+    \eta_j - \frac{d_{ij}}{\ell} \left[ 1 + \left(
+      \frac{T(j)}{c}\right)^\mu\right] \right\}
 \end{equation}
-The distribution of traffic $T(j)$ is narrow~\cite{SM}, which means that all the centers have roughly the same number of
-commuters $T(j) \sim P/(k-1)$. As above we also assume that the
-distance between the workers' households and the activity centers is
-typically $d_{ij} \sim d_{ik} \sim L$. The previous expression now
-reads
+
+According to simulations of the model, we know that the distribution of traffic $T(j)$ is
+narrow, and we can assume that all the centers have roughly the same number of
+commuters $T(j) \sim P/(k-1)$. As above we also assume that there are no spatial
+correlations in the position of employment centers so that $d_{ij} \sim d_{ik} \sim L$. 
+We can now write the previous expression as
+
+
 \begin{equation}
 \frac{L}{\ell} \left( \frac{P}{(k-1)\,c} \right)^{\mu} > \max_{j \in
   \left[1,k-1\right]} \left( \eta_j \right) - \eta_k
@@ -464,160 +503,159 @@ reads
 Following our definitions, $\max_{j \in \left[1,k-1\right]} \left(
 \eta_j \right) = \eta_1$. According to order statistics, if the
 $\eta_j$ are uniformly distributed, we have on average
-$\overline{\eta_1 - \eta_k} = (k-1)/(N_c+1)$. It follows from these
-assumptions that (1) the $k^{th}$ center to appear is the $k^{th}$ most attractive one (2) the average value of the population $\overline{P}_k$ at
-which the $k^{th}$ center appears is given by:
-%
-\begin{equation}
-\overline{P}_k = P^* \left( k-1 \right)^{\frac{\mu+1}{\mu}}
-\label{eq:prediction}
+$$\overline{\eta_1 - \eta_k} = (k-1)/(N_c+1)$$ 
+
+It follows from these assumptions that (1) the $k^{th}$ center to appear is the
+$k^{th}$ most attractive one (2) the average value of the population
+$\overline{P}_k$ at which the $k^{th}$ center appears is given by:
+
+\begin{equation} 
+    \overline{P}_k = P^* \left( k-1 \right)^{\frac{\mu+1}{\mu}}
 \end{equation}
-%
+
 Conversely, the number $k$ of subcenters scales sublinearly with population as
-\begin{equation}
-k \sim \left( \frac{\overline{P}}{P^*} \right)^{\frac{\mu}{\mu + 1}}
-\end{equation}
-It is interesting to note that this result is robust: the dependence
-is sublinear, \emph{whatever the distribution} of the random variable
-$\eta$ (see the Supplementary Material~\cite{SM} for a discussion on this
-point). We can therefore conclude that, probably very generally and
-under mild assumptions, the number of activity subcenters in urban
-areas scales sublinearly with their population where the prefactor and
-the exponent depend on the properties of the transportation network of
-the city under consideration. 
 
-A previous study~\cite{Samaniego:2008} showed that the daily total
-miles driven daily in a city --- the `total commuting
-distance'---scales with the population as $L_{tot} \sim P^\gamma$
-where $\gamma \in \left] 0.5, 1\right[$, which the authors interpreted
-as cities having neither a neither totally centralized nor totally
-decentralized structure. We can discuss this result within the
-framework of our model in the following way. If the system was in the
-pure attractivity-driven regime, we would have $L_{tot} \sim P$. But, if we
-assume that we are in an intermediate regime where
-Eq.~\ref{eq:prediction} holds, and where the system exhibits spatial
-coherence~\cite{SM}, we can write the total length of commuting
-journeys as
-%
-\begin{equation}
-L_{tot} \sim P \frac{L}{\sqrt{k}}
+\begin{equation} 
+    \boxed{k \sim \left( \frac{\overline{P}}{P^*} \right)^{\frac{\mu}{\mu
+    + 1}}}
+    \label{eq:centers_prediction}
 \end{equation} 
-%
-Inverting the result from Eq.~\ref{eq:prediction} we therefore get
-%
-\begin{equation}
-L_{tot} \sim P^{1-\frac{\beta}{2}}
-\label{eq:beta}
-\end{equation}
-%
-where $\beta = \frac{\mu}{\mu+1} \in \left[0 , 1\right]$. Our model is
-thus consistent with the fact that the total traveled miles scales with
-population with a non-trivial exponent comprised in $[0.5,1]$.\\
 
+For positive values of $\mu$, we have $\frac{\mu}{\mu+1}<1$. we can thus
+conclude that the number of activity subcenters in urban areas scales sublinearly
+with their population where the prefactor and the exponent depend on the
+properties of the transportation network of the city under consideration. 
 
-\begin{figure*}
-\includegraphics[width=\textwidth]{gfx/chapter-monocentric/4.pdf}
-\caption{Rank-plot for the employment density (in employees per
-  $km^2$) in Los Angeles, CA (left) and San Antonio, TX (right)
-  between 1994 and 2010. See the Supplementary Material~\cite{SM} for more details. \label{fig:rank_plots}}
-\end{figure*}
+[Link to the empirical observations]
 
-    \subsection{Empirical verification}
-    \label{sub:empirical_verification}
-    
-People from the Census Bureau use the 2000 Census tract-to-tract commuting data
-in order to get the employment density~\cite{Marlay:2010}. Use these data in
-order to assess the employment density in 2000 MSAs. Use population data at the
-same level in order to assess population density in 2000 MSAs.
-Plot at several levels of the threshold and show the many different centers.
-Propose a method to compute the number of centers (exponential, Loubar, etc.).\\
-        \subsubsection{Counting the number of centers}
-        \label{ssub:counting_the_number_of_centers}
-        
-        
-We now test the prediction given by Eq. (\ref{eq:prediction}). For
-that purpose, we collected data for the number of employees per Zip
-Codes in the United States for 16 years, between 1994 and
-2010~\cite{ZBPdata}, as well as the population of all cities in the US
-between 1994 and 2010~\cite{CensusData}. We estimate the number of
-subcenters by constructing the rank-plot of the employment density
-$\rho$ (number of employees per $km^2$) for each Zip Code of a given
-urban area~\cite{Griffith:1981,Dokmeci:1994}. These plots display a decay as fast as an exponential
-(Fig.~\ref{fig:rank_plots}) which implies that there exists a natural
-scale for the rank, that we interpret here as the typical number of
-activity centers. It also implies that any reasonable method should
-give an estimate of the number of subcenters of the same order of
-magnitude (which would not be the case for slowly decaying function
-such as power laws for example). We first note that for some cities
---typically large ones with stable populations
-(Fig.~\ref{fig:rank_plots}, left)-- the employment spatial statistics
-remained stable over the period of study. For other cities, we observe
-large variation of the number of subcenters
-(Fig.~\ref{fig:rank_plots}, right). We then plot (Fig.~\ref{fig:data})
-the population $P$ of cities (with population $P>100$) versus the
-estimated number of subcenters $k$ (the dispersion in the scatterplot
-probably results from the fact that different cities have different
-resilience levels to congestion). On average, we observe a power law
-dependance with exponent $\delta=1.56 \pm 0.15$ (the result is robust
-with regards to the estimate of $k$, see the Supplementary
-Material~\cite{SM} for more details). Inverting this relation gives us
-the number of subcenters as a function of the population
-%
-\begin{equation}
-k \sim P^{\beta}
-\end{equation}
-%
-with $\beta \sim 0.64$. This result is strikingly in agreement with
-the prediction given by our model: the number of subcenters in a city
-scales sublinearly with its population.\\
+\section{Conclusion}
+\label{sec:conclusion}
 
-\begin{figure}
-\includegraphics[width=0.5\textwidth]{gfx/chapter-monocentric/5.pdf}
-\caption{Scatter plot of the estimated number of subcenters versus the
-  population for about 9000 cities with population over 100 people in
-  the U.S. The red dots represent the average population for a given
-  number of subcenters. We fit this average with a power-law
-  dependence (represented by a red dashed line) giving an exponent
-  $\delta=1.56\pm 0.15$ ($r^2=0.87$). See the Supplementary Material~\cite{SM} for more details on the computation of $k$ and the robustness of the results. \label{fig:data}}
-\end{figure}
+Before concluding on the merits of the model and what we learn from it, and to
+avoid mis-interpretations of its conclusions, it is necessary to state what the
+model does not say and to present its limits.
 
-Using the measured value of $\beta$ and Eq. (\ref{eq:beta}) we can estimate the exponent of
-the scaling of $L_{tot}$ with the population and find $L_{tot} \sim
-P^{\,0.68}$ which agrees very well with the value $0.66$ measured
-in~\cite{Samaniego:2008} directly on the data of the daily total miles
-driven in more than $400$ cities in the US.\\
+\subsection{What the model does not say}
+\label{sec:what_the_model_does_not_say}
 
-While agglomeration economies seem to be the basic process explaining
-the existence of cities and their spectacular resilience, this study
-brings evidence that congestion is the driving force that tears them
-apart. The non trivial spatial patterns observed in large cities can
-thus be understood as a result of the interplay between these
-competing processes. We believe that the present model represents an
-important step towards a quantitative, predictive science of
-cities. More generally, this microscopic approach is an interesting
-example of an out-of-equilibrium model: it is governed by local
-optimization with saturation effects, leads to different regimes, and
-is characterized by non-trivial dynamical exponents. In this respect,
-we believe that this discrete approach might be of use in the study of
-pattern formation in biology --which have been so far explored from a
-global optimisation perspective~\cite{Ashton:2005} or using
-coarse-grained reaction-diffusion approaches with density dependent
-diffusion coefficients~\cite{Cates:2012}-- to compute quantities that
-are out of reach within the current methods.
+\graffito{This discussion owes largely to questions raised during presentations
+of this work.}
 
-\section{Proviso}
-\label{sec:proviso}
+A first feature, hidden in the assumptions of the model, is that it does
+not explain the concentration of activities in localised areas in the cities.
+Rather, it takes the existence of centers as granted, and does not bother with
+the behaviour of firms. Thereby, we do not pretend to explain the complexity of
+urban dynamics in its entirety, but rather a single aspect of it. Of course,
+this is a topic worthy of investigation, and should be studied seriously is one
+wants to have a comprehensive understanding of the mechanisms that shape cities.
 
-All methods to measure the number of centers do not consider the spatial
-contiguity of different areal units. It might be that we find different areal
-nits that are in fact part of the same center [Show example]. So all these
-methods do not output a `real' number of centers, but rather provide values that
-are coherent across urban areas and allow their comparison.
+A second limitation lies in the description of congestion. In a worry of
+simplificating the problem, we chose to adopt a macro-scale description of
+traffic congestion, given by Eq.~\ref{eq:commuting_cost}. The sensitivity of the
+road network to congestion is taken into account through the exponent $\mu$ and
+the capacity $C$, which are assumed to be the same across the entire city. A
+full specification of these parameters would need to understand how local
+patterns of congestion lead to macroscropic behaviours at the city scale.  This
+is, of course, a difficult entreprise:  local particularities of the layout may
+have dramatic consequences on the fluidity of traffic, and congestions do
+propagate through the network so that access to a given center can have an
+effect on the travel to another center. 
 
-The model we propose trades-off exhaustivity and complexity for simplicity and
+\subsection{A predictive model}
+\label{sub:a_predictive_mode}
+
+The model we just presented, although not perfect, exhibits some of the
+desirable features of a model we presented in the introduction. First, it goes
+beyond the standard models in urban economics by going beyond the explanation of
+stylized facts. As we saw earlier, one major problem with the model of Fujita
+and Ogawa is the absence of quantitative prediction. Instead of providing a
+prediction that can be further confirmed or refuted by empirical observation,
+the authors merely tested the existence of polycentric solutions in the
+framework of their model. The link with reality is however very loose, in the
+sense that there is a big intellectual leap between the actual prediction of the
+model and reality. Even though the model proposed here is very simple, it is not
+difficult to link it to reality. Once the notion of activity centers is defined
+empirically, it is not difficult to count this number of centers and look at the
+dependence of this number on the population size of the considered city. The
+model can then be confirmed, or refuted. Furthermore, as we will see in the
+following section, the model serves as a basis to the understanding of some of
+the scaling relationships in cities, linking the model even more strongly to the
+empirical reality.
+
+\subsection{Understanding the polycentric transition}
+\label{sub:understanding_the_polycentric_tranistion}
+
+Second, the model allows us to \emph{understand} why the polycentric transition
+occurs. Taking a step back on the assumptions that led to the prediction of
+Eq.~\ref{eq:centers_prediction}, one can see that what triggers the transition
+in our model is the congestion term in Eq.~\ref{eq:cost_function}. The positions
+of households and firms are indeed taken as random, the wages are also taken at
+random. Therefore, we can conclude that our model explains the polycentric
+transition of cities through the increasing congestion around employment centers
+as the population increase. More mechanisms probably are involved, but the model
+shows that congestion alone is enough to lead to a polycentric situation while
+the population increases.\\
+
+If we assume that agglomeration economies is the basic process explaining the
+existence of centers in the first place, the model brings evidence that this
+centripetal force is balanced by the centrifugal effect of congestion, that
+tears city apart. Arguably, the non trivial spatial patterns observed in large cities can
+thus be understood as a result of the interplay between these competing
+processes.\\
+
+Finally, the model we propose trades-off exhaustivity and complexity for simplicity and
 explanatory power. Although some of the hypothesis we made are debatable, it is
 striking that we manage to make a prediction on the scaling of the number of
 centers with population size. On the other hand, unlike simplistic model, our
 model's ontology is hard-wired into the reality we experience. For this reason,
 its assumptions can be discussed, possibly changed. The model can be improved
 upon in many different ways.
+
+
+\section{Perspective}
+\label{sec:perspective}
+
+Even without considering the difficult problem of modeling the behaviour of the
+firms, and the way it is coupled to that of individuals, the model could be
+improved in several ways. One first possible extension is to take the presence
+of public transportation into account. Indeed, the model only considers
+individual vehicles, prone to congestion, as a transportation mean.  However,
+the largest cities in the world are all served by metro
+systems~\cite{Roth:2012}, and the share of public transportations can attain
+$55\%$\graffito{Number from the 2010 American Community Survey} in cities like
+New-York. It is therefore far from being negligible, and should somehow be taken
+into account in the model.
+
+Another limitation of the model is the assumptions that all individuals are
+identical, in the sense that they can all pretend to the same wage. Adding an
+income structure into the model could allow us to explore the spatial patterns
+of segregation, and see whether they can be understood from basic economical
+choices alone. In fact, while perusing the economics literature on the
+topic~\cite{Glaser:2008, Brueckner:1999}, we realised that there was very little
+empirical knowledge on segregation that could be used to test a model. This led
+us to the study that we present in the third part of this thesis.
+
+There is also some work left to be done on the empirical side. Although
+non-parametric methods are an improvement over the previous parametric methods,
+we are yet to understand what the meaning of the obtained centers is. In
+particular, a problem that remains with non-parametric methods is that, no
+matter the distribution of employment, population, etc. into the areal units,
+the method will output a number. In the extreme case of a city where employment
+would be uniformly distributed in space, the LouBar method would tell us that
+the number of centers is equal to the number of areal units. Yet, can we really
+talk about centers in this case? Most would object, and ironically invoke common
+sense. The difficulty resides in that we do not know what we mean exactly when
+we talk about centers: do they reflect an objective reality, or are they a mere
+artifact of the way our brains process information? In the latter case,
+parametric methods will do just fine, while the former case means we need to
+understand what we talk about when we talk about centers.  
+
+A further shortcoming of current methods to determine the number of subcenters
+is that they do not consider the spatial contiguity of different areal units. It
+might be that we find different areal nits that are in fact part of the same
+center [Show example in the US].
+The number they provide probably does not reflect the `real' number of centers
+(if there is such a thing). But somehow, assuming that different cities exhibit
+similar structures, they should still provide values that are coherent across
+different urban areas, and are usefull for comparison purposes.  
+
