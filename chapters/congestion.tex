@@ -134,7 +134,7 @@ higher the density of firms in a radius of $1/\alpha$ around a firm, the higher
 the locational potential is going to be. Balanced by the constraint imposed by
 the rent, which prevents too many firms from agglomerating at the same location,
 the locational potential likely is the term responsible for the existence of
-polycentric transition in the model. Indeed,the authors further write the total
+polycentric solutions in the model. Indeed,the authors further write the total
 gain $G$ as a multiple of $F$:
 
 \begin{equation}
@@ -516,7 +516,7 @@ $\overline{P}_k$ at which the $k^{th}$ center appears is given by:
 Conversely, the number $k$ of subcenters scales sublinearly with population as
 
 \begin{equation} 
-    \boxed{k \sim \left( \frac{\overline{P}}{P^*} \right)^{\frac{\mu}{\mu
+    \boxed{k \sim \left( \frac{P}{P^*} \right)^{\frac{\mu}{\mu
     + 1}}}
     \label{eq:centers_prediction}
 \end{equation} 
@@ -631,9 +631,12 @@ identical, in the sense that they can all pretend to the same wage. Adding an
 income structure into the model could allow us to explore the spatial patterns
 of segregation, and see whether they can be understood from basic economical
 choices alone. In fact, while perusing the economics literature on the
-topic~\cite{Glaser:2008, Brueckner:1999}, we realised that there was very little
+topic~\cite{Glaeser:2008, Brueckner:1999}, we realised that there was very little
 empirical knowledge on segregation that could be used to test a model. This led
-us to the study that we present in the third part of this thesis.
+us to the study that we present in part~\ref{part:stratification} of this
+thesis.\\
+
+\medskip
 
 There is also some work left to be done on the empirical side. Although
 non-parametric methods are an improvement over the previous parametric methods,
@@ -651,11 +654,70 @@ parametric methods will do just fine, while the former case means we need to
 understand what we talk about when we talk about centers.  
 
 A further shortcoming of current methods to determine the number of subcenters
-is that they do not consider the spatial contiguity of different areal units. It
-might be that we find different areal nits that are in fact part of the same
-center [Show example in the US].
-The number they provide probably does not reflect the `real' number of centers
-(if there is such a thing). But somehow, assuming that different cities exhibit
-similar structures, they should still provide values that are coherent across
-different urban areas, and are usefull for comparison purposes.  
+is that they do not consider the spatial arrangement of the areal units
+involved. This can be problematic when the method identifies areal units that
+are contiguous as center. On Fig.~\ref{fig:hotspots_boston} we show an example
+of such a situation. We use the LouBar method~\cite{Louail:2014} to extract the
+employment hotspots in the Metropolitan Statistical Area of Boston using data
+from the 2000 Census. As one can see, several of the hotspots thus identified
+are indeed contiguous. Should we still count them as separate hotspots? Or
+should we consider that all contiguous hotspots are part of a larger hotspots
+that encompasses them all? 
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{gfx/chapter-monocentric/hotspots_boston.pdf}
+    \caption{The census tracts of downtown Boston, MA in the US. In light grey,
+    the census tracts that are identified as employment hotspots by the LouBar
+method. Although the method designates all light grey tracts as different hotspots,
+many of them are contiguous. We can wonder whether such contiguous
+hotspots are, in fact, part of a larger hotspot that would include all of them.
+This plot was generated with python, using the 2000 Census tract-to-tract
+commuting flows and the 2000 Census tracts geometry.\label{fig:hotspots_boston}}
+\end{figure}
+
+This problem is in fact very general, and pertains to the field of spatial
+analysis (including spatial statistics). Finding centers indeed amounts to
+finding the proper way to describe a density profile at a meso-scale level and
+to devising proper methods to detect the salient feature of this spatial
+pattern. The tools provided by spatial analysis are however not yet suited to
+provide such a description. This would however have huge potential applications.
+With hindsight, such tools would also help to describe the spatial patterns of
+segregation that we study in part \ref{part:stratification} of this
+manuscript.
+
+The results of the methods provided in the introduction should not be thrown
+away altogether, though. The number of centers they provide probably does not
+reflect the `real' number of centers (if there is such a thing) in a particular
+city. But, assuming that different cities exhibit similar structures, they
+should still provide values that are coherent across different urban areas, and
+are thus useful for \emph{comparison} purposes.\\
+
+\section{Summary}
+\label{sec:summary}
+
+
+In this part, we have presented an historical overview of the monocentric
+hypothesis for the structure of cities, and how the view has progressively
+shifted towards the picture of a more distributed, polycentric organisation.
+Starting with indirect evidence for a polycentric picture, several methods were
+then naturally proposed to directly measure the number of centers, from the
+first parametric methods to the more recent non-parametric methods. Observing
+evidence for an increased polycentricity with population size, we then wondered
+what were the possible explanations for this phenomenon. We proposed an
+out-of-equilibrium model of city growth that predicts the necessary emergence of
+secondary centers as populations grows, and a sublinear increase of the number
+of subcenters with population---both verified on empirical data, across
+different countries, for several city definitions.
+
+In the next part, we will continue our journey with another, seemingly unrelated
+topic: scaling relationships. We will start with an historical perspective on
+ scaling, showing that scaling relationships are older than most people believe,
+ and we will provide a non-exhaustive review of the empirical results. We will
+ then be ready to show how, using the model exposed in this chapter, we can
+ understand the scaling relationships related to mobility in cities. We will
+ then conclude on a reflection of what scaling relationships can and do tell us about cities,
+ and highlight their shortcomings.
+
+
 
