@@ -9,22 +9,39 @@ INTRODUCTION
 
 POLYCENTRICITY
 	How strong polycentric pattern 
-		Desnity from the center of gravity
-		Thresholded figure shwing several centers (Los Angeles!)
-	Extract the number of centers from 2000 MSA
+		Density from the center of gravity
+		Thresholded figure showing several centers (Los Angeles!)
+	[X] Extract the number of centers from 2000 MSA
 	Fujita et Ogawa
 		Calculation maximisation of utility (look at Brueckner, Glaeser papers).
 		Have a look at AMM theory
 			Download Fujita, Venables, etc
 			Download Fujita, Thisse
+	Figure showing contiguous tracts counted as different centers.
 
 SCALING
+	Introduction
+		Discuss model of Bettencourt and others
+	Do not forget Newman and Kenworthy!
 	Interpretation
 		Plot scaling of wages and scaling of income
 		: Illustrate the effect of flows in the system of cities
 		: on scalings.
+	Normalise Y0 for cities of different countries... Data?
 
 SEGREGATION
+	Text
+		Distinction Concentration/Proportion/Representation
+		Exposure as a measure of interaction
+		Extract the class structure
+		Extract neighbourhoods
+		Clustering
+		Density
+		A new measure of segregation
+			Self-dissimilarity (Evenness)
+			Earth Mover's distance
+	Conclusion
+		Reflection on the way to cluster categories together
 	Add figures
 	Add figures on Earth Moving distance?
 
