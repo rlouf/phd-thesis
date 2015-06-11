@@ -611,10 +611,26 @@ improved in several ways. One first possible extension is to take the presence
 of public transportation into account. Indeed, the model only considers
 individual vehicles, prone to congestion, as a transportation mean.  However,
 the largest cities in the world are all served by metro
-systems~\cite{Roth:2012}, and the share of public transportations can attain
-$55\%$\graffito{Number from the 2010 American Community Survey} in cities like
-New-York. It is therefore far from being negligible, and should somehow be taken
-into account in the model.
+systems~\cite{Roth:2012}, and the share of transports other than personal
+vehicles can attain $42\%$\graffito{Number from the 2013 American Community
+Survey} in cities like New-York. It is therefore far from being negligible, and
+should somehow be taken into account in the model.
+Still, cars remain the dominant mode of transportation in the
+US, as shown of Fig.~\ref{fig:transportation_mode}. The use of alternative modes
+of transportation is only notable in New-York, which is already a polycentric
+city.\\
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{gfx/chapter-monocentric/transportation_modes.pdf}
+    \caption{Importance of different transportation modes in US Metropolitan
+    Statistical Areas, as a function of the number of commuter. Although the
+proportion of individuals using public transportation or other modes (walking,
+cycling, working at home) increases with population size, cars stay the dominant
+mode of transportation everywhere. Data from the 2013 American Community
+Survey.\label{fig:transportation_mode}}
+\end{figure}
+
 
 Another limitation of the model is the assumptions that all individuals are
 identical, in the sense that they can all pretend to the same wage. Adding an
