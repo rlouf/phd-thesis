@@ -1,76 +1,195 @@
 % !TEX root = ../thesis-example.tex
 %
-\chapter{The socio-spatial stratification in cities}
+\chapter{Patterns of segregation}
 \label{sec:concepts}
 
 
-\begin{flushright}{\slshape    
-The limits of my language\\
-Are the limits of my world.} \\ \medskip
---- Ludwig Wittgenstein 
-\end{flushright}
+\section{Presence of categories}
+\label{sec:presence_of_categories}
 
-\section{Introduction}
-\label{sec:introduction}
-
-About models: \cite{Gauvin:2013, Brueckner:1999, Glaeser:2008}
-
-\begin{quote}
-    [Segregation] is a concept rich in theoretical suggestiveness and of
-    unquestionable heuristic value. Clearly we would not wish to sacrifice the
-    capital of theoretization and observation already invested in the concept.
-    Yet this is what is involved in the solution offered by naive
-    operationalism, in more or less arbitrary matching some convenient numerical
-    procedure with the verbal concept of segregation... (Duncan and Duncan, 1955)
-\end{quote}
-
-\section{What segregation is not: the unsegregated city}
-\label{sec:null_model_the_unsegregated_city}
-
-There is often a negative connotation implied with the use of the word
-`segregation', due to its use in relatively recent history. The use of the
-`random city' as a null model however pushes forward the fact that segregation,
-is, in fact, nothing but the deviation from a purely random spatial repartition
-of individuals. What is unclear, is the reasons behind this deviation. Is it
-because of an attraction to similar individuals, or a repulsion towards
-individuals that are different from us? Or maybe is it just simple economic
-mechanisms that are self-reinforced over time? If anything, the relatively
-recent process of gentrification shows that the answer is not as simple as it
-may have seemed at first: wealthy households moving to run-down nighbourhoods
-tends to show that. Although
-simplistic, Schelling's model of segregation shows that segregation does not
-necessarily stem from evil intentions.
-
-We cannot judge the spatial repartition of people. There is no criterion of
-`good' or `bad' in the way people arrange themselves, no moral values attached 
-to any spatial pattern. It is the \emph{processes} that lead to such
-patterns, the intentions behind people's decisions that make segregation
-condemnable. It is the \emph{consequences} of segregation that may make
-undesirable, something worth fighting against. Although it a priori seems that
-the former aspect are a topic for qualitative research, being able to follow
-households and study their pattern of relocation would also help in studying
-the processes behind segregation. Schelling's cellular automata
-model~\cite{Schelling:1971}, although intellectually stimulating, is very
-limited in terms of predictions. A study of the dynamics of households
-(spatially but also in terms of the evolution of their characteristics) should
-deliver some precious insights about how individuals interact with their
-surroundings.
+\begin{equation}
+    \frac{n_\alpha(t)}{N_\alpha}
+\end{equation}
 
 
-\graffito{This remark sprung during a conversation with Viktoria Spaiser at
-Uppsala University}
+\begin{equation}
+    \frac{n_\alpha(t)}{n(t)}
+\end{equation}
+
+\subsection{An unbiaised measure: representation}
+\label{sub:an_unbiaised_measure_the_representation}
+
+\begin{equation}
+    r_alpha(t) = \frac{n_\alpha(t)/n(t)}{N_\alpha/N}
+\end{equation}
 
 \section{Measuring the attraction and repulsion of categories}
 \label{sec:measuring_the_attraction_and_repulsion_of_categories}
 
+\begin{equation}
+    E_{\alpha \beta}(t) = \frac{1}{N_\alpha}
+    \sum_{t=1}^T\,n_\alpha(t)\,r_\beta(t) 
+\end{equation}
+
+The measure of exposure is symmetric, $E_{\alpha \beta}(t) = E_{\beta \alpha}(t)$
+
 \section{The emergent social classes}
 \label{sec:the_emergent_social_classes}
+
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{./gfx/chapter-segregation/figure1.pdf}
+    \caption{(a) Alluvial diagram showing the successive aggregations
+      of different income categories in the clustering process, and
+      the value of the exposure at which the aggregation took
+      place. The aggregation stops when there is no pair of category
+      for which $E>1$, that is when all classes are at best
+      indifferent to one another (see the SI Appendix, section 2 for a more
+      detailed description of the algorithm). One can see on this diagram that
+      the highest income categories attract one another more (higher values of
+      $E_{\alpha \beta}$) than the lowest income categories. (b) The classes that emerge from our
+      analysis, and their respective exposure and isolation values. The lower
+      and higher income classes repel one another, while the middle
+      income class is indifferent to either other classes.  The
+      higher-income class is more coherent than the lower-income,
+      which is more coherent than the middle-income class, as
+      reflected by the isolation coefficient $I$.}
+\label{fig:classes_alluvial}
+\end{figure}
+
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{./gfx/chapter-segregation/gini_income.pdf}
+    \caption{Gini coefficient of the income distribution of the $280$ MSA in
+    $2000$ versus the number of households in the city. As one can see, there is
+no clear relationship.\label{fig:gini}}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-segregation/figure3.pdf}
+    \caption{Proportion of cities in which the different classes are
+    overrepresented, as a function of the total population of the city. One can
+    clearly see that as cities get larger rich people will
+    be overrepresented and poor people underrepresented (compared to national
+    levels). \label{fig:inter-urban_representation}}
+\end{figure}
+
+
+
+
+\section{Neighbourhoods}
+\label{sec:neighbourhoods}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{./gfx/chapter-segregation/figure2.png}
+    \caption{The neighbourhoods in Atlanta for the three different
+      income category. In black, the tracts where the corresponding
+      class is overrepresented, in white where it is
+      underrepresented and in grey where its value is
+      undistinguishable from the random distribution. All
+      MSA defined for the $2000$ Census exhibit a total exclusion between
+      lower-income and higher-income
+      neighbourhoods: the pictures for lower- and higher-income classes are the
+      perfect negative of one another. In contrast, middle-income households
+      are scattered across the city and exhibit very little geographical coherence.}
+\label{fig:atlanta_neighbourhoods}
+\end{figure}
+
 
 \section{Clustering and concentration}
 \label{sec:clustering_and_concentration}
 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{./gfx/chapter-segregation/figure5.pdf}
+    \caption{Three situations that are identical for intra-areal unit measures,
+        but that represent different segregation levels. (Left) The checkerboard
+        city popularised by White~\cite{White:1983}, corresponding to a
+        clustering value of $C=0$ for the black squares. (Middle) An
+        intermediate situation between the checkerboard and the divided city,
+        corresponding to $C \approx 0.86$.(Right) The divided city, corresponding to
+        $C=1$. \label{fig:checkerboard}} 
+\end{figure}
+
+
+\begin{figure} 
+    \includegraphics[width=\textwidth]{gfx/chapter-segregation/figure6.pdf}\\
+    \caption{(Top) Distribution of the value of the clustering coefficient for
+        all cities in our dataset, for the 3 classes. The higher income class
+        exhibits the highest level of clustering, with an average of
+        $\overline{C} = 0.90$, followed by the lower income class with on
+        average $\overline{C} = 0.87$. The Middle income class households are
+        significantly less clustered than the previous two, with $\overline{C} =
+        0.56$ on average.  (Bottom) Distribution of the ratio of the size of the
+        largest and second largest neighbourhoods for each class for all cities in our
+        datset. Higher- and lower-income househols tend to concentrate in single
+        neighbourhood, with a secondary center that is on average $22\%$ and
+        $26\%$ the size of the largest one, respectively. Middle-income
+        households tend to be more dispersed, with a secondary neighbourhood that is on
+        average $62\%$ of the size of the largest.} \label{fig:clustering} 
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-segregation/figure7.pdf}
+    \caption{Number of neighbourhoods for the three different classes as a
+    function of the size of the city. These plots in loglog show that
+    we have a behavior consistent with a power law with exponent less
+    than one (and with different value for each class), with $R^2$ values that
+    range between $0.88$ (higher-income) and $0.96$ (middle-income). Combined with the linear
+    increase of the number of over-represented units with the number of
+    households (see SI Appendix),
+this sub-linear increase in the number of neighbourhoods shows the tendency of
+classes to cluster more as cities get larger.\label{fig:number_clusters_class}}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{./gfx/chapter-segregation/number_overrepresented.pdf}
+    \caption{Number of areal units where each class is overrepresented as a
+    function of the total number of households in the city. The behaviour is
+consistent with a linear behaviour in the three cases.
+\label{fig:overrepresented}}
+\end{figure}
+
+
 \section{Poor centers, rich suburbs?}
 \label{sec:poor_centers_rich_suburbs_}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-segregation/figure4.pdf}
+    \caption{Average representation of the higher-, middle- and
+      lower-income classes over the $276$ MSA as a function of the
+      local density of households. On average, we find that low-density (the
+  suburbs) are rich, while high density regions (the center) are poor,
+  confirming empirically on a large dataset a stylized facts that had previously
+  emerged from local studies. Interestingly, we also
+  find that  very large density areas ($\rho>20,000/km^2$) are rich on average,
+  suggesting that density may be one relevant factor in explaining the
+  differences between neighbourhoods~\cite{Jacobs:1961}.
+  \label{fig:high_low_densities}} 
+  \end{figure}
+
 \section{A new measure of segregation}
 \label{sec:a_new_measure_of_segregation}
+
+\begin{equation}
+    U_\alpha = \frac{1}{2} \sum_{t=1}^T \left| n_\alpha(t) -
+    N_\alpha\,\frac{n(t)}{N}\right|
+\end{equation}
+
+\begin{equation}
+    e = \frac{L_\alpha}{N_\alpha\,D}
+\end{equation}
+
+where $L_\alpha$ is the total distance that individuals belonging to the class
+$\alpha$ should travel when relocating to obtain a uniform city.
