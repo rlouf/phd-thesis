@@ -191,77 +191,11 @@ introduces the concept of `Edge cities', the concentration of business, shopping
 and entertainment can also occur at the outskirts of cities, in regions that
 were previously rural, or residential.\\
 
-Progressively, the concept of the monocentric city got replaced with the more
-elaborate polycentric hypothesis. Is that the end of the story? As suggested in
-the quote opening this chapter, reality is not that straightforward. Gordon and
-Richardson, in a provocative article~\cite{Gordon:1996}, argue that, rather than
-polycentric, cities are dispersed. Indeed, studying the employment density in
-Los Angeles, they found that the centers they defined based on density only contained $17\%$ of
-the total employment. Hardly a polycentric situation! 
-Of course, we can wonder whether Gordon and Richardson's results are an artefact
-of the choice of their case study --Los Angeles, famous for its sprawl-- or the particular method they
-used to compute the number of centers. For this reason, we plot on
-Fig.~\ref{fig:concentration_loubar} the ratio of the total number of individuals that is contained
-in the centers defined by the LouBar method. The results are striking: only a
-few, small metropolitan area reach the mark where $50\%$ of individuals
-(employees or residents belong) to a designed center. Worse, cities seem to be
-on average more dispersed as they are bigger.\\
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\textwidth]{gfx/chapter-monocentric/concentration_loubar.pdf}
-    \caption{{\bf Concentration in subcenters.} (Left) Ratio of the total
-    residential population in US MSAs that lives in the centers identified by the LouBar
-method. (Right) Ratio of the total number of employees in US MSAs that works in the centers
-identified by the LouBar method. Overall, cities are very dispersed, with only a
-few cities having more than $50\%$ of their workforce or residential population
-living in centers, confirming the results of Gordon and
-Richardson~\cite{Gordon:1996}. Data were obtained for the 2000 US Census, the
-figure was prepared using Python.\label{fig:concentation_loubar}}
-\end{figure}
-
-The lesson that should be learned from the article by Gordon and Richardson is
-that the notion of polycentricity is \emph{also an hypothesis} on the spatial
-structure of densities. While it is arguably more involved than the monocentric
-hypothesis, it does indeed consists in imposing some structure onto the raw
-data. The process itself of counting centers implies that these centers exist,
-that there is an element of reality attached to what we call centers. A quick
-look on the 3D plot shown on Fig.~\ref{density_3d} should convince the reader
-that the world is not as simple as the way we picture it. While employment
-densities indeed exhibit strong peaks that are easily distinguishible (although
-that is arguable for Houston), the same cannot be said for population densities.
-The point, I argue, is not that the monocentric or the polycentric model are
-wrong alltogether. The problem lying more in the lack of appropriate tools to
-describe a density spatial profile, in the fact that there is no `one size fits
-all' method of analysis. Indeed, the exploratory tools presented above, as well
-as the ones presented in the following section, try to fit a certain model of
-the city to the actual data, be it monocentric or polycentric.\\
-
-In the following however, we will work in the framework of the polycentric
-assumption (as I have during my thesis). The problems linked with the
-simplification will be put aside for a moment and adressed at various stages in
-the following.
-
-
 \section{How to measure polycentrity}
 \label{sec:how_to_measure_polycentrity}
 
 \subsection{Urban form (put somewhere else)}
 \label{sub:urban_form_put_somewhere_else_}
-
-\cite{Tsai:2005} is a classic on Urban Form, along with~\cite{LeNechet:2015} and
-\cite{Schwarz:2010}.
-Have a look at what~\cite{Berroir:2008} do!
-\cite{Bertaud:2001} is very interesting on urban form in general, and proposes
-an index, the eccentricity, to measure the distance of the center of gravity to
-the geographical CBD.
-\cite{LeNechet:2010} introduces the acentrism index (also explained
-in~\cite{LeNechet:2015}.\\
-\cite{Pereira:2013} proposes an Urban Centrality Index that varies continuously
-between a monocentric configuration and an extreme decentralized situation.
-
-\subsection{The text}
-\label{sub:the_text}
 
 The methods to identify the employment subcenters can be roughly divided in
 three categories: clustering methods, regression-based methods and distribution
@@ -557,6 +491,15 @@ centers in US cities scales with population size as
 \subsection{Spanish cities (mobile phone data)}
 \label{sub:spanish_cities_mobile_phone_data_}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-monocentric/spain_num-centers.pdf}
+    \caption{Scaling of the number of centers with population for spanish
+        metropolitan areas. Assuming a powerlaw relationship, the authors
+    of~\cite{Louail:2014} find an exponent $\beta = 0.64$ ($r^2=0.93$). The data
+were provided by Thomas Louail.\label{fig:centers_spain}}
+\end{figure}
+
 Using mobile phone data and the LouBar method to determine the number of
 centers, Louail et al.~\cite{Louail:2014} also computed the number of centers
 versus population for Spanish cities. Strikingly, the exponent they found is
@@ -564,10 +507,10 @@ very close to that we found on a different system of city, using a different
 method to count centers, and a radically different data collection method.
 
 \begin{equation}
-    k_{\,Spain} \sim P^{\,0.54}
+    k_{\,Spain} \sim P^{\,0.64}
 \end{equation}
 
-Although the numerical values differ, both studies agree on the fact that (1)
+The numerical values are, surprisingly, equal. Both studies agree on the fact that (1)
 the larger cities are, the more polycentric they tend to be; (2) the average
 behaviour is well-approximated by a power-law relationship between the number of
 centers and population; (2) the increase of the number of centers with
