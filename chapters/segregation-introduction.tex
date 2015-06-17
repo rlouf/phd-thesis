@@ -10,47 +10,34 @@ Are the limits of my world.} \\ \medskip
 \bigskip
 
 
-\section{The concept}
-\label{sec:introduction}
+% Defining average and variance
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
 
-About models: \cite{Gauvin:2013, Brueckner:1999, Glaeser:2008}
-
-\begin{quote}
-    [Segregation] is a concept rich in theoretical suggestiveness and of
-    unquestionable heuristic value. Clearly we would not wish to sacrifice the
-    capital of theoretization and observation already invested in the concept.
-    Yet this is what is involved in the solution offered by naive
-    operationalism, in more or less arbitrary matching some convenient numerical
-    procedure with the verbal concept of segregation... (Duncan and Duncan, 1955)
-\end{quote}
-
-\section{The dimensions of segregation}
-\label{sec:the_dimensions_of_segregation}
+\section{Studying segregation}
+\label{sec:studying_segregation}
 
 
-\section{What segregation is not: the unsegregated city}
-\label{sec:null_model_the_unsegregated_city}
+We cannot judge the spatial repartition of people. There is no criterion of
+`good' or `bad' in the way people arrange themselves, no moral values attached
+to any spatial pattern. It is the \emph{processes} that lead to such patterns,
+the intentions behind people's decisions that make segregation condemnable. It
+is the \emph{consequences} of segregation that may make undesirable, something
+worth fighting against. 
 
-There is often a negative connotation implied with the use of the word
-`segregation', due to its use in relatively recent history. The use of the
-`random city' as a null model however pushes forward the fact that segregation,
-is, in fact, nothing but the deviation from a purely random spatial repartition
-of individuals. What is unclear, is the reasons behind this deviation. Is it
+% processes
+% Link to models.
+% We will not be interested into models, because empirical evidence is too
+% shallow
+The processes behind segregation are unclear. Is it
 because of an attraction to similar individuals, or a repulsion towards
 individuals that are different from us? Or maybe is it just simple economic
 mechanisms that are self-reinforced over time? If anything, the relatively
 recent process of gentrification shows that the answer is not as simple as it
 may have seemed at first: wealthy households moving to run-down nighbourhoods
-tends to show that. Although
-simplistic, Schelling's model of segregation shows that segregation does not
-necessarily stem from evil intentions.
-
-We cannot judge the spatial repartition of people. There is no criterion of
-`good' or `bad' in the way people arrange themselves, no moral values attached 
-to any spatial pattern. It is the \emph{processes} that lead to such
-patterns, the intentions behind people's decisions that make segregation
-condemnable. It is the \emph{consequences} of segregation that may make
-undesirable, something worth fighting against. Although it a priori seems that
+tends to show that. Although simplistic, Schelling's model of segregation shows
+that segregation does not necessarily stem from evil intentions.\\
+Although it a priori seems that
 the former aspect are a topic for qualitative research, being able to follow
 households and study their pattern of relocation would also help in studying
 the processes behind segregation. Schelling's cellular automata
@@ -60,6 +47,170 @@ limited in terms of predictions. A study of the dynamics of households
 deliver some precious insights about how individuals interact with their
 surroundings.
 
+About models: \cite{Gauvin:2013, Brueckner:1999, Glaeser:2008}
 
-\graffito{This remark sprung during a conversation with Viktoria Spaiser at
-Uppsala University}
+In this thesis, we will not focus on models and mechanisms of residential
+segregation. It is our belief that the available empirical characterisation of
+segregation is not sufficient. We acknowledge the necessity to
+understand the mechanisms that lead to the spatial differentiation of
+individuals from different income categories. But we also note the urgent need
+to properly characterize first the spatial patterns of segregation.\\
+
+% consequences
+% need for a local information
+As a matter of fact, social residential segregation has terrible consequences.
+As shown in~\cite{Massey:1993}, residential segregation is the cause of major
+economic disadvantages that affect the least affluent segments of the
+population, through the isolation from social networks, or the presence of poor
+public service in the least affluence zones. Worse, it has been shown that
+increased levels of segregation in urban areas is associated with a higher
+mortality burden~\cite{Lobmayer:2002}. For all these reasons, there is a
+somewhat urgent need to measure the extent of segregation, especially its local
+component. Most authors systematically design a single index of segregation for
+territories that can be very large, up to thousands of square
+kilometers~\cite{Apparicio:2000}. In order to mitigate segregation, a more
+local, spatial information is however needed: local authorities need to locate
+where the poorest and richest concentrate if they want to design efficient
+policies to curb, or compensate for, the existing segregation. In other words,
+we need to provide a clear {\it spatial} information on the pattern of
+segregation. 
+
+
+
+\section{Thinking first, measuring later}
+\label{sec:introduction}
+
+% the curse of familiarity 
+As stated many times, and at different periods in the sociology
+literature~\cite{Duncan:1955,James:1982,Massey:1988,Reardon:2002}, the study of
+segregation is cursed by its intuitive appeal. Pretty much everyone has heard of
+segregation, and has an opinion about it. This familiarity with the concept
+favours what Duncan and Duncan~\cite{Duncan:1955} called `naive operationalism':
+the tendency to force a sociological interpretation on measures that are at odds
+with the conceptual understanding of segregation. In their own words
+
+\begin{quote}
+    [Segregation] is a concept rich in theoretical suggestiveness and of
+    unquestionable heuristic value. Clearly we would not wish to sacrifice the
+    capital of theoretization and observation already invested in the concept.
+    Yet this is what is involved in the solution offered by naive
+    operationalism, in more or less arbitrary matching some convenient numerical
+    procedure with the verbal concept of segregation... (Duncan and Duncan,
+    1955~\cite{Duncan:1955})
+\end{quote}
+
+For all its intuitive appeal, segregation is however an intricate, compound
+notion whose complexity only reveals itself through careful study. However
+tempting it is to start writing measures of segregation, on need first to stop
+and think about the meaning of this notion. We need to \emph{think} segregation
+being able to provide \emph{useful} measures of segregation.
+
+
+\section{The dimensions of segregation}
+\label{sec:the_dimensions_of_segregation}
+
+Luckily for us, a lot of thinking has already been done in the sociology and
+geography literature. Previous studies distinguishes between several conceptually
+different dimensions.  Massey~\cite{Massey:1988} first proposed a list of $5$
+dimensions (and related existing measures), which was recently reduced to $4$ by
+Reardon~\cite{Reardon:2004}. 
+
+\subsection{Exposure}
+\label{sub:exposure}
+
+(i) {\it exposure} which measures the extent to
+which different populations share the same residential areas; 
+
+\subsection{Evenness (clustering)}
+\label{sub:evenness_clustering_}
+
+(ii) the {\it
+evenness} (and {\it clustering}) to which extent populations are evenly spread
+in the metropolitan area; (iii) 
+
+\subsection{Concentration}
+\label{sub:concentration}
+
+{\it concentration} to which extent populations
+concentrate in the areal units they occupy; and (iv) 
+
+\subsection{Centralization}
+\label{sub:centralization}
+
+{\it centralization} to
+which extent populations concentrate in the center of the city.\\
+
+
+\section{Defining segregation by what it is not: the unsegregated city}
+\label{sec:null_model_the_unsegregated_city}
+
+The fundamental issue with this picture lies in the lack of a general theoretical framework
+in which all existing measures can be interpreted.  Instead, we have a
+patchwork of seemingly unrelated measures that are labelled with
+either of the aforementionned dimensions. Although segregation can
+indeed manifests itself in different ways, it is relatively
+straightforward to define what is \emph{not} segregation: a spatial
+distribution of different categories that is undistinguishable from a
+uniform random situation (with the same percentages of different
+categories). Therefore, we can define segregation in the following way 
+
+\begin{quote}
+Segregation is any pattern in the spatial distribution of categories that significantly 
+deviates from a uniform random distribution. 
+\end{quote} 
+
+Our definition is perfectly agnostic with regards of the other features of the
+density pattern. It is also not concerned with the overall inequality levels. 
+
+
+In the context of residential segregation, a natural null model is the
+\emph{unsegregated city}, where all households are distributed at
+random in the city with the further constraints that
+
+\begin{itemize}
+    \item The total number $N_\alpha$ of people belonging to a category
+	    $\alpha$ is fixed and equal to that found in the data;
+    \item The total number $n(t)$ of households living in the areal unit $t$ is
+	    fixed and equal to that found in the data.
+\end{itemize}
+
+which also fix the total number of individuals $N$ in the city. The problem of
+finding the numbers $\left( n_\alpha(1), \dots, n_\alpha(T) \right)$ of
+individuals belonging to a certain category $\alpha$ in the $T$ areal units of
+an unsegregated city is reminiscent of the traditionnal occupancy problem in
+combinatorics~\cite{Feller:1950}. Their distribution is given by the multinomial
+distribution $f \left( n_\alpha(1), \dots, n_\alpha(T) \right)$, and the number
+of people of category $\alpha$ in the areal unit $t$ by a binomial distribution.
+Therefore, in an unsegregated city, we have
+
+\begin{align}
+    \begin{split}
+	\E \left[ n_\alpha(t) \right] &= N_\alpha\,\frac{n(t)}{N} \\
+	\Var \left[ n_\alpha(t) \right] &= N_\alpha\,\frac{n(t)}{N} \left( 1 - \frac{n(t)}{N}  \right) 
+    \end{split}
+\end{align}
+
+where $N$ is the total number of households in the city. In metropolitan areas
+$N_\alpha$ is larged compared to $1$, and the distribution of the $n_\alpha(t)$
+can be approximated by a Gaussian with the same mean and variance.
+
+The different dimensions of~\cite{Massey:1988,Reardon:2004} correspond then to
+particular aspects of how a multi-dimensional pattern can deviate from its
+randomized counterpart. The measures we propose here are all rooted in this
+general definition of segregation.
+Another advantage of the above definition of segregation with a null model is
+that we are able to evaluate whether the pattern deviates significantly from the
+random configuration.
+Most studies exploring the question of spatial segregation define measures
+before comparing their value for different cities. Knowing that two quantities
+are different is however not enough: we also have to know whether this
+difference is {\em significant}. In order to assess the significance of a
+result, we have to compare it to what is obtained for a reasonable null model.\\
+
+\bigskip
+
+In this chapter, we have discussed some of the improvements that could be
+brought to the existing measures in the literature. In particular, we have
+emphasized the need for a \emph{local} knowledge of the patterns of segregation.
+We have also laid the theoretical foundation upon which we are going to design
+new segregation measures.
