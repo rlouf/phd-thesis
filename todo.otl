@@ -6,14 +6,12 @@ LOOK
 		Citations, uniform book citation format
 	Check pdfbookmarks!
 	Add epigraph to each chapter
-	Add bigskpi between epigraph and chapter
 
 
 INTRODUCTION
 	New data?
 		Trajectory Mobile phone data
 		Precision --> Cell Tower and Census Block
-			IRIS/Mobile Phone Paris
 			Idem smaller aire urbain with fewer antennas
 		Better for aggregate quantities, evolution in time (Louail et al.)
 		: Access to the time dimension. And to *all* trips
