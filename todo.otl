@@ -1,3 +1,14 @@
+LOOK
+	Citations
+		Check citations formatting
+		Check citations names and titles
+		Citations, uniform journal names
+		Citations, uniform book citation format
+	Check pdfbookmarks!
+	Add epigraph to each chapter
+	Add bigskpi between epigraph and chapter
+
+
 INTRODUCTION
 	New data?
 		Trajectory Mobile phone data
@@ -7,23 +18,17 @@ INTRODUCTION
 		Better for aggregate quantities, evolution in time (Louail et al.)
 		: Access to the time dimension. And to *all* trips
 
+
 POLYCENTRICITY
-	How strong polycentric pattern 
-		Density from the center of gravity
-		Thresholded figure showing several centers (Los Angeles!)
 	Fujita et Ogawa
 		Calculation maximisation of utility (look at Brueckner, Glaeser papers).
 		Have a look at AMM theory
 			Download Fujita, Venables, etc
 			Download Fujita, Thisse
-	Figure Roth 2012 for the metro systems in cities
-	Find the data on 50% car use and % metro use (American Community Survey)
-		[X] Get the data
-		[_] Extract some numbers and get the percentages
+
 
 SCALING
 	Introduction
-		Simple curve linear, superlinear, sublinear (Clementine)
 		Discuss model of Bettencourt and others
 	Do not forget Newman and Kenworthy!
 	Interpretation
