@@ -7,9 +7,79 @@
 To understand is to perceive patterns.} \\ \medskip
 --- Isaiah Berlin~\cite{Berlin:2013}
 \end{flushright}
-”
+
+
 \bigskip
 
+
+There are many different ways in which a spatial pattern can deviate from its
+randomised. This is why we have to further investigate and understand
+residential segregation, one needs to develop further measures -- that will
+eventually fit in one of the previously mentionned dimensions. The different
+dimensions of segregation then correspond to particular aspects of how a
+multi-dimensional pattern can deviate from the corresponding unsegregated city.
+In this chapter, we will try to quantify these patterns in a way that makes
+sense, and is useful to understand the phenomenon of segregation. To do so, it
+is always useful to explore the existing literature and look at the difficulties
+that have been encountered and mentionned by previous authors.
+
+First, several difficulties are tied to the existence of several categories in
+the underlying data. Historically, measurements of racial segregation were
+limited to measures between $2$ population groups. However, most measures
+generalise poorly to a situation with many groups, and the others do not
+necessarily have a clear interpretation~\cite{Reardon:2002}. Worse, in the case
+of groups based on a continuum (such as income), the thresholds chosen to define
+classes are usually arbitrary~\cite{Jargowsky:1996}. We propose in the following
+to solve this issue by defining classes in a unambiguous and non-arbitrary way
+through their pattern of spatial interaction. Applied to the distribution of
+income categories in US cities, we find $3$ emergent categories, which are
+naturally intepreted as the lower-, middle- and higher-income classes. 
+
+Second, most authors systematically design a single index of segregation for
+territories that can be very large, up to thousands of square
+kilometers~\cite{Apparicio:2000}. In order to mitigate segregation, a more
+local, spatial information is however needed: local authorities need to locate
+where the poorest and richest concentrate if they want to design efficient
+policies to curb, or compensate for, the existing segregation. In other words,
+we need to provide a clear {\it spatial} information on the pattern of
+segregation. 
+
+The lack of clear spatial characterization of the distribution of individuals is
+not tied to the problem of segregation in particular, but pertains to the field
+of spatial statistics~\cite{Ripley:1981}. Many studies avoided this spatial
+problem by considering cities as monocentric and circular, and rely on either an
+arbitrary definition of the city center boundaries, or on indices computed as a
+function to the distance to the center (whatever this may be). However, most if
+not all cities are anistropic, and the large ones, polycentric
+(\cite{Louf:2013_polycentric}
+and references therein), casting some doubt about the application of the
+monocentric city picture. Many empirical studies and models in economics aim to
+explain the difference between central cities and suburbs \cite{Glaeser:2008,
+Brueckner:1999}. Yet, the sole stylized fact upon which they rely -- city centers
+tend to be poorer than suburbs (in the US) -- lacks a solid empirical
+basis.\\
+
+Data present themselves as the population sorted in different categories, and in
+different tracts.
+
+In the following, we will purport to answer the following question, solve the
+following difficulties.
+
+\begin{itemize}
+    \item How to quantify the presence of the different categories in areal
+        units? Can we say whether they are overrepresented or normally
+        represented? How can we define neighbourhoods?
+    \item How can we quantify the interactions between the different categories?
+    \item How to define meaningful classes from the original data?
+    \item Do classes tend to leave in geographically coherent areas, or are they
+        scattered across the city?
+    \item How concentrated are neighbourhoods?
+    \item Is there a difference between the city center and the suburbs? How
+        shall we quantify this properly?
+    \item How to define a meaningful segregation index that generalises easily
+        to the many classes situation, and takes the geographical pattern into
+        consideration?
+\end{itemize}
 
 \section{Presence of categories}
 \label{sec:presence_of_categories}
