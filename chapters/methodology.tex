@@ -60,15 +60,191 @@ telescopes.
 \section{Against data}
 \label{sec:against_data}
 
-Examples: \textit{Italics}, \spacedallcaps{All Caps}, \textsc{Small
-Caps}, \spacedlowsmallcaps{Low Small Caps}.
-
-\graffito{An example of side note}
 In `Againt Method', the philosopher of science Paul Feyerabend argued against
 the idea that Science proceeds through the application of a single, monolithic
-method; what people usually call `The Scientific Method'. The reference is not
-innocent, and I will argue here that, although empirical analysis constitutes
-the alpha and the omega of our enquiry for knowledge, data are not enough.  
+method; what people usually call `The Scientific Method'~\cite{Feyerabend:1975}.
+The reference is not innocent, and I will argue here that, although empirical
+analysis constitutes the alpha and the omega of our enquiry for knowledge, data
+are not enough.
+There is common confusion, often innocent, that because data are at the core of
+scientific enquiry, one only needs data analysis to understand how a system
+works and predict its behaviour -- especially so when we have a lot of data. An
+very extreme view of this statement has recently been put forth by Big Data
+supporters. An article in the magazine `Wired'~\cite{Anderson:2008} recently
+argued that the current deluge of data marked the end of Science as we know it.
+That models were not necessary anymore, that they were to be replace with the
+extensive correlation analysis that a vast amount of data allow. This view is
+completely misguided.\\
+
+For one, pure data analysis is, at best, a myth: as Pierre Duhem argued in
+$1906$~\cite{Duhem:1997}, all empirical observations are theory-laden. That is,
+they are necessarily affected by the theoretical presuppositions held by whoever
+is making the observation. Measuring the population of a city, for instance,
+presupposes that there are such objects as cities, and that we can delineate
+them. A deluge of data does not relieve the investigator from defining the
+objects she is studying, from implicitely thinking about the relation between
+the different elements in the system.
+
+Then, correlations are science, indeed. But they are rudimentary science, and
+there is nothing new about them. Arguably, the reason why we are able to
+function at all as individuals is because our brain is capable of computing
+correlations all the time. Take chairs. Chairs are fairly simple objects. Yet,
+they come in all kind of colors, material and shapes. And despite this
+potentially infinte diversity, I am able to recognise a chair when I see one. I
+also have a notion of what a chair is to be used for. Although we do not
+ackowledge it often, we are capable of surprisingly high levels of abstraction
+and generalisation. Because we correlate, all the time. Science starts with the
+observation of these regularities. For instance, that the sun always appears at
+the same place and disappears in the opposite directions. That seasons come and
+go regularly. That after the night always comes the day. Is it useful? Yes, for
+limited applications. Does it make it science? No. Science is when one goes
+beyond the simple observation of correlations, and tries to write down a model,
+to understand the mechanisms responsible for the correlations we observe.\\
+
+Data is not enough, we must build model, theories.
+
+\section{An example: The law of metropolises}
+\label{sec:an_example_the_law_of_metropolises}
+
+\subsection{Statement}
+\label{sub:statement}
+
+The above discourse may seem a bit abstract (maybe because it is?), so let us
+see the shortcomings of pure data analysis on a simple example, related to
+cities.
+
+Using the GEOPOLIS database, Moriconi-Ebrard derived a general transversal rule about system
+of cities, that he called \emph{law of metropolises}~\cite{Pumain:1997}. If we
+note $P_U$ the urban population of systems of cities, and $P_1$ the size of
+their largest city~\graffito{The original regularity was observed for what the
+author calls 'metropolises', which are roughly equivalent to the largest city in
+terms of population.}, we can
+plot $P_1$ versus $P_U$ for all systems of cities and obtain the plot on
+Fig.~\ref{fig:metropolises}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-intro/law_metropolises.pdf}
+    \caption{{\bf The law of metropolises.} Population of the largest city of
+    systems of cities $P_1$ versus the total urban population $P_u$ in that
+system. The dashed line shows the result of a powerlaw fit, whose exponent
+agrees well with the one found in~\cite{Pumain:1997}. Data for the total urban
+population and the population of the largest city of countries in the year
+$2000$ were obtained from
+the World Bank.\label{fig:metropolises}}
+\end{figure}
+
+Assuming a powerlaw relationship between the two quantities, one finds
+
+\begin{equation}
+    P_1 \sim P_U^{\,0.84}\:(r^2=0.98)
+    \label{eq:metropolis}
+\end{equation}
+
+which agrees very well with the empirical data (for all years where data are
+available). It is tempting, at first, to consider this as yet-another emprical
+regularity exhibited by urban systems, and try to find a coherent interpretation
+in geographical terms. However, as we will show, if we assume that the Auerbach-Zipf
+law~\cite{Auerbach:1913,Zipf:1949} holds for each system of cities
+individually
+
+\begin{enumerate}
+    \item We can derive a relation that fits the data as well as
+        Eq.~\ref{eq:metropolis};
+    \item The relation is not a powerlaw.
+\end{enumerate}
+
+
+
+\subsection{Deriving the `law of metropolises'}
+\label{sub:deriving_the_law_of_metropolises_}
+
+Let us consider a system of cities comprised of $N$ cities, with total
+population $P_U$. The size of the largest city is noted $P_1$. We assume that
+the distribution of city sizes follows the Auerbach-Zipf law, so that the city
+of rank $r$ (the $r$th largest city) has a population
+
+\begin{equation*}
+    P_r = P_1\,r^{-\mu}
+\end{equation*}
+
+So the total population in the system of cities can be written
+
+\begin{equation}
+    P_U = \sum_{r=1}^N P_r = P_1\,\sum_{r=1}^{N} \frac{1}{r^\mu}
+\end{equation}
+
+If we assume that $\mu=1$, $P_U$ is given by the harmonic series, and thus
+
+\begin{equation}
+    P_U = P_1 \left[ \ln(N) + \gamma + O\left(\frac{1}{N}\right)\right]
+\end{equation}
+
+where $\gamma \approx 2.58$ is Euler's constant. This gives us a first relation
+between $P_1$, $P_U$ and $N$.\\
+
+Still using the assumption that the distribution of city size follows the
+Auerbach-Zipf law with $\mu=1$, we can show (using extremal value
+theory)~\cite{Clauset:2009} that on average\graffito{'Average' as in {\bf
+ensemble average}} the size of the largest city is proportional to the total
+number of cities
+
+\begin{equation*}
+    P_1 \propto N
+\end{equation*}
+
+Thus, when the number of cities in the system is large, $N \gg 1$ the following
+relation holds 
+
+\begin{equation}
+    \boxed{P_1\,\ln(P_1) = P_U}
+    \label{eq:metropolises_debunked}
+\end{equation}
+
+As one can see on Fig~\ref{fig:metropolises_debunked}, the formula given by
+Eq.~\ref{eq:metropolises_debunked} fit the data as well as the previous one.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-intro/law_metropolises_debunked.pdf}
+    \caption{{\bf The law of metropolises revisted.} $P_1 \ln(P_1)$ versus the total urban population $P_u$ in that
+system. The dashed line shows the result of a linear fit, which agrees as well
+with the data as does the powerlaw relation assumed in~\cite{Pumain:1997}. Data for the total urban
+population and the population of the largest city of countries in the year
+$2000$ were obtained from
+the World Bank.\label{fig:metropolises_debunked}}
+\end{figure}
+
+
+It is therefore impossible to determine which of
+Eq.~\ref{eq:metropolises} of Eq.~\ref{eq:metropolises_debunked} describes the
+`true' relation between $P_1$ and $P_U$ based on data analysis alone.
+Nevertheless, the later finds a very simple explanation in the fact that cities
+in systems of cities follow the Zipf-Auerbach law up to a good
+approximation. In the absence of any theoretical explanation for the powerlaw
+relationship and given the empirical equivalence of both forms, it
+least-assuming to consider $P_1 \ln P_1 \sim P_u$.
+
+
+\subsection{Lessons learned}
+\label{sub:lessons_learned}
+
+So, not only is the \emph{law of metropolises} not a fundamental relation, it is
+rigorously wrong. 
+
+This teaches us that, given the range of variations of the measured
+quantities, it is very difficult to distinguish empirically a powerlaw
+relationship from something qualitatively different such as $Y \ln Y \sim P$.
+One should therefore be wary of interpreting empirical relationships,
+like the one originally found in~\cite{Pumain:1987}, unless a mechanistic
+explanation of the fitted relationship is provided. As a matter of fact, what
+was thought as a fundamental law might end up being trivial and without great
+interest.
+
+We will discuss this matter again in Chapter~\cite{chap:scaling-implications} when
+discussing the conclusions we can draw from the analysis of scaling
+relationships. But before doing so, we need to talk about models and theories.
+
 
 \section{Of models and theories}
 
