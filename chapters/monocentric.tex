@@ -69,42 +69,54 @@ throughout the city during the day, and density profiles can only be
 scholars have considered residence densities (nightime city) and employment
 densities (daytime city). The recent availability of mobile phone data 
 may however give us a more precise, continuous picture of the
-densities during the day~\cite{Louail:2014}.}\\
+densities during the day~\cite{Louail:2014}.
 
-Then comes the problem of how to makes sense of these patterns. The densities
+
+Then, how do we makes sense of these patterns? The densities
 represented on Fig.~\ref{fig:density_3d} are indeed very complex, and it would
-help their understanding if we could isolate some particular structure.
-This is what Clark did in $1951$~\cite{Clark:1951}. Realising that (1) districts of large
-population tend to be in the interior, districts of small population in the
-exterior (2) as cities expand, they tend to spread themselves out, he proposes
-to write the density $\rho$ as a function of the distance $d$ from the center
+help our understanding if we could isolate some particular structure.
+Realising that districts of large population tend to be in the interior,
+districts of small population in the exterior Clark proposes in
+$1951$~\cite{Clark:1951} to write the density $\rho$ as a function of the
+distance $d$ from the center
 
 \begin{equation}
     \rho = a\,e^{-d/b} 
 \end{equation}
 
-And, to justify his assumption, plots the population density of various cities as a function of
-the distance to the center~\cite{Clark:1951}. The monocentric hypothesis was
-born.
+Where $a$ is the density at the center, and $b$ the typical distance over which
+the density decreases. To justify his assumption, Clark plots the population
+density of various cities as a function of the distance to the
+center~\cite{Clark:1951}. The monocentric hypothesis is born.\\
 
 Looking at the density profiles plotted by Clark in 1951~\cite{Clark:1951} for
 many cities across the world, or on Fig.~\ref{fig:distance_center_minneapolis}
-for the Metropolitan Statistical Area of Minneapolis, one can be
+for the Minneapolis-St. Paul MSA, one can be
 forgiven for thinking that cities have a monocentric structure. Such profiles
 indeed almost always exhibit a sharp decrease as we go farther from the city
 center -- defined as the areal unit with the highest density. However, this
 pattern is only the signature of a monocentric pattern if one makes the further
 hypothesis that the pattern of employment densities in cites are symmetric
 under rotations around the center. Obviously, this is not the case: cities are
-nowhere isotropic but in the imagination of modelers. The decreasing exponential
-model is thus mispecified.
+nowhere isotropic but in the imagination of modelers. 
+
+To make this point clearer, we show on
+Fig.~\ref{fig:distance_center_minneapolis} both the density profile of the
+Minneapolis-St. Paul MSA and a map where we highlight in black the tracts with
+an employment density greater than $10000\,\text{km}^{-2}$. As one can see, two
+tracts (respectively the historical centers of Minneapolis, and of St. Paul) are
+highlighted. However, the peak in density corresponding to St. Paul is not
+distinguishable on the density profile. Indeed, it is averaged out with smaller
+densities that are located at equidistance to Minneapolis.
+
+The decreasing exponential model is thus mispecified.
 
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{./gfx/chapter-monocentric/distance_center_minneapolis.pdf}
-    \caption{Employment density as a function of distance to the center for the
-    Metropolitan Statistical Area of Minneapolis-St. Paul in 2000. The center is defined here as the
+    \caption{{\bf The limitations of density profiles.} Employment density as a function of distance to the center for the
+    Minneapolis-St. Paul MSA in $2000$. The center is defined here as the
     tract with the highest employment density, and corresponds to the historical
     Central Business District of Minneapolis. The curve exhibits a very sharp
     decay, giving the illusion of a monocentric structure. (Inset) The census tracts
@@ -112,8 +124,8 @@ model is thus mispecified.
     employment density reaches values above $10,000\,\text{km}^{-2}$. The two tracts
     coincide with the historical centers of the Twin Cities, and are distant from
     $14\,\text{km}$. This fragmented structure cannot be infered from the density
-    profile on the left (arrow on the curve).
-    \label{fig:distance_center_Minneapolis}}
+    profile (arrow on the curve).
+    \label{fig:distance_center_minneapolis}}
 \end{figure}
 
 
@@ -125,32 +137,33 @@ empirical analyis, the monocentric hypothesis only became clearly stated with
 the theoretical work of economists.
 
 
-The Alonso-Muth-Mills model (inspired by Von Th\"unen's land rent model)  might well be the reason for the long-lasting influence of
-the monocentric model; a concise exposition of the model can be found
-in~\cite{Brueckner:1987,Fujita:1989}). In 1964, Alonso introduced the bid-rent curve as a
-function of the distance to the city center~\cite{Alonso:1964}. The simplifying hypothesis of
-\emph{monocentricity} naturally followed, the assumption that all firms in a
-city are concentrated in a single, fixed-size part of the city, the central business
-district. Later, in $1967$ and $1969$, Mills~\cite{Mills:1967} and
-Muth~\cite{Muth:1969} show how we can can obtain an exponentially decreasing
-function for the density as a function of the distance from the center, using
-the monocentric hypothesis. The monocentric Alonso-Muth-Mills (AMM) model was
-born, and was seemingly backed by empirical evidence.\\
+The Alonso-Muth-Mills model (inspired by Von Th\"unen's land rent model)  might
+well be the reason for the long-lasting influence of the monocentric
+model\footnote{A concise exposition of the AMM model can be found
+in~\cite{Brueckner:1987,Fujita:1989}}. In 1964, Alonso introduced the bid-rent
+curve as a function of the distance to the city center~\cite{Alonso:1964}. The
+assumption that all firms in a city are concentrated in a single, fixed-size
+part of the city naturally followed. Later, in $1967$ and $1969$,
+Mills~\cite{Mills:1967} and Muth~\cite{Muth:1969} show how we can can obtain an
+exponentially decreasing function for the density as a function of the distance
+from the center, using the monocentric hypothesis. The monocentric
+Alonso-Muth-Mills (AMM) model was born, and was seemingly backed by empirical
+evidence.\\
 
 
-We should not underestimate how this model influenced people's perception
-of what a city is. In the US, the name of Central Business District is casually
-used as a way to designate the principle activity center in a city.  Many, if
-not most, measures of the spatial variation of quantities inside cities actually
-use the notion of `distance to the city center'. This biais can still be found
-in the recent literature. For instance in a recent study by Glaeser, Kahn and
-Rappaport on the repartition of income classes in cities~\cite{Glaeser:2008},
-the authors comment on plots of the average income as a function of the distance
-to the center. This only makes sense, however, under the assumption of monocentricity.
-In fact, measuring quantities as a function of the distance to the center is
-omnipresent in the literature. Many authors are relying on the monocentric
-hypothesis for their empirical analysis -- sometimes without being aware of
-it.\\
+One should not underestimate how the monocentric model influenced people's
+perception of what a city is. In the US, the name of Central Business District
+is casually used as a way to designate the principle activity center in a city.
+Many, if not most, measures of the spatial variation of quantities inside cities
+actually use the notion of `distance to the city center'. Many authors are
+relying on the monocentric hypothesis for their empirical analysis -- sometimes
+without being aware of it. This biais can still be found in the recent
+literature. For instance, in a recent study by Glaeser, Kahn and Rappaport on the
+repartition of income classes in cities~\cite{Glaeser:2008}, the authors comment
+on plots of the average income as a function of the distance to the center. This
+only makes sense, however, under the assumption of monocentricity.\\
+
+% Corrections until here
 
 This persistence of the monocentric hypothesis is all the more surprising that
 authors repeatedly suggested or found that the hypothesis was not adequate. In
