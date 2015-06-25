@@ -1,18 +1,30 @@
-LOOK
-	Citations
-		Check citations formatting
-		Check citations names and titles
-		Citations, uniform journal names
-		Citations, uniform book citation format
-	Check pdfbookmarks!
-	Add epigraph to each chapter
+CORRECTIONS
+	The boring
+		Check pdfbookmarks!
+		Equations, do we need all these numbers?
+		Intra-text references. Are there any?
+		Check the coherence of the text as a whole
+			Enough repetitions?
+			Are there repetitions I can avoid?
+		Check that all references in the text work
+		SPELL FUCKING CHECK THIS BITCH OUT
+			SEVERAL TIMES
+			FORWARD, BACKWARD
+		Remove references to calculations. 
+	The stylish
+		"Summary" / "Conclusion" at section titles?
+		"Proviso" <-- are you serious?
+	The necessary
+		Short abstract
+		Fix introductions at the end of each part
+
+
+
 
 
 INTRODUCTION
 	New data?
 		Trajectory Mobile phone data
-		Precision --> Cell Tower and Census Block
-			Idem smaller aire urbain with fewer antennas
 		Better for aggregate quantities, evolution in time (Louail et al.)
 		: Access to the time dimension. And to *all* trips
 
@@ -24,6 +36,7 @@ POLYCENTRICITY
 			Download Fujita, Venables, etc
 			Download Fujita, Thisse
 	Look at Berroir and friends
+	Modele de Bussiere?
 
 SCALING
 	Introduction
