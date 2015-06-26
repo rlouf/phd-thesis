@@ -13,19 +13,18 @@ of the nature of the system itself.}  \\ \medskip
 \bigskip
 
 
-We saw in chapter~\ref{chap:monocentric_intro} that as cities grow and expand,
-they evolve from a monocentric organisation where all the activities are
+We saw in chapter~\ref{chap:monocentric_introduction} that as cities grow and
+expand, they evolve from a monocentric organisation where all the activities are
 concentrated in the same geographical area --usually the central business
-district-- to a more distributed, polycentric organisation. We begin the
-following chapter with introducing briefly the model of Fujita and Ogawa, in
-urban economics, that allegedly explains the polycentric structure in cities. We
-will highlight the issues of this model, before present our model inspired by
-it. This model is a stochastic, out-of-equilibrium model and relies on the
-assumption that the polycentric structure of large cities might find its origin
-in congestion, irrespective of the particular local economic details. We are
-able to reproduce many stylized facts, and --most importantly-- to derive a
-general relation between the number of activity centers of a city and its
-population. 
+district-- to a more distributed, polycentric organisation. In this chapter, we
+will try to uncover the mechanisms at play behind this transition. We begin with
+a brief introduction of the model of Fujita and Ogawa in urban economics. We
+will highlight the issues of this model, before presenting our model. This model
+is a stochastic, out-of-equilibrium model and relies on the assumption that the
+polycentric structure of large cities might find its origin in congestion,
+irrespective of the particular local economic details. We are able to reproduce
+many stylized facts, and --most importantly-- to derive a general relation
+between the number of activity centers of a city and its population. 
 
 
 \section{Fujita and Ogawa}
@@ -37,15 +36,15 @@ economies---to explain why economical activities tend to group---and the spatial
 distribution of wages and rents across the urban space. They consider that
 cities are constituted of two kinds of actors: the firms, who tend to
 concentrate to maximise their production, and the households, who try to
-minimise their rent and commuting cost. In the following, I will present the
-model, focusing on the hypotheses.\\ 
+minimise their rent and commuting cost.\\ 
 
 The model is \emph{static}, in the sense that the number of firms and
-individuals are fixed. It is an \emph{equilibrium} model, considering the the
+individuals are fixed. It is an \emph{equilibrium} model, considering that the
 city is the realisation of a general optimum. The original model is also
 \emph{one-dimensional}, although the hypothesis of one-dimensionality is not
-fundamental, and only necessary to make the calculations easier. Because I will
-not try to solve the model, I will write equations in the 2D case.
+fundamental, and only necessary to make the calculations easier. Because we 
+do not try to solve the model, we write equations in the more general
+two-dimensional case.
 
 \subsection{Households} 
 \label{sub:households}
@@ -54,9 +53,9 @@ Fujita and Ogawa assume that there is a fixed number $N$ of households in the
 city. The households are considered identical, in the sense that they all have
 the same utility function and the same budget constraint. The utility function
 of each household is given by the function $U = U(Z)$ where $Z$ is the surplus
-of money that is left after budgetary constraints (expressed in monetary units).
-Basically the money one has left at the end of the month, once the rent, bills
-and petrol (or transportation card) are paid. 
+of money that is left after budgetary constraints (expressed in monetary units);
+basically, the money one has left at the end of the month, once the rent, bills
+and petrol (or transportation card) have been paid. 
 
 The utility is assumed to be an increasing function of $Z$ so
 
@@ -84,7 +83,7 @@ further specify the commuting cost
     C_T\left(i,j\right) = t\,d_E(i,j) = t\,\left|\vec{y}-\vec{x}\right|
 \end{equation}
 
-where $t$ the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
+where $t$ represents the commuting cost per unit distance, and $d_E(i,j) = \left| \vec{y} -
 \vec{x} \right|$ the euclidean distance between home and work. The total rent
 cost is further written as
 
@@ -119,9 +118,9 @@ form
         -  W\left(j\right)\,L_f
 \end{equation}
 
-where $G$ is the total gain realised by the firm selling its production, $C_R$
-the rent paid by the firm, and $L_f$ the total number of employees per firm---a
-paramter of the model.\\
+where $G(j)$ is the total gain realised by the firm selling its production,
+$C_R(j)$ the rent paid by the firm, and $L_f$ the total number of employees per
+firm---a parameter of the model.\\
 
 To take agglomeration economies into account, Fujita and Ogawa define the
 locational potential $F$ defined by
@@ -159,7 +158,7 @@ of companies therefore reads
 \subsection{Equilibrium conditions and results}
 \label{sub:equilibrium_conditions}
 
-Once the budget constraints have been explicited, one needs to further define
+Once the budget constraints have been explicited, one needs to define
 the equilibrium conditions to be able to solve the model. First, the goal of
 each household is to maximise their utility under the budget constraint.\\
 
@@ -172,8 +171,10 @@ particular is equivalent to performing a cost-benefit analysis. The firms have
 no utility function, and choose to be a the location $j$ that maximises their
 profit.\\
 
-A further constraint is given by the bid-rent curve and goes as follows. The authors define two intermediate functions, $\Psi(\vec{x})$ and $\Phi(\vec{x})$ which are
-respectively the bid rent function of households and of firms, defined as
+A further constraint is given by the bid-rent curve, and determines the spatial
+interaction between households and firms. The authors define two intermediate
+functions, $\Psi(\vec{x})$ and $\Phi(\vec{x})$ which are respectively the bid
+rent function of households and of firms, defined as
 
 \begin{align}
     \Psi\left(\vec{x}\right) &= \max_{\vec{x}} \left\{ \frac{1}{S_h} \left[W(\vec{x} ) - Z -
@@ -185,10 +186,13 @@ W(\vec{y})\right]
 $\Psi(\vec{x})$ represents the maximum rent that the households could pay to be
 located at $\vec{x}$ while still having a utility value $U$. $\Phi(\vec{y})$ is
 the maximum rent that firms could pay to be located at $\vec{y}$. At
-equilibrium, it is assumed that whoever's bid rent function is maximum at
-$\vec{x}$ will be located at $\vec{x}$.\\
+equilibrium, it is assumed that whoever's bid rent function has the highest
+value at $\vec{x}$ will be located at $\vec{x}$.
 
-The results of this model, given its intricacy, are somewhat disapointing.
+Taken together, the equilibrium conditions determine the spatial distribution of
+households and firms, of the wages and land prices.\\
+
+The results of this model, given its intricacy, are somewhat disappointing.
 Unsurprisingly, the authors are not able to derive an analytical solution for
 their model. What they do, however, is deriving the conditions on the parameters
 for the existence of monocentric and polycentric organisations of activities,
@@ -197,7 +201,7 @@ using numerical methods.
 \section{Problems with the Fujita and Ogawa model}
 \label{sec:problems_with_the_fujita_and_ogawa_model}
 
-This approach fails at giving a satisfactory quantitative account  of the
+The approach of Fujita \& Ogawa fails at giving a satisfactory quantitative account  of the
 polycentric transition of cities. A lot can be said about the details of the
 model and its assumptions. We choose here to only discuss the issues that we
 feel are the most important, and that we will try to adress in our model. 
@@ -209,40 +213,42 @@ business firms. However, the equilibrium assumption is unsupported as cities are
 out-of-equilibrium systems and their dynamics is of particular interest for
 practical applications~\cite{Batty:2008}.\\
 
-\paragraph{It is too complex.} It integrates so many interactions and
+\paragraph{It is too complex.} The model integrates so many interactions and
 variables that it is difficult to understand the hierarchy of processes
-governing the evolution of cities, which ones are fundamental and which ones a
-irrelevant. A model is only interesting when it
-provides a simple structure to understand empirical results, whether it
-reproduces them, or provides well-understood limiting case.\graffito{Limiting
+governing the evolution of cities: which ones are fundamental and which ones a
+irrelevant. A model is however only interesting when it \graffito{Limiting
 case models are often called `null models'} 
+provides a simple structure to understand empirical results, whether it
+reproduces them, or provides well-understood limiting case.
 
 \paragraph{It does not make any prediction.} Worse, due to its complexity, the
 model is unsolvable, and does not make any prediction. At best it shows that
-polycentric configurations are \emph{possible}. Yet, there are possibly different
-models[possibly? Loo
-at literature in economics] that admit polycentric activity profiles as a
-solution. The model is thefore unsupported by data.\\ 
+polycentric configurations are \emph{possible}. Yet, there are possibly
+different models that would admit polycentric activity profiles as a solution.
+The constraint is not strong enough, the model is unsupported by data.\\ 
 
 We also note that the model does not take the congestion into account in the
 commuting cost (which is only a function of the distance). However, it is
 mentioned in the economics literature as being a possible cause of the
-polycentric transition of cities~\cite{McMillen:2003}. 
+polycentric transition of cities~\cite{McMillen:2003} (see
+Chapter~\ref{chap:monocentric_introduction}). 
 
 \section{Modeling the polycentric transition}
 \label{sec:an_out_of_equilibrium_model_}
 
-Following recent interdisciplinary efforts to construct a quantitative
-description of cities and their
-evolution~\cite{Makse:1995,Zanette:1997,Marsili:1998a,Marsili:1998b,Batty:book2005,Bettencourt:2007,Batty:2008},
+In this section, we start from the model by Fujita \& Ogawa to propose a
+dynamical model of city growth. Following recent interdisciplinary efforts to
+construct a quantitative description of cities and their
+evolution~\cite{Makse:1995,Zanette:1997,Marsili:1998,Bettencourt:2007,Batty:2008},
 we deliberately omit certain details and focus instead on basic processes. We
 thereby aim at building a minimal model which captures the complexity of the
 system and is able to account for --qualitative as well as quantitive-- stylized
-facts. 
+facts.  
+
 The model we propose is by essence dynamical and describes the evolution
 of cities' organisation as their population increases. We focus on car
-congestion -- mainly due to journey-to-work commutes -- and its effect on the job
-location choice for individuals.\\
+congestion -- mainly due to journey-to-work commutes -- and its effect on the
+job location choice for individuals.\\
 
 \subsection{Decoupling the choice of household and job}
 \label{sub:decoupling_the_choice_of_household_and_job}
@@ -265,7 +271,7 @@ will choose to work at the center $j$ such that the quantity
 
 is maximum. Doing so, we give up any hope to describe the spatial structure of the rent
 distribution, or the alledged scaling between rent prices and population size in
-cities.
+cities~\cite{Bettencourt:2013}.
 
 \subsection{Decoupling the dynamics of residence and work locations}
 \label{sub:decoupling_the_dynamics_of_}
@@ -273,7 +279,7 @@ cities.
 Another difficulty with the Fujita-Ogawa model is the strong coupling between
 the behaviour of firms and individuals. The empirical literature on the
 behaviour of firms points to a tendency of similar industries to cluster
-geographically~\cite{Marcon:2003, Duranton:2005, Marcon:2009}, and a higher
+geographically~\cite{Duranton:2005, Marcon:2009}, and a higher
 profit of industries located in Urban environments~\cite{Melo:2009}. Although
 theoretical attempts at explaining these behaviours have been
 proposed~\cite{Duranton:2004}, the models are yet to be developped in an
@@ -281,14 +287,14 @@ out-of-equilibrium framework.\\
 
 Here, we decide to simplify the problem by assuming that firms indeed cluster
 into specific locations, that we call activity centers. Each worker can then
-choose among a pool of $N_c$ potential activity centers (which we suppose are
-also randomly distributed among the city). The active subcenters are then
+choose among a pool of $N_c$ potential activity centers (whose locations are
+randomly distributed across the city). The active subcenters are then
 defined as the subset of potential centers which have a non zero incoming number
 of individuals. We thus assume that the existence of activity centers is defined
 by the willingness of workers to work in the possible locations.\\
 
 
-We now discuss the form of the wage $W(j)$ and the commuting cost $C_T$ that are
+Let us now discuss the form of the wage $W(j)$ and the commuting cost $C_T$ that are
 present in equation~\ref{eq:Z_workers_general}. 
 
 \subsection{Determining the wage}
@@ -300,40 +306,42 @@ physics. Indeed, the wage depends on many different factors, ranging from the
 type of company, the education level of the inhabitant, the level of
 aglomeration, etc., and in this respect is not too different from quantities
 that can be measured in a large atom made of a large number of interacting
-particles. In this situation, physicists found out that although it is possible
+particles. In this situation, physicists figured that although it is possible
 to write down the corresponding equations, not only is it impossible to solve
-them, but also not really useful. In fact they found out~\cite{Dyson:1962} that
+them, but also not really useful. In fact they found out that
 a statistical description of these systems, relying on random matrices could
-lead to predictions which agree with experimental results.\\
+lead to predictions which agree with experimental results~\cite{Dyson:1962}.\\
 
 We wish to import in spatial economics this idea of replacing a complex quantity
-such as wages --which depends on so many factors and interactions-- by a random
+such as wages -- which depends on so many factors and interactions -- by a random
 one. The problem is not so much that we cannot write down the equations that
 determine the wage that an individual could get in a given company. Even if we
-could, the sheer number of people living in a urban area would surely prevent us
+could (and we can't), the sheer number of people living in an urban area would prevent us
 from solving these equations. And even if we could solve them, the resulting
 information would be too overwhelming to really allow us to understand the
-large-scale behaviour of the system as a whole. We thus need an \emph{effective}
+behaviour of the system as a whole. We thus need an \emph{effective}
 theory of cities.
-We therefore decide to account for the interaction between activity centers
-and people by taking the wage as proportional to a random variable $\eta_j \in
-\left[ 0,1\right]$ such that $W(j) = s\, \eta_j$ where $s$ defines the maximum
-attainable average wage in the considered city.\\
+
+We therefore decide to account for the interaction between activity centers and
+people by taking the wage in location $j$ as proportional to a random variable
+$\eta_j \in \left[ 0,1\right]$ such that $W(j) = s\, \eta_j$ where $s$ defines
+the maximum attainable average wage in the considered city.\\
 
 We are aware that wages are not determined endogeneously but is rather the
 result of thousands, millions of interactions between firms and individuals. In
 the same way that Dyson did not mean that the interactions between electrons in
 large atoms \emph{are} random, our assumptions does not mean that wages are
-intrisincally randomly determined. What we mean, however, is that in the case of
-systems containing a large number of individuals, one may possibly do \emph{as
-if} they were randomly determined. Although we thereby abandon the possibility
-to describe the dynamics of the wage distribution and the spatial 
+really randomly determined. What we mean, however, is that in the case of
+systems containing a large number of individuals, one may do \emph{as
+if they were randomly determined}. Although we thereby abandon the possibility
+to describe the dynamics of the wages and their spatial distribution, the
+resulting model is analytically solvable and makes quantitative predictions.
 
 \subsection{Commuting cost and congestion}
 \label{sub:the_commuting_cost}
 
 
-As for the transportation cost $C_T(i,j)$, we choose it to be
+We choose the transportation cost $C_T(i,j)$ 
 proportional to the commuting time between $i$ and $j$. In a typical
 situation where passenger transportation is dominated by personal
 vehicles, this commuting time not only depends on the distance between
@@ -354,7 +362,7 @@ $\mu$ is a parameter quantifying the resilience of the transportation
 network to congestion. We further simplify the problem by assuming
 than the traffic $T_{ij}$ is only a function of the subcenter $j$ and
 therefore write $T_{ij}=T(j)$ the total traffic incoming in subcenter
-$j$ (see Supplementary Material~\cite{SM} for a short discussion).
+$j$.
 
 \subsection{Summary}
 \label{sub:summary}
@@ -364,14 +372,17 @@ In summary, our model is defined as follows. At each time step, we add
 a new individual $i$ located at random in the city, who will
 choose to work in the activity area $j$ (among $N_c$ possibilities
 located at random) such that the following quantity
-%
+
 \begin{equation}
-Z_{ij} = \eta_j - \frac{d_{ij}}{\ell} \left[ 1 + \left( \frac{T(j)}{c} \right)^{\mu} \right]
-\label{eq:cost_function}
+    Z_{ij} = \eta_j - \frac{d_{ij}}{\ell} \left[ 1 + \left( \frac{T(j)}{c} \right)^{\mu} \right]
+    \label{eq:cost_function}
 \end{equation}
-%
-is maximum (we omitted irrelevant multiplicative factors). The quantity $\ell = s/t$ is interpreted as the maximum effective
-commuting distance that people can financially withstand. 
+
+is maximum (we omitted irrelevant multiplicative factors). The quantity $\ell =
+s/t$ is interpreted as the maximum effective commuting distance that people can
+financially withstand. Interestingly, the presence of commuting costs entails the
+existence of a second length scale $\ell$ in the system (the first one being the
+typical size $L$ of the city).
 
 \subsection{Monocentric to polycentric transition}
 \label{sub:monocentric_to_polycentric_transition}
@@ -380,7 +391,7 @@ Depending on the relative importance of wages, distance and congestion, the
 model predicts the existence of three different regimes: the monocentric regime
 (top left Fig.~\ref{fig:model_results}), the distance-driven polycentric (top
 right Fig.~\ref{fig:model_results}) regime and the attractivity-driven
-polycentric (bottom Fig.~\ref{fig:model_results}) regime. 
+polycentric (bottom Fig.~\ref{fig:model_results}) regime.\\
 
 
 \begin{figure}
@@ -388,19 +399,19 @@ polycentric (bottom Fig.~\ref{fig:model_results}) regime.
     \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/1.pdf}
     \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/2.pdf}
     \includegraphics[width=0.49\textwidth]{gfx/chapter-monocentric/3.pdf}
-    \caption{The monocentric (top left), distance-driven polycentric (top right)
+    \caption{{\bf The different regimes.} The monocentric (top left), distance-driven polycentric (top right)
       and attractivity-driven polycentric (bottom) regimes as produced by
       our model. Each link represents a commuting journey to an activity center. \label{fig:model_results}}
 \end{figure}
 
-The existence of a monocentric regime depends on how $\ell$---the maximum commuting distance that people can
-afford--- compares to the size of the city $L$. Indeed, it is easy to
-see that people located at a distance $d_{ij} > \ell$
-from the most attractive center will not be able to afford commuting to this
-center, and will, according to our model, choose to commute to a closer center.
-As a result, a monocentric regime is only sustainable as long as people's
-residence is drawn close to the most attractive center. In the limit where $\ell
-\gg L$, the attractiveness of a center becomes irrelevant, and a monocentric regime cannot
+The existence of a monocentric regime depends on how $\ell$ -- the maximum
+commuting distance that people can afford -- compares to the size of the city
+$L$. Indeed, people located at a distance $d_{ij} > \ell$ from the most
+attractive center will not be able to afford commuting to this center, and will,
+according to our model, choose to commute to a closer center.  As a result, a
+monocentric regime is only sustainable as long as people's residence is drawn
+close to the most attractive center. Thus, in the limit where $\ell \gg L$, the
+attractiveness of a center becomes irrelevant, and a monocentric regime cannot
 exist. In these cases, we end up in the situation shown on the top-right of
 Fig.~\ref{fig:model_results}.\\
 
@@ -416,11 +427,10 @@ organisation, the traffic is negligible and
 $$Z_{ij}\approx \eta_j$$
 
 which implies that all individual are going to choose the most attractive
-center, that is the center with the largest value of $\eta_j$, say $\eta_1$.
+center, with the largest value of $\eta_j$, say $\eta_1$.
 When the number $P$ of households increases, the traffic will also increase and
-some initially less attractive centers (with smaller values of $\eta$) might
-become more attractive, leading to the appearance of new subcenters
-characterized by a non-zero number of commuters. More specifically, a new
+some initially less attractive centers (with a smaller values of $\eta$) might
+become more attractive, leading to the appearance of a new subcenter. More specifically, a new
 subcenter $j$ will appear when for an individual $i$, we have 
 
 $$Z_{ij}>Z_{i1}$$
@@ -466,8 +476,8 @@ We have so far established that, because of increased levels of congestion as
 the population grows, all cities will eventually adopt a polycentric
 structure. Although appealing and in agreement with a common observation, the
 prediction given by Eq.~\ref{eq:critical_population} is impossible to test with
-the currently available data. Therefore, we would like to compute what the model
-predicts for the variation of the number of subcenters with population.\\
+the currently available data. Therefore, we would like to obtain a prediction
+for the variation of the number of subcenters with population.\\
 
 We compute the value of the population at which 
 the $k^{th}$ center appears. Still in the attractivity-driven regime, we assume
@@ -526,48 +536,20 @@ Conversely, the number $k$ of subcenters scales sublinearly with population as
 For positive values of $\mu$, we have $\frac{\mu}{\mu+1}<1$. we can thus
 conclude that the number of activity subcenters in urban areas scales sublinearly
 with their population where the prefactor and the exponent depend on the
-properties of the transportation network of the city under consideration. 
+properties of the transportation network of the city under consideration. This
+prediction is in agreement with the scalings obtained for Spanish and American
+cities in Chapter~\cite{scaling:introduction}.
 
-[Link to the empirical observations]
 
 \section{Conclusion}
 \label{sec:conclusion}
 
-Before concluding on the merits of the model and what we learn from it, and to
-avoid mis-interpretations of its conclusions, it is necessary to state what the
-model does not say and to present its limits.
-
-\subsection{What the model does not say}
-\label{sec:what_the_model_does_not_say}
-
-\graffito{This discussion owes largely to questions raised during presentations
-of this work.}
-
-A first feature, hidden in the assumptions of the model, is that it does
-not explain the concentration of activities in localised areas in the cities.
-Rather, it takes the existence of centers as granted, and does not bother with
-the behaviour of firms. Thereby, we do not pretend to explain the complexity of
-urban dynamics in its entirety, but rather a single aspect of it. Of course,
-this is a topic worthy of investigation, and should be studied seriously is one
-wants to have a comprehensive understanding of the mechanisms that shape cities.
-
-A second limitation lies in the description of congestion. In a worry of
-simplificating the problem, we chose to adopt a macro-scale description of
-traffic congestion, given by Eq.~\ref{eq:commuting_cost}. The sensitivity of the
-road network to congestion is taken into account through the exponent $\mu$ and
-the capacity $C$, which are assumed to be the same across the entire city. A
-full specification of these parameters would need to understand how local
-patterns of congestion lead to macroscropic behaviours at the city scale.  This
-is, of course, a difficult entreprise:  local particularities of the layout may
-have dramatic consequences on the fluidity of traffic, and congestions do
-propagate through the network so that access to a given center can have an
-effect on the travel to another center. 
 
 \subsection{A predictive model}
 \label{sub:a_predictive_mode}
 
-The model we just presented, although not perfect, exhibits some of the
-desirable features of a model we presented in the introduction. First, it goes
+The model we just presented, although not perfect, exhibits many of the
+desirable features of a model we listed in the introduction. First, it goes
 beyond the standard models in urban economics by going beyond the explanation of
 stylized facts. As we saw earlier, one major problem with the model of Fujita
 and Ogawa is the absence of quantitative prediction. Instead of providing a
@@ -594,13 +576,13 @@ in our model is the congestion term in Eq.~\ref{eq:cost_function}. The positions
 of households and firms are indeed taken as random, the wages are also taken at
 random. Therefore, we can conclude that our model explains the polycentric
 transition of cities through the increasing congestion around employment centers
-as the population increase. More mechanisms probably are involved, but the model
+as the population increase. More mechanisms are probably involved, but the model
 shows that congestion alone is enough to lead to a polycentric situation while
 the population increases.\\
 
 If we assume that agglomeration economies is the basic process explaining the
 existence of centers in the first place, the model brings evidence that this
-centripetal force is balanced by the centrifugal effect of congestion, that
+centripetal force is balanced by the centrifugal effect of congestion that
 tears city apart. Arguably, the non trivial spatial patterns observed in large cities can
 thus be understood as a result of the interplay between these competing
 processes.\\
