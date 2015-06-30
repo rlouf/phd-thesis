@@ -12,27 +12,6 @@ and with five I can make him wiggle his trunk'} \\ \medskip
 
 \bigskip
 
-In particular, we show that the dependence on population size of the total
-number of miles driven daily, the total length of the road network, the total
-traffic delay, the total consumption of gasoline, the quantity of $CO_2$ emitted
-and the relation between area and population of cities, are all governed by a
-single parameter which characterizes the sensitivity to congestion. 
-
-
-The recent availability of an unprecedented amount of data has made possible
-quantitative studies of cities~\cite{Fujita:1999,Batty:2007,Marshall:2004},
-opening the way to a Science of Cities. In particular, the discovery of
-allometric scaling relationships in cities has driven the quantitative research
-on urban systems in the past years. Indeed, there is a great amount of evidence
-to show that different socio-economic indicators in cities, such as the GDP, the
-crime rate, the number of patents as well as different structural indicators
-such as the total length of the road network, the urbanized land area, etc.,
-exhibit robust scaling relationships with respect to
-population~\cite{Newman:1989,Makse:1995,Pumain:2006,Bettencourt:2007,Samaniego:2008,Rozenfeld:2008,Pan:2013}.
-The existence of these simple scaling relationship hints at the existence of
-universal processes shared by urban systems, and thus at the possibility of
-modeling cities.\\
-
 A common trait shared by all complex systems --including cities-- is the
 existence of a large variety of processes occuring over a wide range of time and
 spatial scales. The main obstacle to the understanding of these systems
@@ -46,7 +25,7 @@ attempts~\cite{Fujita:1982,Makse:1995,Batty:2008,Frasco:2013,Bettencourt:2010,Be
 a theoretical understanding of many observed empirical regularities in cities is
 still missing.\\
 
-In the present study, we show that the spatial structure of the mobility pattern
+Here we show that the spatial structure of the mobility pattern
 controls the behaviour of many quantities in urban systems. Indeed, cities are
 not only defined by the spatial organisation of places fulfilling different
 functions --shops, places of residence, workplaces, etc.-- but also by the way
@@ -87,8 +66,9 @@ average surface per capita).
 plot the scaling for surface area versus population for US Urban Areas on
 Fig.~\ref{fig:scaling_area}. A fit assuming a power-law dependence gives an exponent
 
+\graffito{All $\pm$ intervals are $95\%$ confidence intervals.}
 \begin{equation}
-    \boxed{\beta_A = 0.85 \pm 0.01\,(95\% CI)}
+    \boxed{\beta_A = 0.85 \pm 0.01\;(r^2 = 0.93)}
 \end{equation}
 
 A result which agrees with previous measurements made on morphologically defined
@@ -102,10 +82,10 @@ quantities.
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/scaling_area.pdf}
-    \caption{Scaling of the surface area of US urban areas with population size,
+    \caption{{\bf Spatial footprint.} Scaling of the surface area of US urban areas with population size,
         and what would be expected with a naive model (blue solid line).
     A fit assuming a powerlaw dependence (dashed line) gives an exponent
-    $\beta_A = 0.85 \pm 0.01\,(95\% CI)$.\label{fig:scaling_area}}
+    $\beta_A = 0.85 \pm 0.01\,(r^2 = 0.93)$.\label{fig:scaling_area}}
 \end{figure}
 
 
@@ -153,7 +133,7 @@ Fig.~\ref{fig:scaling_lanemiles}) assuming a powerlaw dependence and find an
 exponent
 
 \begin{equation}
-    \boxed{\beta_R \sim 0.765 \pm 0.033}
+    \boxed{\beta_R \sim 0.765 \pm 0.033\;(r^2 = 0.92)}
 \end{equation}
 
 Note that since the relation between the length and the number of nodes given by
@@ -164,7 +144,7 @@ due to the scaling of the surface area.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/scaling_lanemiles.pdf}
-    \caption{Scaling of the total length of roads in US urban areas versu the
+    \caption{{\bf Length of roads.} Scaling of the total length of roads in US urban areas versu the
     total population. A fit assuming a powerlaw dependence (dashed grey line)
 gives an exponent $\beta_R \sim 0.765 \pm 0.033$ ($r^2=0.92$). The behaviour is
 qualitatively different from what would be expected with a naive mode (solid
@@ -213,7 +193,7 @@ for other countries and cities.
 
 \begin{figure}[!h]
     \includegraphics[width=1.0\textwidth]{gfx/chapter-scaling/figure_2.pdf}
-    \caption{Constant daily driven distance per capita. (a) daily total driven
+    \caption{{\bf Commuting distance \& individual choice.} Constant daily driven distance per capita. (a) daily total driven
         distance per capita as a function of population for 441 urbanised area
         in the US in 2010. The data shown in the plot are compatible with a
     population-independent behaviour. (b) Histogram of the daily total driven
@@ -236,7 +216,7 @@ location (see Fig.~\ref{fig:monocentric_decentralised})~\cite{Samaniego:2008}.\\
 \begin{figure}[!h]
     \centering
     \includegraphics[width=1\textwidth]{gfx/chapter-scaling/monocentric-decentralised.pdf}
-    \caption{Representation of the monocentric city (left) and the totally
+    \caption{{\bf Limiting cases.} Representation of the monocentric city (left) and the totally
     decentralised city (right), two extreme models for the shape of mobility
 patterns.\label{fig:monocentric_decentralised}}
 \end{figure}
@@ -263,18 +243,18 @@ Fig.~\ref{fig:scaling_Ltot_norm}, and the exponent sits between the ones of the
 monocentric and decentralised cities
 
 \begin{equation*}
-    \boxed{\beta_L =  0.595 \pm 0.026\, (R^2 = 0.90)}
+    \boxed{\beta_L =  0.595 \pm 0.026\; (r^2 = 0.90)}
 \end{equation*}
 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{gfx/chapter-scaling/scaling_commuting_norm.pdf}
-    \caption{Scaling of the total yearly commuted distance normalised by the
+    \caption{{\bf Commuting distance \& city structure.} Scaling of the total yearly commuted distance normalised by the
     city's surface area with population size for US Urban Areas. The blue lines
 show the behaviours that would be expected for a monocentric and a totally
 decentralised city. The dashed line represents the fit assuming a powerlaw
-dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (R^2 =
+dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (r^2 =
 0.90)$.\label{fig:scaling_Ltot_norm}}
     
 \end{figure}
@@ -295,7 +275,7 @@ Fig.~\ref{fig:polycentric}).
 \begin{figure}[!h]
     \centering
     \includegraphics[width=0.4\textwidth]{gfx/chapter-scaling/polycentric.pdf}
-    \caption{City with a polycentric structure, intermediate between the
+    \caption{{\bf Polycentric structure.} City with a polycentric structure, intermediate between the
     monocentric and totally decentralised situations. \label{fig:polycentric}}
 \end{figure}
 
@@ -488,8 +468,9 @@ obtain $(1+a)/2$.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/scaling_delay.pdf}
-    \caption{Scaling of the total delay due to congestion of US urban areas with
-    population size. \label{fig:scaling_delay}}
+    \caption{{\bf Congestion and delay.} Scaling of the total delay due to congestion of US urban areas with
+    population size. A fit assuming a powerlaw dependence of the total delay on
+population size yields an exponent $\beta_D = 1.270 \pm 0.067\;(r^2=0.97)$.\label{fig:scaling_delay}}
 \end{figure}
 
 Unfortunately, agglomeration in cities does not only generate economies.
@@ -527,9 +508,9 @@ delays due to congestion actually dominate the time spent in traffic, and that
 economical losses \emph{per capita} due to the time lost in congestion --and the
 corresponding strain on people's life-- increase with the size of the city. 
 
-In the fitting assumption Eq. \ref{eq:fit}, and using the same arguments for the
-calculation of $\delta\tau$, we easily obtain for the exponent the value
-$1+\frac{\mu}{\mu+1}\left(1-\frac{a}{2}\right)$.
+\begin{equation}
+    \boxed{\beta_D = 1.270 \pm 0.067\;(r^2 = 0.97)}
+\end{equation}
 
 \subsection{Transport related $CO_2$ emission. Gasoline consumption}
 
@@ -553,6 +534,12 @@ dominated by congestion effects at large populations
 \begin{equation}
     Q_{CO_2} \sim q\; \ell\; P \left(\frac{P}{c}\right)^{\delta}
 \end{equation}
+
+
+\begin{equation}
+    \boxed{\beta_C = 1.262 \pm 0.089\;(r^2=0.94)}
+\end{equation}
+
 
 and the total daily transport-related $CO_2$ emission per capita thus scales as 
 
@@ -579,8 +566,8 @@ cities. Finally, our prediction also agrees with measurements made in
 \cite{Rybski} for developing countries. 
 
 \begin{figure}
-\includegraphics[width=0.9\linewidth]{gfx/chapter-scaling/scaling_co2.pdf}
-\caption{Variation of $CO_2$ emissions due to transport with city size. In blue, excess $CO_2$ (in tons) due to congestion, as given by the Urban Mobility Report (2010) for 101 metropolitan areas in the US~\cite{DataUSA2}. In green, we show the estimated $CO_2$ emissions (in tons) due to transports, as given by the OECD for 268 metropolitan areas in 28 different countries (Data about the total $CO_2$ emissions due to transportation in major metropolitan area in the OECD can be found online~\cite{OECD}). The dashed yellow lines represent the least-square fit assuming a power-law dependency with multiplicative noise, which gives respectively $Q_{CO_2} \sim P^{1.262 \pm 0.089} (r^2=0.94)$ for the US data and $Q_{CO_2} \sim P^{1.212 \pm 0.098} (r^2=0.83)$ for the OECD data.}
+    \includegraphics[width=0.9\linewidth]{gfx/chapter-scaling/scaling_co2.pdf}
+    \caption{{\bf Congestion and $CO_2$ emissions.} Variation of $CO_2$ emissions due to transport with city size. In blue, excess $CO_2$ (in tons) due to congestion, as given by the Urban Mobility Report (2010) for 101 metropolitan areas in the US~\cite{DataUSA2}. In green, we show the estimated $CO_2$ emissions (in tons) due to transports, as given by the OECD for 268 metropolitan areas in 28 different countries (Data about the total $CO_2$ emissions due to transportation in major metropolitan area in the OECD can be found online~\cite{OECD}). The dashed yellow lines represent the least-square fit assuming a power-law dependency with multiplicative noise, which gives respectively $Q_{CO_2} \sim P^{1.262 \pm 0.089} (r^2=0.94)$ for the US data and $Q_{CO_2} \sim P^{1.212 \pm 0.098} (r^2=0.83)$ for the OECD data.}
 \end{figure}
 
 
@@ -589,12 +576,14 @@ cities. Finally, our prediction also agrees with measurements made in
 
 \subsection{Travel-time budget and congestion}
 
+Hey!
+
 \subsection{Newman \& Kenworthy}
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/newman_kenworthy.pdf}
-    \caption{Per capita $CO_2$ emissions versus the population density of cities
+    \caption{{\bf Newman \& Kenworthy.} Per capita $CO_2$ emissions versus the population density of cities
     belonging to OECD countries. The cities also present in the Newman \&
     Kenworthy dataset are represented in red. This curve casts serious doubt on
 the fact that energy consumption are a simple funtion of
@@ -627,7 +616,7 @@ consumption is needed to test this prediction and draw definitive conclusions.
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/nk_model.pdf}
-    \caption{Per capita $CO_2$ emissions versus $\sqrt{A}$ for cities of
+    \caption{{\bf Newman \& Kenworthy revisited.} Per capita $CO_2$ emissions versus $\sqrt{A}$ for cities of
     countries that belong to the OECD. The dashed line represents the obtained
 linear fit, as predicted by Eq.~\ref{eq:nk_area} ($r^2=0.55$). The agreement is
 poor, which may be due to the fact that cities all belong to different systems
