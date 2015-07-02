@@ -157,7 +157,7 @@ blue line).\label{fig:scaling_lanemiles}}
 The total commuting distance $L_{tot}$ is determined by two different
 constraints. First the individual constraint: individuals make the decision
 about where they are going to live and work; they have their own behaviour and
-limitations.  However, the individuals' choices are also limited by the city
+limitations. However, the individuals' choices are also limited by the city
 structure itself, that is by how employment and residences are spread across the
 city.
 
@@ -441,7 +441,7 @@ Using Eq.~\ref{eq:assum} and Eq.~\ref{eq:area} we are now able to compute $L_{to
 \end{equation}
 
 We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the US on
-Fig.~\cite{fig:scaling_Ltot_norm}, and one
+Fig.~\ref{fig:scaling_Ltot_norm}, and one
 can check in Table~\ref{table:} that the exponent predicted from the previously measured
 value of $\alpha$ agrees well with the exponent measured on the data.
 
@@ -644,8 +644,19 @@ as
 
 and is therefore not a simple function of the city density, in contrast with
 what was suggested by the seminal paper of Newman and
-Kenworthy~\cite{Newman:1989}. At this stage however, more data about gasoline
-consumption is needed to test this prediction and draw definitive conclusions.
+Kenworthy~\cite{Newman:1989}. We plot on Fig.~\ref{fig:newman_kenworthy}, we
+plot the average individual $CO_2$ emissions (used as a proxy for gasoline
+consumption) as a function of the density for OECD cities. The points
+corresponding to cities that were in the original study~\cite{Newman:1989} are
+highlighted. The relation is a lot less clear than that presented originally.  
+
+We then plot the same quantity as a function of $\sqrt{A}$, the prediction given
+by Eq.~\ref{eq:nk_area}, on Fig.~\ref{fig:nk_revisited}. As one can see, the
+prediction is far from perfectly followed. If anything, this figure, combined to
+Fig.~\ref{fig:newmann_kenworthy} show that the debate, in the absence of a
+clear-cut conclusion, is not over. At this stage, more data about gasoline
+consumption -- preferably for cities belonging to the same system of cities --
+is needed to explore this prediction.
 
 \begin{figure}
     \centering
@@ -659,9 +670,18 @@ of cities (and thus have a different prefactor).\label{fig:nk_model}}
 
 \subsection{Monocentric versus polycentric}
 
-Although polycentricity emerges naturally from our model as a result of congestion, many circumstances can prevent or foster the appearance of new activity centers in a city. There are many debates as to whether policies should favour polycentric or monocentric developpement of cities. Most of them are based on ideologies and opinions about how cities should be, very few are based on a quantitative understanding of the city as a complex system. Although this only represents a small part of the debate, our model allows to quantify the effect of polycentricity on the total delay due to congestion.
+Although polycentricity emerges naturally from our model as a result of
+congestion, many circumstances can prevent or foster the appearance of new
+activity centers in a city. There are many debates as to whether policies should
+favour polycentric or monocentric developpement of cities. Most of them are
+based on ideologies and opinions about how cities should be, very few are based
+on a quantitative understanding of the city as a complex system. Although this
+only represents a small part of the debate, our model allows to quantify the
+effect of polycentricity on the total delay due to congestion.
 
-We can indeed compute the total delay due to congestion in the case of a monocentric configuration. In this situation, all the population commutes to a single destination $1$ and we have
+We can indeed compute the total delay due to congestion in the case of a
+monocentric configuration. In this situation, all the population commutes to a
+single destination $1$ and we have
 
 \begin{equation}
     \delta \tau_{mono} = \frac{1}{v}\; \sum_i d_{i1} \left(\frac{P}{c} \right)^\mu = L_{tot} \left(\frac{P}{c} \right)^\mu
@@ -673,19 +693,53 @@ It follows, using the expression given above for $L_{tot}$
     \delta\tau_{mono} = \frac{\ell}{v}\; P^{1+\mu}
 \end{equation}
 
-From the fact that $1+\mu > 1+\frac{\mu}{2\mu+1}$, we indeed find that the total delay due to
-congestion is worse for monocentric cities than it is for polycentric cities with the same population, which agrees with the usual intuition. More precisely the ratio of delays is given by
+From the fact that $1+\mu > 1+\frac{\mu}{2\mu+1}$, we indeed find that the total
+delay due to congestion is worse for monocentric cities than it is for
+polycentric cities with the same population, which agrees with the usual
+intuition. More precisely the ratio of delays is given by
 
 \begin{equation}
     \frac{\delta\tau_{mono}}{\delta\tau_{poly}}\sim
     \left(\frac{P}{c}\right)^{\,\beta}
 \end{equation}
 
-where the exponent is of order $\beta \approx 0.57\;$. Therefore, even though diseconomies associated with polycentric cities scale superlinearly with population, it would be even worse if we did not let cities evolve from the monocentric case. The same reasoning applies to the consumption of gasoline and the $CO_2$ emissions. This suggests that, everything else being equal, polycentricity should be favoured for quality of life and environmental reasons.
+where the exponent is of order $\beta \approx 0.57\;$. Therefore, even though
+diseconomies associated with polycentric cities scale superlinearly with
+population, it would be even worse if we did not let cities evolve from the
+monocentric case. The same reasoning applies to the consumption of gasoline and
+the $CO_2$ emissions. 
+
+This suggests that, everything else being equal,
+polycentricity should be favoured for quality of life and environmental reasons.
 
 
 \subsection{Outlook}
 
-The superlinear increase of congestion delay with population, and thereby of gasoline consumption and of $CO_2$ emissions, has terrible consequences on the economy, the environment, health and well-being. The outlook is nothing short of grim in our ever-urbanising world. As the proportion of human beings living in cities dramatically increases --the UN expects the world population to be $67\%$ urban in 2050~\cite{UN:2011}-- wages are likely to increase~\cite{Bettencourt:2007} but not enough to compensate for the negative effects of congestion. As a result, if the individual car stays the dominant transportation mode, cities will put more strain on people's life, while acting as catalysts for the production of $CO_2$ greenhouse gas, responsible for an overall increase of the planet's temperature~\cite{Oreskes:2004}. It is currently believed that advantages associated with living in a large city outweigh the costs. Our results reveal however the existence of very rapidly growing problems such as congestion and $CO_2$ emissions, which inevitably begs the question of the sustainability of large cities. It might be time to cut down considerably the use of individual vehicles, or to consider the possibility of living in smaller or medium sized cities: the infrastructure costs ($L_N$) may be larger, but the impact on the environment ($CO_2$ emissions) and on the well-being of people (delays in congestion) would be beneficial (see Figure 3).
+The superlinear increase of congestion delay with population, and thereby of
+gasoline consumption and of $CO_2$ emissions, has terrible consequences on the
+economy, the environment, health and well-being. The outlook is nothing short of
+grim in our ever-urbanising world. As the proportion of human beings living in
+cities dramatically increases -- the UN expects the world population to be $67\%$
+urban in 2050 -- wages are likely to \graffito{Estimates are given in the United
+Nations' 2011 World Urban Propects.}
+increase~\cite{Bettencourt:2007} but not enough to compensate for the negative
+effects of congestion. As a result, if the individual car stays the dominant
+transportation mode, cities will put more strain on people's life, while acting
+as catalysts for the production of $CO_2$ greenhouse gas, responsible for an
+overall increase of the planet's temperature~\cite{Oreskes:2004}. 
 
-The most striking fact about the above results is that despite the apparence of complexity that is conveyed by cities, most of their structure can be explained by the very simple and universal desire for the best achievable balance between income and commuting costs. Our model unifies mobility patterns, spatial structure of cities and allometric scalings in a framework that can be built upon. More work is needed in order to integrate information about firm locations, the influence of public transportation on mobility patterns~\cite{Roth:2011}, the effect of the integration of cities into urban systems~\cite{Rozenblat:2007}, to understand the fluctuations around the average trends, and to test the validity of the model on different sets of data. We believe however that the results presented here represent a crucial step towards a scientific understanding of cities.
+It is currently believed that advantages associated with living in a large city
+outweigh the costs. Our results reveal however the existence of very rapidly
+growing problems such as congestion and $CO_2$ emissions, which inevitably begs
+the question of the sustainability of large cities. It might be time to cut down
+considerably the use of individual vehicles, or to consider the possibility of
+living in smaller or medium sized cities: the infrastructure costs ($L_N$) may
+be larger, but the impact on the environment ($CO_2$ emissions) and on the
+well-being of people (delays in congestion) would be beneficial.\\
+
+The most striking fact about the above results is that despite the apparence of
+complexity that is conveyed by cities, most of their structure can be explained
+by the very simple and universal desire for the best achievable balance between
+income and commuting costs. Our model unifies mobility patterns, spatial
+structure of cities and allometric scalings in a framework that can be built
+upon. 
