@@ -64,7 +64,7 @@ average surface per capita).
 
 \paragraph{Reality.} The naive argument does not compare well with reality. We
 plot the scaling of the surface area versus population for US Urban Areas on
-Fig.~\ref{fig:scaling_area}. A fit assuming a power-law dependence gives an exponent
+Figure~\ref{fig:scaling_area}. A fit assuming a power-law dependence gives an exponent
 
 \graffito{All $\pm$ intervals are $95\%$ confidence intervals.}
 \begin{equation}
@@ -127,7 +127,7 @@ previously in Eq.~\ref{eq:area_naive} we finally get
 
 \paragraph{Reality.} Again, the naive argument does not compare well with
 reality. We fit the data for US urban areas (see
-Fig.~\ref{fig:scaling_lanemiles}) assuming a powerlaw dependence and find an
+Figure~\ref{fig:scaling_lanemiles}) assuming a powerlaw dependence and find an
 exponent
 
 \begin{equation}
@@ -179,11 +179,11 @@ case, we would simply have
 (by constant, we mean independent from the population size of the city). As
 surprising as it may seem, the data show that $L_{tot}/P$ can indeed be considered
  independent from $P$ (with a value of approximately $23$ miles for
-the US, see Fig.~\ref{fig:LtotoverP}), in agreement with the individual
+the US, see Figure~\ref{fig:LtotoverP}), in agreement with the individual
 constraint assumption (Eq. \ref{eq:assum}). This finding is also in agreement
 with the results drawn from census data in Germany by~\cite{Wilkerson:2014}.
 This does not mean, of course, that the distance driven is the same for every
-city. As one can see on Fig.~\ref{fig:LtotoverP}, the fluctuations are quite
+city. As one can see on Figure~\ref{fig:LtotoverP}, the fluctuations are quite
 important between cities. The important point, though, is that the distance does not depend on the population size.
 Although this assumption of a constant distance is simple and verified on the US
 data, we think that it deserves to be systematically tested on other datasets
@@ -209,7 +209,7 @@ The easiest way to understand the influence of the city constraints is to
 consider two limiting cases: the totally centralised
 (monocentric) city where everyone goes to work to a single center, and the
 totally decentralised city where everyone goes to work to the nearest
-location (see Fig.~\ref{fig:monocentric_decentralised})~\cite{Samaniego:2008}.\\
+location (see Figure~\ref{fig:monocentric_decentralised})~\cite{Samaniego:2008}.\\
 
 \begin{figure}[!h]
     \centering
@@ -237,7 +237,7 @@ $\sqrt{A}/\sqrt{P}$, and we obtain
 
 \paragraph{Reality. } The scaling of the total driven distance for Urban Areas
 (morphological definition) is shown on
-Fig.~\ref{fig:scaling_Ltot_norm}, and the exponent sits between the ones of the
+Figure~\ref{fig:scaling_Ltot_norm}, and the exponent sits between the ones of the
 monocentric and decentralised cities
 
 \begin{equation*}
@@ -267,7 +267,7 @@ So far, so good. But how can we understand the non-trivial exponent that is obse
 where the limiting case are helpful: if the exponent sits between the ones that
 would be obtained in a monocentric or decentralised city, surely, cities must
 adopt an intermediate structure. One candidate stands out: the polycentric city (see
-Fig.~\ref{fig:polycentric}).
+Figure~\ref{fig:polycentric}).
 
 \begin{figure}[!h]
     \centering
@@ -310,6 +310,24 @@ sub-linear scaling of the surface area $A$.
 
 
 
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|c|c|c|l|}
+\hline
+Quantity & Naive exponent &  Measured value\\
+\hline
+$A $ & $1$ & $0.85\; (r^2=0.93)$\\
+\hline
+$L_N / \sqrt{A}$ & $0.5$ & $0.42\; (r^2=0.83)$\\
+$L_N $ & $1$ & $0.89\;(r^2=0.77)$\\ 
+\hline
+$L_{tot} / \sqrt{A}$ &  $\left\{0.5,1\right\}$ & $0.60\; (r^2=0.90)$\\
+$L_{tot} /P$ &  $1$ & $0.03\; (r^2=0.04)$\\
+\hline
+\end{tabular}
+\caption{{\bf Naive exponents and measured values.} This table displays the value of the exponent governing the behavior with the population $P$ obtained by naive arguments and the value obtained from empirical data. The discrepancies reveal the failure of the naive scaling arguments and the necessity to go further and model mobility patterns.}
+\label{table:naive}
+\end{table*}
 
 
 
@@ -317,7 +335,7 @@ sub-linear scaling of the surface area $A$.
 
 The previous results, in particular the behaviour of the total commuting length
 with population, hint at the necessity to better describe the structure of the
-mobility patterns. This is exactly what the model presented in the previous
+mobility patterns (Table~\ref{table:naive}). This is exactly what the model presented in the previous
 does.  Using the relation that we derived for the number of centers, we will see
 how we can understand the values of the exponents presented earlier in this
 chapter. We will also see how the model allows us to understand the scaling of
@@ -373,7 +391,7 @@ number of activity centers and the constant commuting length of individuals.
 This means that the growth of the area is controlled by the appearance of new
 activity centers. if we assume that a city is organized around $k$ activity
 centers and that the attraction basin of each of these centers are spatially
-separated~\cite{Louf:2013_polycentric} (See on Fig.~\ref{fig:polycentric}), we then have  $A \sim k\, A_1$ where $A_1$ is the
+separated~\cite{Louf:2013_polycentric} (See on Figure~\ref{fig:polycentric}), we then have  $A \sim k\, A_1$ where $A_1$ is the
 area of each subcenter's attraction basin. This area $A_1$ is related to the
 average individual commuting distance by $\sqrt{A_1} \sim L_{tot} / P$, and we
 obtain
@@ -417,7 +435,7 @@ where $\delta=\frac{\mu}{2\mu+1}$. The exponent $\delta$ is smaller than $1/2$
 whatever $\mu\geq 0$, which implies that the density of cities increases
 \emph{sublinearly} with population. In other words, the density of cities
 \emph{increases}  with population. We verify this prediction with
-data about land area of urbanized areas in the US (Fig.~\cite{fig:scaling_area}). We find
+data about land area of urbanized areas in the US (Figure~\cite{fig:scaling_area}). We find
 $\beta_A = 0.85 \pm 0.01\;$ which is not too far from the
 theoretical value $2\delta_{th} = 0.64 \pm 0.12$, equal to
 $\alpha$ in this case.\\
@@ -441,8 +459,8 @@ Using Eq.~\ref{eq:assum} and Eq.~\ref{eq:area} we are now able to compute $L_{to
 \end{equation}
 
 We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the US on
-Fig.~\ref{fig:scaling_Ltot_norm}, and one
-can check in Table~\ref{table:} that the exponent predicted from the previously measured
+Figure~\ref{fig:scaling_Ltot_norm}, and one
+can check in Table~\ref{table:scaling} that the exponent predicted from the previously measured
 value of $\alpha$ agrees well with the exponent measured on the data.
 
 
@@ -508,7 +526,7 @@ economical losses \emph{per capita} due to the time lost in congestion --and the
 corresponding strain on people's life-- increase with the size of the city. 
 
 The prediction $1+\delta = 1.32$ agrees well with the empirical measure (see
-Table~\ref{table:} and Fig.~\ref{fig:scaling_delay})
+Table~\ref{table:scaling} and Figure~\ref{fig:scaling_delay})
 
 \begin{equation}
     \boxed{\beta_D = 1.270 \pm 0.067\;(r^2 = 0.97)}
@@ -554,8 +572,8 @@ and the total daily transport-related $CO_2$ emission per capita thus scales as
 
 The quantity of $CO_2$ emitted per capita in cities thus increases with the size
 of the city, a consequence of congestion. This prediction agrees with the
-exponent we measure (Figure 3) on data gathered for US and OECD cities (see
-Table~\ref{table:} and Fig.~\ref{fig:scaling_co2})
+exponent we measure (Figurere~\ref{fig:scaling_co2}) on data gathered for US and OECD cities (see
+Table~\ref{table:scaling})
 
 \begin{equation}
     \boxed{\beta_C = 1.262 \pm 0.089\;(r^2=0.94)}
@@ -611,7 +629,7 @@ given by
 
 In other words, the \emph{individual commuting time increases with the size of the
 city}. Note that not only is this a consequence of the model, but also of the
-data analaysis (see Fig.~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
+data analaysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
 
 \subsection{Newman \& Kenworthy}
 
@@ -644,16 +662,16 @@ as
 
 and is therefore not a simple function of the city density, in contrast with
 what was suggested by the seminal paper of Newman and
-Kenworthy~\cite{Newman:1989}. We plot on Fig.~\ref{fig:newman_kenworthy}, we
+Kenworthy~\cite{Newman:1989}. We plot on Figure~\ref{fig:newman_kenworthy}, we
 plot the average individual $CO_2$ emissions (used as a proxy for gasoline
 consumption) as a function of the density for OECD cities. The points
 corresponding to cities that were in the original study~\cite{Newman:1989} are
 highlighted. The relation is a lot less clear than that presented originally.  
 
 We then plot the same quantity as a function of $\sqrt{A}$, the prediction given
-by Eq.~\ref{eq:nk_area}, on Fig.~\ref{fig:nk_revisited}. As one can see, the
+by Eq.~\ref{eq:nk_area}, on Figure~\ref{fig:nk_revisited}. As one can see, the
 prediction is far from perfectly followed. If anything, this figure, combined to
-Fig.~\ref{fig:newmann_kenworthy} show that the debate, in the absence of a
+Figure~\ref{fig:newmann_kenworthy} show that the debate, in the absence of a
 clear-cut conclusion, is not over. At this stage, more data about gasoline
 consumption -- preferably for cities belonging to the same system of cities --
 is needed to explore this prediction.
@@ -711,6 +729,41 @@ the $CO_2$ emissions.
 
 This suggests that, everything else being equal,
 polycentricity should be favoured for quality of life and environmental reasons.
+
+\begin{table*}[!h]
+\begin{tabular}{|c|c|c|c|}
+\hline
+Quantity & Theoretical expression & Predicted exponent & Measured value\\
+  $\;\;$  & ($\delta=\alpha/\alpha+1$) & & \\ \hline
+$L_{tot}$ & $P$ & $1$ & $1.03 \pm 0.03\;(r^2=0.95)$\\ 
+$A / \ell^2$ & $\left( \frac{P}{c} \right)^{\,2\,\delta}$ & $2 \delta = 0.78 \pm 0.20$ & $0.853 \pm 0.011\; (r^2=0.93)$\\
+$L_N / \ell$ & $\sqrt{P}\; \left(\frac{P}{c}\right)^{\,\delta}$ & $\frac{1}{2} + \delta = 0.89 \pm 0.10 $ & $0.765 \pm 0.033\; (r^2=0.92)$\\
+$\delta \tau / \tau$ & $P\; \left( \frac{P}{c} \right)^{\, \delta}$ & $1 +
+\delta = 1.39 \pm 0.10$ & $1.270 \pm 0.067\; (r^2=0.97)$\\
+$Q_{gas,CO_2}/\ell$  & $P\left( \frac{P}{c}\right)^{\delta}$ & $1+\delta=1.39 \pm 0.10$ & $1.262 \pm 0.089\; (r^2=0.94)$\\
+& & & $1.212 \pm 0.098\, (r^2=0.83)$\\
+\hline \hline
+$L_N / \sqrt{A}$ & $\sqrt{P}$ & $0.5$ & $0.42 \pm 0.02\;(r^2=0.83)$\\
+$L_{tot} / \sqrt{A}$ &  $P\;
+\left(\frac{P}{c}\right)^{-\delta}$ & $1 - \delta = 0.61 \pm 0.10$ & $0.595 \pm 0.026\; (r^2=0.90)$\\
+\hline
+\end{tabular}
+\caption{{\bf Summary of the scaling exponents.} This table displays the predicted theoretical behavior and
+  the empirical observations versus the population size $P$ for
+  different quantities: $L_{tot}$ is the daily total driven distance,
+  $A$ is the area of the city, $L_{N}$ is the total length of the road
+  network, $\delta\tau$ is the daily total delay due to congestion,
+  $Q_{gas}$ is the yearly total consumption of gasoline and $Q_{CO_2}$
+  is the total $CO_2$ emissions emitted yearly due to
+  transportation. In the third column, we show the predicted values of
+  the exponent of $P$ using the value of $\alpha$ measured on US
+  employment data, and in the fourth column, the value of the
+  exponents directly measured on data about US and OECD cities. The
+  measured values are in good agreement with the prediction. In
+  particular, the exponents for $L_N$ and $\delta \tau$ are consistent
+  with our prediction that their difference should be $1/2$.}
+\label{table:results}
+\end{table*}
 
 
 \subsection{Outlook}
