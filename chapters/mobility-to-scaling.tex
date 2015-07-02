@@ -184,7 +184,7 @@ constraint assumption (Eq. \ref{eq:assum}). This finding is also in agreement
 with the results drawn from census data in Germany by~\cite{Wilkerson:2014}.
 This does not mean, of course, that the distance driven is the same for every
 city. As one can see on Fig.~\ref{fig:LtotoverP}, the fluctuations are quite
-important between cities. But they do not depend on the population size.
+important between cities. The important point, though, is that the distance does not depend on the population size.
 Although this assumption of a constant distance is simple and verified on the US
 data, we think that it deserves to be systematically tested on other datasets
 for other countries and cities. 
@@ -206,7 +206,7 @@ these cities is $23$ miles, and the standard deviation $7$ miles.}
 \label{sub:influence_of_the_city_structure}
 
 The easiest way to understand the influence of the city constraints is to
-consider two limiting cases: on the one hand, the totally centralised
+consider two limiting cases: the totally centralised
 (monocentric) city where everyone goes to work to a single center, and the
 totally decentralised city where everyone goes to work to the nearest
 location (see Fig.~\ref{fig:monocentric_decentralised})~\cite{Samaniego:2008}.\\
@@ -258,16 +258,15 @@ dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (r^2 =
 \end{figure}
 
 This comes as another evidence -- different from that presented in
-Chapter~\ref{chap:monocentric-introduction} -- that cities do not have a
-strictly monocentric structure. In particular, this result cast some doubts
+Chapter~\ref{chap:monocentric_introduction} -- that cities do not have a
+strictly monocentric structure. This result cast some further doubts
 about the model by Bettencourt~\cite{Bettencourt:2013} which assumes implicitely that cities are always
-monocentric. 
+monocentric.\\
 
 So far, so good. But how can we understand the non-trivial exponent that is observed? This is
 where the limiting case are helpful: if the exponent sits between the ones that
 would be obtained in a monocentric or decentralised city, surely, cities must
-adopt an intermediate structure. Following the previous part on polycentricity,
-there is an obvious candidate: the polycentric city (see
+adopt an intermediate structure. One candidate stands out: the polycentric city (see
 Fig.~\ref{fig:polycentric}).
 
 \begin{figure}[!h]
@@ -292,17 +291,18 @@ So that
 
 Therefore if, as we showed in the previous part,  the number of centers
 increases sublinearly with population, we would have a scaling of the form
-$L_{tot}/\sqrt{A}\sim P^{\,\beta_L}$ where $\beta_L \in [1/2,1]$. One
-can easily see that this expression is consistent with that of $A/\lambda^2$ and
-$L_{tot}/P$ if
+$L_{tot}/\sqrt{A}\sim P^{\,\beta_L}$ where $\beta_L \in [1/2,1]$. 
+
+This expression is consistent with that of $A/\lambda^2$
+and $L_{tot}/P$ if
 
 \begin{equation} 
     \beta_L = 1-\frac{\beta_A}{2} 
     \label{eq:consis} 
 \end{equation}
 
-which is indeed what we observe empirically (up to error bars). This preliminary
-analysis thus leads us to the conclusion that, in order to compute the various
+which is indeed what we observe empirically (up to error bars). We conclude from
+this preliminary empirical analysis that, in order to compute the various
 exponents, we need to better describe the structure of commuting patterns. In
 other words, we need to find a description of cities that goes beyond the naive
 monocentric or totally decentralized views, and which accounts for the observed
@@ -317,17 +317,16 @@ sub-linear scaling of the surface area $A$.
 
 The previous results, in particular the behaviour of the total commuting length
 with population, hint at the necessity to better describe the structure of the
-mobility patterns to understand the previous scaling relationships. This is
-exactly what the model presented in the previous does.
-Using the relation that we derived for the number of centers, we will see how we
-can understand the values of the exponents presented earlier in this chapter. We
-will also see how the model allows us to understand the scaling of other
-quantities, namely the total time spent in traffic and the total $CO_2$
+mobility patterns. This is exactly what the model presented in the previous
+does.  Using the relation that we derived for the number of centers, we will see
+how we can understand the values of the exponents presented earlier in this
+chapter. We will also see how the model allows us to understand the scaling of
+other quantities, namely the total time spent in traffic and the total $CO_2$
 emissions due to transportation.
 
 \subsection{Area}
 
-At this stage, the number of centers is a function of population and the area
+According to the model introduced in Chapter~\ref{chap:monocentric_model}, the number of centers is a function of population and the area
 
 \begin{equation}
     k = F\left(A,P\right)
@@ -352,8 +351,8 @@ can assume that the area behaves as
 
 where $a$ is the exponent to be determined, through fits on data. The empirical
 value for the exponent for the US data is $a\simeq 0.85$. Once this exponent is
-given we can then compute the various exponent for the quantities of interest
-(see the following and table 2). We get for the number of centers $k$
+given we can then compute the various exponent for the quantities of interest.
+We get for the number of centers $k$
 
 \begin{equation}
     k \sim P^{\frac{\mu + a/2}{\mu+1}}
@@ -374,7 +373,7 @@ number of activity centers and the constant commuting length of individuals.
 This means that the growth of the area is controlled by the appearance of new
 activity centers. if we assume that a city is organized around $k$ activity
 centers and that the attraction basin of each of these centers are spatially
-separated~\cite{Louf:2013_polycentric}, we then have  $A \sim k\, A_1$ where $A_1$ is the
+separated~\cite{Louf:2013_polycentric} (See on Fig.~\ref{fig:polycentric}), we then have  $A \sim k\, A_1$ where $A_1$ is the
 area of each subcenter's attraction basin. This area $A_1$ is related to the
 average individual commuting distance by $\sqrt{A_1} \sim L_{tot} / P$, and we
 obtain
@@ -417,10 +416,10 @@ The final expression for the area is then here given by
 where $\delta=\frac{\mu}{2\mu+1}$. The exponent $\delta$ is smaller than $1/2$
 whatever $\mu\geq 0$, which implies that the density of cities increases
 \emph{sublinearly} with population. In other words, the density of cities
-\emph{increases}  with population. We verify this prediction in Table 2, with
-data about land area of urbanized areas in the US (Figure 2). We find $2
-\delta_{emp} = 0.85 \pm 0.01\; (95\%\, CI)$ which is not too far from the
-theoretical value $2\delta_{th} = 0.64 \pm 0.12\; (95\%\, CI)$, equal to
+\emph{increases}  with population. We verify this prediction with
+data about land area of urbanized areas in the US (Fig.~\cite{fig:scaling_area}). We find
+$\beta_A = 0.85 \pm 0.01\;$ which is not too far from the
+theoretical value $2\delta_{th} = 0.64 \pm 0.12$, equal to
 $\alpha$ in this case.\\
 
 Because the area of an urban system results from centuries of evolution, we do
@@ -441,8 +440,9 @@ Using Eq.~\ref{eq:assum} and Eq.~\ref{eq:area} we are now able to compute $L_{to
     \label{eq:travelled_length}
 \end{equation}
 
-We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the US on Figure 2, and one
-can check in Table 2 that the exponent predicted from the previously measured
+We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the US on
+Fig.~\cite{fig:scaling_Ltot_norm}, and one
+can check in Table~\ref{table:} that the exponent predicted from the previously measured
 value of $\alpha$ agrees well with the exponent measured on the data.
 
 
@@ -483,8 +483,9 @@ speed $v$ is the same for everyone, the total delay due to congestion is given
     \delta \tau = \frac{1}{v} \sum_{i,j} d_{ij} \left(\frac{T_j}{c} \right)^\mu 
 \end{equation}
 
-If we assume that all the centers share the same number of commuters --a
-reasonable assumption within our model~\cite{Louf:2013}-- we obtain
+If we assume that all the centers share the same number of commuters -- a
+reasonable assumption within the model presented in
+Chapter~\ref{chap:monocentric_model}~\cite{Louf:2013_polycentric} -- we obtain
 
 \begin{equation} 
     \delta \tau \sim \frac{L_{tot}}{v} \left( \frac{P}{k}
@@ -506,13 +507,23 @@ delays due to congestion actually dominate the time spent in traffic, and that
 economical losses \emph{per capita} due to the time lost in congestion --and the
 corresponding strain on people's life-- increase with the size of the city. 
 
+The prediction $1+\delta = 1.32$ agrees well with the empirical measure (see
+Table~\ref{table:} and Fig.~\ref{fig:scaling_delay})
+
 \begin{equation}
     \boxed{\beta_D = 1.270 \pm 0.067\;(r^2 = 0.97)}
 \end{equation}
 
 \subsection{Transport related $CO_2$ emission. Gasoline consumption}
 
-Another diseconomy associated with congestion is the quantity of $CO_2$ emitted by cars and the gasoline consumed by motor vehicles. This amount not only depends on the distance that has been driven, but also on the traffic during the journey. It indeed turns out that for the same length driven, a car burns more oil when the traffic is heavy than when the road is clear.  Within our model, the presence of traffic is seen in the time spent to cover a given distance, and we write that the quantity of $CO_2$ emitted by a vehicle is proportional to the total time spent in traffic, leading to
+Another diseconomy associated with congestion is the quantity of $CO_2$ emitted
+by cars and the gasoline consumed by motor vehicles. This amount not only
+depends on the distance that has been driven, but also on the traffic during the
+journey. It indeed turns out that for the same length driven, a car burns more
+oil when the traffic is heavy than when the road is clear.  Within our model,
+the presence of traffic is seen in the time spent to cover a given distance, and
+we write that the quantity of $CO_2$ emitted by a vehicle is proportional to the
+total time spent in traffic, leading to
 
 \begin{equation}
     Q_{CO_2}  = q \sum_{i,j} d_{ij} \left[ 1+ \left( \frac{T_j}{c} \right)^\mu \right]
@@ -534,10 +545,6 @@ dominated by congestion effects at large populations
 \end{equation}
 
 
-\begin{equation}
-    \boxed{\beta_C = 1.262 \pm 0.089\;(r^2=0.94)}
-\end{equation}
-
 
 and the total daily transport-related $CO_2$ emission per capita thus scales as 
 
@@ -547,25 +554,25 @@ and the total daily transport-related $CO_2$ emission per capita thus scales as
 
 The quantity of $CO_2$ emitted per capita in cities thus increases with the size
 of the city, a consequence of congestion. This prediction agrees with the
-exponent we measure (Figure 3) on data gathered for US and OECD cities (Data
-about the area and population of urbanised areas can be found  on the Census
-Bureau website \cite{DataUSA1}, data about congestions in urban areas can be
-found in the Urban Mobility Report \cite{DataUSA2}, and data about the total
-lane miles and the daily total miles driven in urbanized areas can be found on
-on the Federal Highway administration website \cite{DataUSA3}). We are aware
-that the scaling of $CO_2$ with population size is controversial, with results
-varying from one study to another. Although a systematic meta-analysis of these
-results is beyond the scope of this paper, we note that the authors
-of~\cite{Fragkias:2013} are concerned with the total emissions of $CO_2$, while
-this paper is only concerned with emissions due to transportations. Moreover,
-our prediction agrees well with the exponent of $1.33$ measured by the authors
-of~\cite{Oliveira:2014} on the same dataset, but with a different definition of
-cities. Finally, our prediction also agrees with measurements made in
-\cite{Rybski} for developing countries. 
+exponent we measure (Figure 3) on data gathered for US and OECD cities (see
+Table~\ref{table:} and Fig.~\ref{fig:scaling_co2})
+
+\begin{equation}
+    \boxed{\beta_C = 1.262 \pm 0.089\;(r^2=0.94)}
+\end{equation}
 
 \begin{figure}
     \includegraphics[width=0.9\linewidth]{gfx/chapter-scaling/scaling_co2.pdf}
-    \caption{{\bf Congestion and $CO_2$ emissions.} Variation of $CO_2$ emissions due to transport with city size. In blue, excess $CO_2$ (in tons) due to congestion, as given by the Urban Mobility Report (2010) for 101 metropolitan areas in the US~\cite{DataUSA2}. In green, we show the estimated $CO_2$ emissions (in tons) due to transports, as given by the OECD for 268 metropolitan areas in 28 different countries (Data about the total $CO_2$ emissions due to transportation in major metropolitan area in the OECD can be found online~\cite{OECD}). The dashed yellow lines represent the least-square fit assuming a power-law dependency with multiplicative noise, which gives respectively $Q_{CO_2} \sim P^{1.262 \pm 0.089} (r^2=0.94)$ for the US data and $Q_{CO_2} \sim P^{1.212 \pm 0.098} (r^2=0.83)$ for the OECD data.}
+    \caption{{\bf Congestion and $CO_2$ emissions.} Variation of $CO_2$
+emissions due to transport with city size. In blue, excess $CO_2$ (in tons) due
+to congestion, as given by the Urban Mobility Report (2010) for 101 metropolitan
+areas in the US. In green, we show the estimated $CO_2$
+emissions (in tons) due to transports, as given by the OECD for 268 metropolitan
+areas in 28 different countries. The dashed yellow lines represent the least-square fit
+assuming a power-law dependency with multiplicative noise, which gives
+respectively $Q_{CO_2} \sim P^{1.262 \pm 0.089} (r^2=0.94)$ for the US data and
+$Q_{CO_2} \sim P^{1.212 \pm 0.098} (r^2=0.83)$ for the OECD data.
+\label{fig:scaling_co2}} 
 \end{figure}
 
 
@@ -574,7 +581,37 @@ cities. Finally, our prediction also agrees with measurements made in
 
 \subsection{Travel-time budget and congestion}
 
-Hey!
+The total commuting time $T$ can be written as
+
+\begin{equation}
+    T = \tau_0 + \delta_\tau
+\end{equation}
+
+where $\tau_0 = L_{tot} / v \sim P$ is the free-flow commuting time and $\delta
+\tau \sim P^{1+\delta}$ the excess commuting time computed above. The first
+thing we notice when looking at the respective population dependence of both
+quantities, is that, in large cities, the total commuting time is dominated by
+the time spent in congestion. Indeed, we have
+
+\begin{equation}
+    \displaystyle \frac{T}{\delta_\tau} \xrightarrow[\:P \gg 1\:]{} 1
+\end{equation}
+
+Which agrees with one's (at least our) experience of driving in large cities.
+
+The second remark is linked to a long-standing belief in the study of urban
+systems that individuals possess a constant travel-time
+budget~\cite{Zahavi:1974}. We can easily see, however, that this hypothesis is
+wrong. Indeed, in the limit of large cities, the individual commuting time is
+given by
+
+\begin{equation}
+    \frac{\delta_\tau}{P} \sim P^{\,\delta}
+\end{equation}
+
+In other words, the \emph{individual commuting time increases with the size of the
+city}. Note that not only is this a consequence of the model, but also of the
+data analaysis (see Fig.~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
 
 \subsection{Newman \& Kenworthy}
 
@@ -588,9 +625,8 @@ the fact that energy consumption are a simple funtion of
 density.\label{fig:newman_kenworthy}}
 \end{figure}
 
-Another important related quantity is the the consumption of gasoline which in
-principle is proportional to the emission of $CO_2$ and the time spent driving.
-The total daily gasoline consumption is then given by
+The consumption of gasoline is proportional to the emission of $CO_2$ and the time spent driving.
+The total daily gasoline consumption is thus given by
 
 \begin{equation} 
     Q_{gas} \sim q\; \ell\; P \left(\frac{P}{c}\right)^{\delta}
