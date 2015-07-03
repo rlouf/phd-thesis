@@ -218,7 +218,7 @@ Chapter~\ref{chap:scaling_implication}.
 
 \begin{table*}[!h]
     \centering
-\begin{tabular}{|c|c|c|c|}
+\begin{tabular}{|cccc|}
 \hline
 Exponent & City definition & Year & Study\\
 \hline
@@ -231,11 +231,15 @@ Exponent & City definition & Year & Study\\
 0.73 & Administrative (Europe) & 1990 & Gu\'erois~\cite{Guerois:2003}\\
 0.78 & Morphological (US) & 2010 & Louf \& Barthelemy~\cite{Louf:2014_scaling}\\
 \hline
-\emph{1.48} & \emph{Functional} (US) & & Batty \& Ferguson~\cite{Batty:2011}\\
+\emph{1.48} & \emph{Functional} (US) & 2005 & Batty \& Ferguson~\cite{Batty:2011}\\
 \hline
 \end{tabular}
-\caption{{\bf Scaling of the surface area.} }
-\label{table:naive}
+\caption{{\bf Scaling of the surface area.} Scaling exponent for the surface area of
+cities found in the literature. The scaling for administrative cities, built-up
+areas or cities defined according to a morphological criterion are consistent
+with one another -- at least qualitatively. The exponent for cities with a
+functional definition is however qualitatively different.}
+\label{table:area}
 \end{table*}
 
 \subsection{Economic diversity and employment}
@@ -263,8 +267,7 @@ Strangely enough, the data imply
     D \propto P^{\, \beta}
 \end{equation}
 
-with $\beta > 1$, in contradiction with later results found by Bettencourt et
-al.~\cite{Bettencourt:2014}.\\
+with $\beta > 1$, in contradiction with later results.\\
 
 Indeed, Bettencourt et al.\cite{Bettencourt:2014} showed that the professional
 diversity $D$, measured as the number of professions of different kind in the
@@ -311,6 +314,25 @@ related to manufactures of different kinds. This behaviour in time is the
 starting point of the authors' evolutionary theory to explain scaling laws, that
 we will discuss later in this introduction.\\
 
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|ccc|}
+\hline
+Exponent & City Definition & Economic sector\\
+\hline
+1.67 & Functional (France) & Research and development\\
+1 & Functional (France) & Hotels and restaurants \\
+0.85 & Functional (France) & Manufacture of food products\\
+\hline
+\end{tabular}
+\caption{{\bf Scaling of employment in different economic sectors.} The scaling
+behaviour of the number of employees in a given economic sector depends on the
+economic sector. We give an example for each of the `innovative'
+(superlinear),`common' (linear) and `mature' (sublinear) categories defined by
+Pumain et al.~\cite{Pumain:2006}. The exponents were obtained from~\cite{Pumain:2006} and concern
+French $1999$ `Aires urbaines'.} 
+\label{table:employment} 
+\end{table*}
 
 \subsection{Wealth}
 \label{sub:wealth}
@@ -327,6 +349,27 @@ Because larger cities create proportionally more wealth than smaller cities, we
 can wonder whether this supplement of wealth allows to sustain proportionally
 more jobs. The answer, as shown in~\cite{Bettencourt:2014} for american cities,
 is negative: the total employment of a city is on average proportional to its population.
+
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|cccc|}
+\hline
+Quantity & Exponent & City Definition & Study\\
+\hline
+GDP & 1.13 & Functional (US) & Bettencourt~\cite{Bettencourt:2013}\\
+New patents & 1.27 & Functional (US) & Bettencourt et al.~\cite{Bettencourt:2007}\\ 
+Total wages & 1.12 & Functional (US) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+\hline
+Employment & 1.01 & Functional (US) & Bettencourt et
+al.~\cite{Bettencourt:2007}\\
+\hline
+\end{tabular}
+\caption{{\bf Economic vitality.} The scaling of quantities linked to cities'
+economic vitality and creativity scale superlinearly with population size.
+This does not translate however in larger employment rates, as the number of
+employees scales linearly with population size.} 
+\label{table:wealth} 
+\end{table*}
 
 \subsection{Human interactions}
 \label{sub:human_interactions}
@@ -345,12 +388,33 @@ They further found that the number of non-returned calls showed a larger
 exponents than the number of calls, meaning that the number of solicitations an
 individual gets is greater in large cities.\\
 
-Although this is not emphasized by the authors of the study, we note that the
-exponents found in Portugal vary with the city definition that is chosen, with a
-clear superlinear behaviour for Portugal's municipalities and `statistical
-cities', but a near-linear behaviour for LUZ (Larger Urban Zones, a functionnal
-definition of cities introduced by Eurostat).
 
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|ccc|}
+\hline
+Quantity & Exponent & City Definition\\
+\hline
+Cumulative phone contacts & 1.12 & Morphological (Portugal)\\
+Cumulative phone contacts & 1.13 & Administrative (Portugal)\\
+\hline
+Cumulative call volume & 1.11 & Morphological (Portugal)\\
+Cumulative call volume & 1.15 & Administrative (Portugal)\\
+\hline
+Cumulative number of calls & 1.10 & Morphological (Portugal)\\
+Cumulative number of calls & 1.13 & Administrative (Portugal)\\
+\hline
+\end{tabular}
+\caption{{\bf Interactions over the phone.} Scaling of the cumulative number of
+    phone contacts, phone calls and the cumulative call volume over $409$ days
+    in Portugal. As for the scaling of the surface area, administrative and
+    morphologically defined cities exhibit similar exponents. The scaling for
+    LUZ (european functional definition) shows a behaviour compatible with a
+    linear scaling, although the number of points (9) is not large enough to
+    conclude. The data were obtained from a mobile phone provider, and all
+    quantities are rescaled to take into
+account the variation of the operator's coverage between cities.}
+\end{table*}
 
 \subsection{Mobility of individuals, and environmental impact}
 \label{sub:mobility}
@@ -361,13 +425,15 @@ information available on the mobility of individuals concerns the commuting to
 work, often by car. 
 
 Samaniego and Moses~\cite{Samaniego:2008} showed that the total number of miles
-driven in Urban Areas (morphological definition) in the US scaled sublinearly
-with population size, with a non-trivial exponent (that is, different from
-$1/2$. More details in the next chapter).  Also related to commuting and the use of
-personal vehicles in general is the evolution of the total comsumption of
-gasoline as a function of city sizes. Bettencourt et al. showed that gasoline
-sales in Metropolitan Statistical Areas scaled sublinearly with population
-size~\cite{Bettencourt:2007}. 
+driven in U.S. Urban Areas (morphological definition) rescaled by the total
+surface area scales sublinearly with population size, with a non-trivial
+exponent (that is, different from $1/2$. More details in the next chapter). We
+showed in a later study~\cite{Louf:2014_scaling} that the total distance driven
+scales linearly with population size in Urban Areas.
+Also related to commuting and the use of personal vehicles in general is the
+evolution of the total comsumption of gasoline as a function of city sizes.
+Bettencourt et al. showed that gasoline sales in Metropolitan Statistical Areas
+scaled sublinearly with population size~\cite{Bettencourt:2007}. 
 
 Hopefully, new data such as mobile phone data should be
 able to inform us about other trips, which represent no less than 80\% of all
@@ -383,6 +449,35 @@ with population size, while the authors of
 population size for US Urban Areas (morphological definition). We will come back
 to this in the next Chapter.
 
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|cccc|}
+\hline
+Quantity & Exponent & City Definition & Study\\
+\hline
+Distance driven & 1 & Morphological (US) & Louf \& Barthelemy~\cite{Louf:2014_scaling} \\
+Gasoline sales & 0.79 & Functional (US) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+\hline
+$CO_2$ emissions & 1.42 & Morphological (US) & Oliveira et al.~\cite{Oliveira:2014}\\
+$CO_2$ emissions & 1.37 & Morphological (US) & Louf \&
+Barthelemy~\cite{Louf:2014_smog}\\
+$CO_2$ emissions & \emph{0.93} & \emph{Functional} (US) & Fragkias et al.~\cite{Fragkias:2013}\\
+\hline
+\end{tabular}
+\caption{{\bf Mobility. } Scaling relationships linked to the individual
+    mobility in cities. The three scaling exponents regarding the $CO_2$
+    emissions \emph{due to transportation} were obtained using the
+    Vulcan data (\url{http://vulcan.project.asu.edu/}) which provide
+    measurements of the $CO_2$ emissions on a $10\text{ km}\,x\,10\text{ km}$
+    grid. The difference between the three studies is in the method used to
+    delineate cities: Fragkias et al.~\cite{Fragkias:2013} rely on the Metropolitan Statistical Areas
+    defined by the Census Bureau, Oliveira et al.~\cite{Oliveira:2014} rely on
+    the City Clustering Algorithm~\cite{Rozenfeld:2008} (morphological
+    criterion) while we rely on the Urbans Areas defined by the Census Bureau.
+}
+\end{table*}
+
+
 
 \subsection{Basic commodities}
 \label{sub:basic_commodities}
@@ -392,6 +487,25 @@ electricity) per capita changes with population size. By far the most expected
 result, Bettencourt et al. showed~\cite{Bettencourt:2007} that the total water
 consumption (in China), the total electrical consumption (in China),  and the
 total housing (in the US) are proportional to the population.\\
+
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|cccc|}
+\hline
+Quantity & Exponent & City definition & Study\\
+\hline
+Total housing & 1.00 & Functional (US) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+Total electrical consumption & 1.05 & Administrative (China) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+Total water consumption & 1.01 & Administrative (China) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+\hline
+\end{tabular}
+\caption{{\bf Basic commodities. } Scaling of the total housing, electrical
+    consumption and water consumption with population size. All exponents are
+    compatible with a linear behaviour (within the $95\%$ confidence interval
+    error bars).
+}
+\end{table*}
+
 
 
 \subsection{Infrastructure}
@@ -408,13 +522,32 @@ to use than shapefiles!) showed that the number of street segments--the portion
 of road between two intersections--scaled sublinearly with the size of urban
 areas~\cite{Veregin:1997}. Arguably, the total length of the street network is
 more interesting to measure costs in terms of infrastructure, and we have to
-wait until the study by Samaniego and Moses in 2008~\cite{Samaniego:2008}, to
+wait until our study in 2014~\cite{Louf:2014_scaling}, to
 have evidence for the sublinear scaling of total street length with the
 population size of urban areas. 
 
 Finally, Bettencourt et al. showed that the length of electric cables in German
 cities scaled sublinearly with population size~\cite{Bettencourt:2007}. So far,
 studies thus indicate that cities indeed realise some economies of scale.
+
+\begin{table*}[!h]
+    \centering
+\begin{tabular}{|cccc|}
+\hline
+Quantity & Exponent & City definition & Study\\
+\hline
+Street segments & 0.83 & Morphological (US) & Veregin \& Tobler~\cite{Veregin:1997}\\
+Street length & 0.86 & Morphological (US) & Louf \& Barthelemy~\cite{Louf:2014_scaling}\\
+Electric cables length & 0.87 & Administrative (Germany) & Bettencourt et al.~\cite{Bettencourt:2007}\\
+\hline
+\end{tabular}
+\caption{{\bf Infrastructure. } Scaling of the total number of street segments,
+    the total length of roads and the total length of electrical cables of
+    cities as a function of population. The three quantities exhibit a sublinear
+    scaling behaviour, implying that larger cities need less infrastructure per
+    capita, thereby realising economies of scale.
+}
+\end{table*}
 
 \section{Summary}
 \label{sec:summary}
