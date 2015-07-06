@@ -92,71 +92,73 @@ with the conceptual understanding of segregation. In their own words
 
 For all its intuitive appeal, segregation is however an intricate, compound
 notion whose complexity only reveals itself through careful study. However
-tempting it is to start writing measures of segregation, on need first to stop
-and think about the meaning of this notion. We need to \emph{think} segregation
-being able to provide \emph{useful} measures of segregation.
+tempting it is to start writing measures of segregation that seem `reasonable',
+it is necessary to stop and think about the meaning of the notion first. We need to
+\emph{think} segregation to be able to provide \emph{useful} measures of
+segregation.
 
 
 \section{The dimensions of segregation}
 \label{sec:the_dimensions_of_segregation}
 
-Luckily for us, a lot of thinking has already been done in the sociology and
-geography literature. Previous studies distinguishes between several conceptually
-different dimensions.  Massey~\cite{Massey:1988} first proposed a list of $5$
-dimensions (and related existing measures), which was recently reduced to $4$ by
+Segregation has been extensively studied in the Sociology and Geography
+literature. The most important conceptual heritage of this literature is the
+distinction between residential segregation's different dimensions.
+Massey~\cite{Massey:1988} first proposed a list of $5$ dimensions (and related
+existing measures), which was recently reduced to $4$ by
 Reardon~\cite{Reardon:2004}. 
 
-\subsection{Exposure}
-\label{sub:exposure}
+\begin{description}
+    \item[Evenness] (and clustering in the continuous
+        limit, as shown by Reardon~\cite{Reardon:2004}) is the extent to which
+        populations are evenly spread in the metropolitan area.
+        Measures of evenness are affected by the fact that
+        individuals are not spread uniformly across space in urban areas,
+        disregarding of their respective category;
 
-(i) {\it exposure} which measures the extent to
-which different populations share the same residential areas; 
+    \item[Exposure] is the extent to which different
+        populations share the same residential area. This presupposes defining
+        what is meant by `residential area';
 
-\subsection{Evenness (clustering)}
-\label{sub:evenness_clustering_}
+    \item[Concentration] is the extent to which populations concentrate in their
+        residential area;
 
-(ii) the {\it
-evenness} (and {\it clustering}) to which extent populations are evenly spread
-in the metropolitan area; (iii) 
+    \item[Centralisation] is the extent to which populations concentrate in the
+        center of the city. However, we have seen in
+        Chapter~\ref{chap:monocentric_introduction} that the notion of center
+        was meaningless in large, polycentric urban areas;
+\end{description}
 
-\subsection{Concentration}
-\label{sub:concentration}
-
-{\it concentration} to which extent populations
-concentrate in the areal units they occupy; and (iv) 
-
-\subsection{Centralization}
-\label{sub:centralization}
-
-{\it centralization} to
-which extent populations concentrate in the center of the city.\\
+We will discuss in details the shortcoming of the measures currently proposed
+for each of these dimensions in Chapter~\ref{chap:patterns_segregation}.
 
 
 \section{The unsegregated city}
 \label{sec:null_model_the_unsegregated_city}
 
-The fundamental issue with this picture lies in the lack of a general theoretical framework
-in which all existing measures can be interpreted.  Instead, we have a
-patchwork of seemingly unrelated measures that are labelled with
-either of the aforementionned dimensions. Although segregation can
-indeed manifests itself in different ways, it is relatively
-straightforward to define what is \emph{not} segregation: a spatial
-distribution of different categories that is undistinguishable from a
-uniform random situation (with the same percentages of different
-categories)~\cite{Jahn:1947}. Therefore, we can define segregation in the following way 
+The fundamental issue with the picture given by these 4 dimensions lies in the
+lack of a general theoretical framework in which all existing measures can be
+interpreted.  Instead, we have a patchwork of seemingly unrelated measures that
+are labelled with either of the aforementioned dimensions. Although segregation
+can indeed manifests itself in different ways, it is relatively straightforward
+to define what is \emph{not} segregation: a spatial distribution of different
+categories that is undistinguishable from a uniform random
+situation~\cite{Jahn:1947}. Therefore, we can simply define segregation as the
+following
 
 \begin{quote}
-Segregation is any pattern in the spatial distribution of categories that significantly 
-deviates from a uniform random distribution. 
+Segregation is any pattern in the spatial distribution of populations that significantly 
+deviates from a random distribution. 
 \end{quote} 
 
 Our definition is perfectly agnostic with regards of the other features of the
-density pattern. It is also not concerned with the overall inequality levels. 
+density pattern. It is also not concerned with the overall inequality levels.\\
 
 
-In the context of residential segregation, a natural null model is the
-\emph{unsegregated city}, where all households are distributed at
-random in the city with the further constraints that
+In the context of residential segregation in urban areas, a natural null model
+is therefore the \emph{unsegregated city}. Within the framework of this model,
+all households are distributed at random in the city with the further
+constraints that
 
 \begin{itemize}
     \item The total number $N_\alpha$ of people belonging to a category
@@ -165,7 +167,7 @@ random in the city with the further constraints that
 	    fixed and equal to that found in the data.
 \end{itemize}
 
-which also fix the total number of individuals $N$ in the city. The problem of
+which also fixes the total number of individuals $N$ in the city. The problem of
 finding the numbers $\left( n_\alpha(1), \dots, n_\alpha(T) \right)$ of
 individuals belonging to a certain category $\alpha$ in the $T$ areal units of
 an unsegregated city is reminiscent of the traditionnal occupancy problem in
@@ -189,14 +191,15 @@ The different dimensions of~\cite{Massey:1988,Reardon:2004} correspond then to
 particular aspects of how a multi-dimensional pattern can deviate from its
 randomized counterpart. The measures we propose here are all rooted in this
 general definition of segregation.
-Another advantage of the above definition of segregation with a null model is
-that we are able to evaluate whether the pattern deviates significantly from the
-random configuration.
+
 Most studies exploring the question of spatial segregation define measures
 before comparing their value for different cities. Knowing that two quantities
 are different is however not enough: we also have to know whether this
 difference is {\em significant}. In order to assess the significance of a
-result, we have to compare it to what is obtained for a reasonable null model.\\
+result, we have to compare it to what is obtained for a reasonable null model.
+As we will see in Chapter~\cite{chap:patterns_segregation}, the 
+`unsegregated city model allows us to assess whether a given pattern is
+the result of a segregation process or not.\\
 
 \bigskip
 
@@ -205,3 +208,8 @@ brought to the existing measures in the literature. In particular, we have
 emphasized the need for a \emph{local} knowledge of the patterns of segregation.
 We have also laid the theoretical foundation upon which we are going to design
 new segregation measures.
+In Chapter~\ref{chap:patterns_segregation}, we start from the above-defined null
+model to propose a way to quantify the presence of various categories in areas
+of the city, identify and delineate neighbourhoods, measure the interactions
+between the categories and propose measures that fit in the $4$ dimensions
+picture.
