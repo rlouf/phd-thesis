@@ -17,7 +17,7 @@ ideas and models on large scale cross-sectional and historical data.\\
 Streets form a network which to a good approximation is planar (where nodes are
 intersections and links are segment roads) and which is now fairly well
 characterized
-\cite{Jiang:2004,Roswall:2005,Porta:2006,Porta:2006b,Lammer:2006,Crucitti:2006,Cardillo:2006,Xie:2007,Jiang:2007,Masucci:2009,Chan:2011,Courtat:2011}.
+\cite{Jiang:2004,Rosvall:2005,Porta:2006,Porta:2006b,Lammer:2006,Crucitti:2006,Cardillo:2006,Xie:2007,Jiang:2007,Masucci:2009,Chan:2011,Courtat:2011}.
 Due to spatial constraints, the degree distribution is peaked, the clustering
 coefficient and assortativity are large, and most of the interesting information
 lies in the spatial distribution of betweeenness centrality
@@ -27,16 +27,16 @@ various cities with each other and to provide a classification. \\
 The problem, from a fundamental point of view is however difficult: finding a
 typology of street patterns amounts essentially to classify planar graphs, a non
 trivial problem. For street networks, this problem has been addressed by the
-space syntax community \cite{Hillier,Penn} and a good account can be found in
-the book by Marshall~\cite{Marshall:2006}. These works, although based on
+space syntax community \cite{Hillier:1984,Penn:2003} and a good account can be found in
+the book by Marshall~\cite{Marshall:2004}. These works, although based on
 empirical observations, contain a large part of subjectivity and our goal is to
 eliminate this subjective part to reach a non ambiguous, scientific
 classification of these patterns. An interesting direction was provided in the
 study of leaves and their classification according to their veination patterns
-\cite{Katifori:2012,Weitz:2012}, but with a notable difference which prevents us
+\cite{Katifori:2012,Mileyko:2012}, but with a notable difference which prevents us
 from a direct application to streets and which is the existence of a hierarchy
 of veins governed by their diameter. From a mathematical point of view there
-exists an exact bijection between planar graphs and trees \cite{BDG} which
+exists an exact bijection between planar graphs and trees \cite{Bouttier:2004} which
 provides an interesting direction. Using this bijection, classifying planar
 graphs would amount to classify trees, which is a simpler problem. However, this
 bijection does not take into account the geometrical shape of the planar graph:
@@ -56,7 +56,7 @@ A major shortcoming of existing classifications  is that they are mostly based
 on the street network. This is however problematic, for two different reasons.
 First, there is no unambiguous, purely geometrical definition of what a street
 is: we could define it as the road segment between two intersections, as an
-almost straight line (up to a certain angular tolerance, see \cite{Con}), or we
+almost straight line (up to a certain angular tolerance, see \cite{Porta:2006}), or we
 could also follow the actual street names. There is a certain degree of
 arbitrariness in each of these definitions, and it is not clear how robust a
 classification based on streets would be. Second, it seems that what is
@@ -90,7 +90,7 @@ Blocks are defined as the cells of the planar graph formed by streets, and it is
 relatively easy to extract them from a map. We have gathered road networks for
 $131$ major cities accross the world, spanning all continents (but Antartica),
 and their locations are represented on the map Fig.~\ref{fig:world_map}. The
-street networks have been obtained from the OpenStreetMap database \cite{OSM},
+street networks have been obtained from the OpenStreetMap database,
 and restricted to the city center using the Global Administrative Areas database
 (or databases provided by the countries administration). We extracted the blocks
 from the street network and cleaned undesired features. We end up with a set of
@@ -126,14 +126,14 @@ in~\cite{Lammer:2006,Fialkowski:2008}, we find that for different cities the
 distributions have different shapes for small areas, but display fat tails
 decreasing as a power law \begin{equation} P(A)\sim \frac{1}{A^\tau}
 \end{equation} with an exponent of order $\tau\approx 2$
-\cite{Lammer:2006,Barthelemy:2011,Strano:2012,Barthelemy:2013,frag:2014}.
+\cite{Lammer:2006,Barthelemy:2011,Strano:2012,Barthelemy:2013}.
 Although this seemingly universal behaviour gives a useful constraint on any
 model that attempts at modeling the evolution of cities' road
-networks~\cite{frag:2014}, it does not allow to distinguish cities from each
+networks, it does not allow to distinguish cities from each
 other.
 
 A second characterization of a block is through its shape, with the form (or
-shape) factor $\Phi$, defined in the Geography literature in~\cite{Hagget:1965}
+shape) factor $\Phi$, defined in the Geography literature in~\cite{Hagget:1966}
 as the ratio between the area of the block and the area of the circumscribed
 circle $\mathcal{C}$
 %
@@ -184,7 +184,7 @@ distribution of $\Phi$ for all cells, which is simply the translation of the
 well-known formula for probability conditional distribution
 
 \begin{equation} 
-    P(\Phi)=\sum_AP(\Phi|A)P(A) 
+    P(\Phi)=\sum_AP(\Phi|A)\,P(A) 
 \end{equation}
 
 These figures give a `fingerprint' of the city which encodes information about
@@ -208,9 +208,9 @@ area $>10^5\text{m}^2$). We thus sort the blocks according to their area in two
 distinct bins
 
 \begin{align*} 
-    \alpha_1 &= \left\{ \text{cells} | \mathcal{A} \in \left[10^3,
+    \alpha_1 &= \left\{ \text{cells}\, |\, \mathcal{A} \in \left[10^3,
 10^4\right]\right\}\\ 
-    \alpha_2 &= \left\{ \text{cells} | \mathcal{A} \in
+    \alpha_2 &= \left\{ \text{cells}\, |\, \mathcal{A} \in
 \left[10^4, 10^5\right]\right\}\\ 
 \end{align*}
 
@@ -234,7 +234,7 @@ bins $\alpha$
 At this
 point, we have a distance between two cities' pattern and we measure the
 distance matrix between all the $131$ cities in our dataset, and perform a
-classical hierarchical clustering on this matrix \cite{Clustering}. We
+classical hierarchical clustering on this matrix \cite{Kaufman:2009}. We
 obtain the dendrogram represented on Fig.~\ref{fig:dendrogram} and at an
 intermediate level, we can identify $4$ distinct categories of cities, which
 are easily interpretable in terms of the abundance of blocks with a given
