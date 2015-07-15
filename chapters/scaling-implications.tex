@@ -3,6 +3,113 @@
 
 \bigskip
 
+\section{What scaling laws tell us about cities}
+
+Before concluding this part, it is important to understand what exactly scaling
+laws can tell us about cities. Scaling laws are, by essence, cross-sectionnal
+studies of cities. As opposed to a dynamical study where one would follow the
+evolution of single cities over time, scaling laws tells us about the behaviour
+of an \emph{ensemble} of cities at a give point in time. Throughout
+Chapters~\ref{chap:scaling_introduction} and~\ref{chap:scaling_model}, we have
+implicitely assumed that scaling laws are the signature of phenomena occuring at
+the intra-urban level. This assumption, we call \emph{evolution interpretation},
+is however not completely obvious. 
+
+The interpretation of allometric scaling laws in Biology is straightforward,
+because the compared organisms are independent. Indeed, the mass of a
+given elephant at a point in time $t$ is not correlated to the mass of any other
+living creature in the world. Therefore, scaling relationships can only be
+understood as resulting from the existence  of similar processes in the growth
+of these different animals. Cities, on the other hand, are part of a bigger
+system -- the system of cities -- and interact constantly through networks.
+People change residence, companies relocate, goods are shipped and money is
+transfered. Therefore, as argued by Denise Pumain~\cite{Pumain:2012}, scaling
+laws can also be construed as reflecting the redistribution processes within the
+system of cities. We call this the \emph{differentiation interpretation}.
+
+\subsection{The evolution interpretation}
+\label{sub:the_evolution_interpretation}
+
+The evolution interpretation (Figure~\ref{fig:evolution_interpretation}) has
+been widely adopted in the scaling literature~\cite{Bettencourt:2007,
+Bettencourt:2013,Louf:2014_scaling} without ever being really stated, let alone
+justified. It is based on two assumptions. First, that the cities in the dataset
+are different realisations of the same system. Thus, as stated in
+Chapter~\ref{chap:scaling_introduction}, looking at the scaling of various
+quantities with population size is a way to probe the system's internal
+processes.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-scaling/evolution-interpretation.pdf}
+    \caption{{\bf Evolution interpretation.} In this interpretation we consider
+    that cities are different realisations of the same system. The intra-urban
+processes are responsible for the non-linear scaling of the different
+quantities.\label{fig:evolution_interpretation}}
+\end{figure}
+
+The second assumption has to do with the time scales over which the different
+processes occur. It has indeed been observed that some scaling laws were stable
+over time, even though the population of the cities is constantly changing.
+This is only possible, however, if the timescale the processes responsible for
+the value of the quantity being studied occur over timescales that are at worst
+of the same order of the timescales over which population changes. For instance,
+an abrupt increase in population size is not likely to be immediately reflected
+in terms of the length of streets, while the evolution of the total commuted
+length will be almost instantaneous.
+
+If the two previous assumptions are verified, then one can indeed use
+transversal scaling relationships as a way to probe the internal dynamics of
+cities.\\
+
+As an aside, the previous discussion hints at the difficulty to intepret the
+values of the observed deviations to scaling laws~\cite{Bettencourt:2010a}. It is
+indeed difficult to assess to what extent they account for a real over
+or under-performance of the city compared to the other cities, or
+ for the time it takes for the studied quantity to react to population changes.
+Unfortunately, we cannot answer these questions until we understand in details
+the mechanisms reponsible for the evolution of the corresponding quantities in time.
+
+\subsection{The differentiation interpretation}
+\label{sub:the_differentiation_interpretation}
+
+As Denise Pumain judiciously claims~\cite{Pumain:2006,Pumain:2012}, the evolution
+interpretation is not the only possible interpretation of scaling laws. In some
+cases and the mechanisms responsible for scaling relationships should be sought
+after in the hierarchical organisation of cities and their interactions.\\
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{gfx/chapter-scaling/system-interpretation.pdf}
+    \caption{{\bf Differentiation interpretation.} In this interpretation, we
+    consider that the redistribution processes occuring within systems of cities
+are reponsible for the non-linear scaling of quantities with city size in this
+system.\label{fig:label_fig}}
+\end{figure}
+
+We briefly mentioned in Chapter~\ref{chap:scaling_model} that allometric scaling relationships
+could only be obtained when considering cities belonging to the same system of
+cities. The fact that we observe scalings when taking a single country into
+account, and a cloud of points when mixing two different countries, is a
+signature of the integration of cities into systems of cities. Although it is
+not clear at the moment what are the mechanisms reponsible for the
+'equilibration' of the scaling there clearly is an adjustement that is being
+made, because the economy, the population, etc. are tightly connected through
+the flow of commodities, populations, information and funds.\\
+
+Now, the same connections may be responsible for the scaling relationships
+themselves. As an example, Pumain et al.~\cite{Pumain:2006} study the scaling of
+the number of employees from different economic sector with population size (see
+Chapter~\ref{chap:scaling_introduction}.\\
+
+So, are scaling relationships properties of cities, or of systems of cities.
+Probably both. The scaling of some quantities, such as the total quantity of
+CO\textsubscript{2} emitted or the tota length of roads are undoubtedly due to
+intra-urban processes. Others, such as the linear scaling of total income, are
+probably due to the interactions of cities within the same system of cities.
+However, it is impossible to discriminate between both interpretations on an
+empirical basis. Ultimately, models that are able to reproduce 
+
 
 \section{What cities?}
 \label{sec:what_cities_}
@@ -117,139 +224,10 @@ behaviours, scientists should refrain from giving policy advice that might have 
 disastrous consequences. If they choose to do so anyway, policy makers should be wary
 about what is, at best, a shot in the dark
 
-\section{Properties of cities, or systems of cities?}
-\label{sub:what_can_scalings_tell_us_about_cities_and_systems_of_cities_}
-
-Before moving on to the models proposed to explain scaling laws, 
-it is important to understand what exactly scaling laws can tell us about
-cities. Scaling laws are, by essence, cross-sectionnal studies of cities. As
-opposed to a dynamical study where one would follow the evolution of single
-cities over time, scaling laws tells us about the behaviour of an
-\emph{ensemble} of cities at a give point in time. Two main questions emerge
-from a review of the existing literature:
-
-\begin{enumerate}
-    \item Do scalings tell us something about the growth of cities?
-    \item Is the differentiation between cities implied by scalings due to
-        intra-urban processes, or inter-urban processes?
-\end{enumerate}
-
-I will try to anwer these questions in the next two subsections.
-
-\subsection{Scaling, not growth}
-\label{sub:scaling_not_growth}
-
-In the paper that became the reference in terms of
-scalings~\cite{Bettencourt:2007}, Bettencourt and co-authors proposed a simple
-model to model urban growth. Assume a given resource, whose quantity is noted
-$Y$. If it requires $R$ units of resources to maintain an individual, and $E$ to
-create a new individual, then assuming all resources are allocated, we have
-
-\begin{equation}
-    Y = R\,P + E\,\frac{\mathrm{d}P}{\mathrm{d}t}
-    \label{eq:growth_resource_allocation}
-\end{equation}
-
-Assuming that the resource scales with population as in
-Eq.~\ref{eq:scaling_definition}, we have for the growth rate
-
-\begin{equation}
-    \frac{\mathrm{d}P}{\mathrm{d}t} = \left(\frac{Y_0}{E}\right) P^{\,\beta} -
-\left(\frac{R}{E}\right)P 
-    \end{equation}
-
-Equation whose solutions exhibit different qualitative behaviours depending on
-the value of the exponent $\beta$. For $\beta < 1$, the total population
-eventually reaches a finite limiting size; for $\beta = 1$ the solution reduces
-to an exponential, and for $\beta > 1$ the equation leads to a
-faster-than-exponential growth.\\
-Denise Pumain rightfully questioned the link between scaling exponents and city
-growth~\cite{Pumain:2012}. The objection she raises is on the ground of the link
-between scalings and time evolution of the system, an implicit assumption in the
-derivation of the previous differential equation. Put simply, the assumption is:
-given a city with population $P$ at an instant $t$, which evolves in a system of
-city which follows the law $Y = Y_0\,P^\beta$ at an instant $t$. If the
-population of all cities evolve between $t$ and $t+1$, then the same scaling law
-still holds---although the population of all cities have changed. She refutes
-this hypothesis on two grounds: the first one, that scaling are not properties
-of cities, but rather of the system of cities to which the cities belong and its
-particular processes of redistribution leading to a spatial differentiation
-between cities.  I will discuss this point in the next subsection. The next
-argument is based on a misunderstanding of the role of the ergodic hypothesis in
-equilibrium statistical mechanics. Pumain states that the previously explicited
-hypothesis is based on an assumed equivalence between longitudinal trajectories and
-cross-sectional measures, itself based on the egodic hypothesis. The ergodic
-hypothesis is used in statistical physics to use time averages and averages over
-statistical ensembles interchangeably. It states, roughly, that a system can
-reach all possible states when the time of the experiment tends to $\infty$. If
-it is verified then the time averages that we perform in experiments are equal
-to averages over many independent realisations of the same system (used in
-computations). Besides the fact that cities and systems are systems of cities
-are out-of-equilibrium systems, Pumain does not explicit what averages she is
-refering to. The ergodic objection does not hold in this case, although it does
-raise interesting questions in the case of the out-of-equilibrium model
-presented in the previous chapter. But still, the critique is justified, and
-scalings have indeed little to do with city growth.
-
-Furthermore, the growth rate predicted by their differential equation strongly
-depends on the size of the city considered. It is however an empirical fact that
-the relative growth rate of cities $\mathrm{d}P / P$ should be independent (or
-weakly dependent on) city size.
-
-\subsection{A property of cities, or systems of cities?}
-\label{sub:a_property_of_cities_or_systems_of_cities_}
 
 
-
-The second assumption, never really stated, is that the
-processes responsible for the city-wide value of the quantity being studied
-occur over time-scales that are at most of the same order of the time-scales
-over which population changes. A very fast increase in population size, for
-instance, is not likely to be immediately reflected in terms of the length of
-streets, for instance. Of all the deviations measured by Bettencourt et al, it
-is difficult to say whether these deviations account for a real over or
-under-performance of the city compared to the other cities in the system, or
-just for the time-delay in the studied quantity to react to population
-changes. In fact, these questions cannot be answered until we understand the
-evolution of these quantities in time.
-
-\paragraph{On systems of cities} The fact that we observe scalings when taking a
-single country into account, and a cloud of points when mixing two different
-countries, is a signature of the integration of cities into systems of
-cities. Although it is not clear at the moment what are the mechanisms
-reponsible for the 'equilibration' of the scaling there clearly is an
-adjustement that is being made, because the economy, the population, etc. are
-tightly connected through the flow of commodities, populations, information and
-funds.
-
-\paragraph{And the ergodic counter-argument?} Pumain in~\cite{Pumain:2012} argues that
-transversal averages are usable to describe the time-evolution of individual
-cities if and only if the trajectories of cities are egodic (which they clearly
-aren't). This argument is misguided, and based on several misunderstandings of
-what scalings represent, and the role of ergodicity in physical theories.
-Although prompt to deplore the lack of knowledge of the existing geography
-literature physicists have, we have to deplore on our side the improper use of
-several concepts borrowed from physics, and the sometimes improper use of
-mathematics and the latest developpements in some branches of physics (network
-theory for instance). This is not an attack, this is just to point out that no
-side is free form reproaches, and time wasted on criticising one another for
-improper use of the literature would be put to better use if spent on teaching
-these things to one another.
-\section{Scaling and system of cities}
-\label{sec:scaling_and_system_of_cities}
-
-We briefly mentionned in the introduction that allometric scaling relationships
-could only be obtained when considering cities belonging to the same system of
-cities. Indeed, if we mix on the same plot cities from two different countries,
-say North-American cities with African cities, it is very likely that we would
-obtain very different results. Based on this observation, several questions
-arise: First, how does the $Y$ quantity at the level of a country (system)
-depend on the properties of its system of cities? How can we understand the
-quantity $Y_0$, and how can we sensibly normalise the scaling curves of
-different systems of cities to compare their respective trends?
-
-\section{Proviso}
-\label{sec:poviso}
+\section{Conclusion and perspective}
+\label{sec:conclusion_and_perspective}
 
 Scaling laws are useful tool to probe the system city, but they are not
 everything. They provide an extraordinarily easy way to explore the properties
@@ -259,37 +237,3 @@ and help clear a couple of paths, and help establish a large-scale understanding
 of the system, this is done at the expense of an extensive coverage of the
 underlying phenomena. Scalings can be seen as a gateway to the study of cities,
 but they cannot be the study itself.
-
-The attentive reader might have noticed that I have attempted to be very careful
-in specifying the city definition that was used in the different studies in the
-
-Our results
-suggest that diseconomies associated with congestion scale superlinearly with
-population size, implying that --despite polycentrism-- cities whose
-transportation infrastructure rely heavily on traffic sensitive modes are
-unsustainable.
-iterature, or that I have used myself.
-
-\section{Different phenomena, different explanations}
-\label{sec:different_phenomena_different_explanations}
-    
-Recent wrks pretend explaining the origin of scalings in cities. However,
-as should be clear from the literature reviews, scaling realtionships span
-different phenomena that sometimes have very little to do with one another.
-Rather than looking for a pseudo-universal interpretation of scaling laws, 
-
-\cite{Pumain:2006} for an interpretation of scaling laws in terms of
-innovation waves etc.
-
-\cite{Bettencourt:2013} for the latest model to date.
-
-The link between Eq.~\ref{eq:growth_resource_equation} is at best metaphorical.
-But a metaphor is not a theory, and fancy language is not a substitute for a
-real understanding of the system. As Einstein, Podolksy and Rosen succintly put
-it in their famous critique of quantum mechanics~\cite{Einstein:1935}:
-
-\begin{quote}
-    In a complete theory there is an element corresponding to each element of
-    reality.
-\end{quote}
-
