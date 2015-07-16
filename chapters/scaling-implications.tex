@@ -15,17 +15,19 @@ implicitely assumed that scaling laws are the signature of phenomena occuring at
 the intra-urban level. This assumption, we call \emph{evolution interpretation},
 is however not completely obvious. 
 
-The interpretation of allometric scaling laws in Biology is straightforward,
-because the compared organisms are independent. Indeed, the mass of a
-given elephant at a point in time $t$ is not correlated to the mass of any other
-living creature in the world. Therefore, scaling relationships can only be
-understood as resulting from the existence  of similar processes in the growth
-of these different animals. Cities, on the other hand, are part of a bigger
-system -- the system of cities -- and interact constantly through networks.
-People change residence, companies relocate, goods are shipped and money is
-transfered. Therefore, as argued by Denise Pumain~\cite{Pumain:2012}, scaling
-laws can also be construed as reflecting the redistribution processes within the
-system of cities. We call this the \emph{differentiation interpretation}.
+Maybe the easiest way to understand this is through comparison with
+Biology, where allometric scaling laws are also widely used. The interpretation
+of allometric scaling laws in Biology is straightforward, because the compared
+organisms are independent. For instance, the mass of a given elephant at a point in
+time $t$ is not correlated to the mass of any other living creature in the
+world. Therefore, scaling relationships can only be understood as resulting from
+the existence  of similar processes in the growth of these different animals.
+Cities, on the other hand, are part of a bigger system -- the system of cities
+-- and interact constantly through networks.  People change residence, companies
+relocate, goods are shipped and money is transfered. Therefore, as argued by
+Denise Pumain~\cite{Pumain:2012}, scaling laws can also be construed as
+reflecting the redistribution processes within the system of cities. We call
+this the \emph{differentiation interpretation}.
 
 \subsection{The evolution interpretation}
 \label{sub:the_evolution_interpretation}
@@ -33,7 +35,7 @@ system of cities. We call this the \emph{differentiation interpretation}.
 The evolution interpretation (Figure~\ref{fig:evolution_interpretation}) has
 been widely adopted in the scaling literature~\cite{Bettencourt:2007,
 Bettencourt:2013,Louf:2014_scaling} without ever being really stated, let alone
-justified. It is based on two assumptions. First, that the cities in the dataset
+justified. It is based on two assumptions. The first assumption is that cities in the dataset
 are different realisations of the same system. Thus, as stated in
 Chapter~\ref{chap:scaling_introduction}, looking at the scaling of various
 quantities with population size is a way to probe the system's internal
@@ -44,31 +46,40 @@ processes.
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/evolution-interpretation.pdf}
     \caption{{\bf Evolution interpretation.} In this interpretation we consider
     that cities are different realisations of the same system. The intra-urban
-processes are responsible for the non-linear scaling of the different
+processes -- and the way they respond to population changes -- are responsible for the non-linear scaling of the different
 quantities.\label{fig:evolution_interpretation}}
 \end{figure}
 
 The second assumption has to do with the time scales over which the different
-processes occur. It has indeed been observed that some scaling laws were stable
+processes occur. It has been observed that some scaling laws were stable
 over time, even though the population of the cities is constantly changing.
 This is only possible, however, if the timescale the processes responsible for
 the value of the quantity being studied occur over timescales that are at worst
 of the same order of the timescales over which population changes. For instance,
 an abrupt increase in population size is not likely to be immediately reflected
 in terms of the length of streets, while the evolution of the total commuted
-length will be almost instantaneous.
+length will be almost instantaneous. In practice, the rate of population
+changes in cities is small enough for the processes to follow, or the amplitude
+small enough for the induced
+error to be unsignificant. Hence the observed stability in the value of the
+exponents. 
 
 If the two previous assumptions are verified, then one can indeed use
 transversal scaling relationships as a way to probe the internal dynamics of
 cities.\\
 
-As an aside, the previous discussion hints at the difficulty to intepret the
-values of the observed deviations to scaling laws~\cite{Bettencourt:2010a}. It is
-indeed difficult to assess to what extent they account for a real over
-or under-performance of the city compared to the other cities, or
- for the time it takes for the studied quantity to react to population changes.
-Unfortunately, we cannot answer these questions until we understand in details
-the mechanisms reponsible for the evolution of the corresponding quantities in time.
+The previous discussion has several important consequences. First, it hints at
+the difficulty to intepret the values of the observed deviations to scaling
+laws~\cite{Bettencourt:2010a}. It is indeed difficult to assess to what extent
+deviations account for a real over or under-performance of the city compared to
+the other cities, or for the time it takes for the studied quantity to react to
+population changes.  Worse, the delayed adjustment to population changes
+introduces an irreducible uncertainty in the numerical values of the exponents
+themselves. Thus, the real error on the measured value of the exponent is very
+likely larger than what is usually indicated by the statistical error bars.
+Unfortunately, we cannot get a better estimate of the error until we understand
+in details the mechanisms reponsible for the time evolution of the corresponding
+quantities. There lies one limitation of the scaling relationships.
 
 \subsection{The differentiation interpretation}
 \label{sub:the_differentiation_interpretation}
@@ -99,82 +110,54 @@ the flow of commodities, populations, information and funds.\\
 
 Now, the same connections may be responsible for the scaling relationships
 themselves. As an example, Pumain et al.~\cite{Pumain:2006} study the scaling of
-the number of employees from different economic sector with population size (see
-Chapter~\ref{chap:scaling_introduction}.\\
+the number of employees from different economic sector in France with population size (see
+Chapter~\ref{chap:scaling_introduction}). They found that the number of
+employees in innovative sectors (such as research and development) scaled
+superlinearly with population size, while the number of employees in mature
+economic sector (such as the manufacture of food products) scaled sublinearly
+with population size. Using historical data, they further found that the
+scaling behaviour of some activities has significantly changed over time: the
+exponent of manufacturing activities has continuously decreased since $!960$,
+while that of research and developement has continuously increased. This could
+be explained, they claim, that these scaling exponents could be explained by the
+hierarchical diffusion of innovations in systems of cities. Innovative
+activities first appear in large cities, entailing a larger proportion of the
+active population working in these sectors than in smaller cities, thus a
+superlinear scaling. Over time, the innovations progressively diffuse through
+the system of cities, the proportions are equilibrated and the value of the
+scaling exponent decreases.
 
-So, are scaling relationships properties of cities, or of systems of cities.
-Probably both. The scaling of some quantities, such as the total quantity of
-CO\textsubscript{2} emitted or the tota length of roads are undoubtedly due to
-intra-urban processes. Others, such as the linear scaling of total income, are
-probably due to the interactions of cities within the same system of cities.
-However, it is impossible to discriminate between both interpretations on an
-empirical basis. Ultimately, models that are able to reproduce 
+Although the mechanism is plausible, the current issue with this interpretation
+is the lack of predictive model that explains the values of the exponent. At any
+rate, the fact that cities do not grow in isolation but constantly interact
+within a system of cities should be borne in mind when trying to interpret
+scaling laws.
+
+\subsection{Cities, or systems of cities?}
+\label{sub:cities_or_systems_of_cities_}
+
+So, are scaling relationships properties of cities, or of systems of cities?
+Probably both. The above discussion is very general, and the origin of scalings
+should be evaluated on a case-by-case basis. The scaling of some quantities,
+such as the total quantity of CO\textsubscript{2} emitted or the tota length of
+roads are undoubtedly due to intra-urban processes. Others, such as the linear
+scaling of total income, are probably due to the interactions of cities within
+the same system of cities. However, it is impossible to discriminate between
+both interpretations on a purely empirical basis. Ultimately, we need models that are
+able to reproduce at least the qualitative scaling behaviour. Plausible
+narratives are not enough.
 
 
 \section{What cities?}
 \label{sec:what_cities_}
 
-\cite{Louf:2014_smog} for problem with the $CO_2$\\
-\cite{Arcaute:2014} for variation of exponents with city definition.
-
-
-The success of natural sciences lies in their great emphasis on the role of
-quantifiable data and their interplay with models. Data and models are both
-necessary for the progress of our understanding: data generate stylized facts
-and put constraints on models. Models on the other hand are essential to
-comprehend the processes at play and how the system works. If either is missing,
-our understanding and explanation of a phenomenon are questionable. This issue
-is very general, and affects all scientific domains, including the study of
-cities. \\
-
-Until recently, the field of urban economics essentially consisted in untested
-laws and theories, unjustified concepts that supersede empirical
-evidence~\cite{Bouchaud:2008}. Without empirical validation, it is not clear
-what these models teach us about cities. The tide has turned in recent years,
-however: the availability of data is increasing in size and specificity, which
-has led to the discovery of new stylized facts and opened the door to a new
-science of cities~\cite{Batty:2013}. The recent craze for scaling
-laws~\cite{Batty:2008,Bettencourt:2007,Pumain:2004}, for instance, has been an
-important new step in the study of urban systems.
-
-These laws present themselves as a power-law relationship between socioeconomic
-(GDP, number of patents), structural (length of roads, of cables) quantities
-$Y$, and the size of the population $P$ of the city:
-
-\begin{equation}
-Y = P^{\, \beta}
-\end{equation}
-
-
-where the exponent $\beta$ can be different from $1$. This type of scaling relation is a signature
+As we have argued up to this point, scaling relations are a signature
 of various processes governing the phenomenon under study, especially when the exponent
 $\beta$ is not what is naively expected~\cite{Barenblatt:2003}. However, as more and more scaling
 relationships are being reported in the literature, it becomes less and less clear what we really
 learn from these empirical findings. Mechanistic insights about these scalings are usually
-nonexistent, often leading to misguided interpretations.\\
+nonexistent, often leading to misguided interpretations.
 
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=\textwidth]{gfx/chapter-scaling/lost_smog.pdf}
-	\caption{ {\bf Are larger cities greener or smoggier?} Scaling of transport-related $CO_2$
-emissions with the population size for US cities from the same dataset but at different aggregation
-levels. In red, the aggregation is done at the level of urban areas and in green for combined statistical
-areas. Depending on the definition of the city, the scaling exponents are qualitatively different, leading
-to two opposite conclusions. Data on $CO_2$ emissions were obtained from the Vulcan Project (\url{http://
-vulcan.project.asu.ed}) (see~\cite{Fragkias:2013,Oliveira:2014}). Data on the population of urban areas and
-metropolitan statistical areas were obtained from the Census Bureau (\protect\url{http://www.census.org}). \label{fig}}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{gfx/chapter-scaling/city_definition.pdf}
-    \caption{{\bf City definitions in the US.} The Minneapolis Urban Area (in
-    black) is defined by the Census Bureau as contiguous block groups with at
-least $1000$ inhabitants per square mile. The Minneapolis-St. Paul Metropolitan
-Statistical Area (in grey) is defined as the counties containing the urban area
-as well as any adjacent county that have a high degree of integration with the
-core, as measured with commuting flows.\label{fig:two_definitions}}
-\end{figure}
 
 A striking example of the fallacies which hinder the interpretation and application
 of scaling is given by different studies on $CO_2$ emissions due to transportation~\cite{Fragkias:2013,Glaeser:2010,Oliveira:2014,Rybski:2013}. The topic
@@ -195,18 +178,54 @@ in traffic jams is not proportional to the traveled distance. As a matter of fac
 distance and time scale differently with population size, and the time spent commuting and
 $CO_2$ emissions scale with the same exponent~\cite{Louf:2014}.
 
-The second, subtler, issue lies in the definition of the city itself, and over which
-geographical area the quantities $Q_{CO_2}$ and $P$ should be aggregated. There is currently great
-confusion in the literature about how cities should be defined, and scientists, let alone the
-various statistical agencies in the world, have not yet reached a consensus. This is a crucial
-issue as scaling exponents are very sensitive to the definition of the city~\cite{Arcaute:2013}. $CO_2$ emissions are no exception: aggregating over urban areas or metropolitan
-statistical areas entails radically different behaviours (see figure~\ref{fig}). For the US, using the
-definition of urban areas provided by the Census Bureau (\url{http://www.census.org}), one finds
-that $CO_2$ emissions per capita sharply increase with population size, implying that larger
-cities are less green. Using the definition of metropolitan statistical areas, also provided by
-the Census Bureau, one finds that $CO_2$ emissions per capita decrease slightly with population
-size, implying that larger cities are greener.\\
+The second, subtler, issue lies in the definition of the city itself, and over
+which geographical area the quantities $Q_{CO_2}$ and $P$ should be aggregated.
+There is currently great confusion in the literature about how cities should be
+defined, and scientists, let alone the various statistical agencies in the
+world, have not yet reached a consensus. For instance, the U.S. Census Bureau
+defines two types of cities for statistical purposes
+(see~\ref{fig:two_definitions} for an illustration on the city of Minneapolis).
+First, the Urban Areas are defined as a set of contiguous high-density areal
+units with a threshold on the total population (morphological definition). The Metropolitan Statistical
+Areas, on the other hand, include core Urban Areas, and the areal units that
+sends more than a given percentage of its working population to work in the
+core (functional definition).
 
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{gfx/chapter-scaling/city_definition.pdf}
+    \caption{{\bf City definitions in the US.} The Minneapolis Urban Area (in
+    black) is defined by the Census Bureau as contiguous block groups with at
+least $1000$ inhabitants per square mile. The Minneapolis-St. Paul Metropolitan
+Statistical Area (in grey) is defined as the counties containing the urban area
+as well as any adjacent county that have a high degree of integration with the
+core, as measured with commuting flows.\label{fig:two_definitions}}
+\end{figure}
+
+
+This is a crucial issue as scaling exponents are very sensitive to the
+definition of the city~\cite{Arcaute:2013}.  $CO_2$ emissions are no exception:
+aggregating over Urban Areas or Metropolitan Statistical Areas entails radically
+different behaviours (see figure~\ref{fig:lost}). For the US, using the
+definition of urban areas provided by the Census Bureau
+(\url{http://www.census.org}), one finds that $CO_2$ emissions per capita
+sharply increase with population size, implying that larger cities are less
+green. Using the definition of metropolitan statistical areas, also provided by
+the Census Bureau, one finds that $CO_2$ emissions per capita decrease slightly
+with population size, implying that larger cities are greener.\\
+
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\textwidth]{gfx/chapter-scaling/lost_smog.pdf}
+	\caption{ {\bf Are larger cities greener or smoggier?} Scaling of transport-related $CO_2$
+emissions with the population size for US cities from the same dataset but at different aggregation
+levels. In red, the aggregation is done at the level of urban areas and in green for combined statistical
+areas. Depending on the definition of the city, the scaling exponents are qualitatively different, leading
+to two opposite conclusions. Data on $CO_2$ emissions were obtained from the Vulcan Project (\url{http://
+vulcan.project.asu.ed}) (see~\cite{Fragkias:2013,Oliveira:2014}). Data on the population of urban areas and
+metropolitan statistical areas were obtained from the Census Bureau
+(\protect\url{http://www.census.org}). \label{fig:lost}}
+\end{figure}
 
 
 Faced with these two opposite results, what should one conclude? Our point is that, in
@@ -216,14 +235,42 @@ to play in the rising new science of cities. But, as the previous discussion ill
 dangerous to interpret empirical results without any mechanistic insight. Conclusions cannot
 safely be drawn from data analysis alone.
 
-From a policy point of view, now, what should one do to curb CO2 emissions? Favour
-the growth of large urban areas or the repartition of population in less populated cities?
-Both can be argued by considering data analysis alone. It should therefore be obvious that,
-until they have a satisfactory understanding of the mechanisms responsible for the observed
-behaviours, scientists should refrain from giving policy advice that might have unforeseen,
-disastrous consequences. If they choose to do so anyway, policy makers should be wary
-about what is, at best, a shot in the dark
+Does it mean that we should throw away scaling relationships altogether, as
+suggested byr Arcaute et al.~\cite{Arcaute:2014}? We think this is tackling the
+problem from the wrong end. Scaling relationships are undoubtedly the signature
+of processes occuring at the system (city or system of cities) level. The issue
+encountered with cities is that the system itself is not properly defined. We
+don't really know what cities we are talking about! Cities are doubtlessly a
+real pattern. If anything, the fact that there exists a word to designate them
+is a proof of their existence. Yet, the way we unveil this pattern with
+empirical data is, at best imprecise. It is not based on a theoretical
+understanding of what cities are.  Yet, this is critical if we want to fully
+make sense of the exponents found in empirical data. We therefore believe that
+future research in this area should focus on
 
+\begin{itemize}
+    \item Understanding the basic object we are working on, cities. How they 
+        should be defined, on what theoretical grounds.
+    \item Accounting on the difference in qualitative behaviour for different
+        definitions.
+\end{itemize}
+
+Indeed, as long as we do not \emph{know} what system we should be probing, it is
+not quite clear what our results mean. As long as we do not \emph{understand}
+why values of exponents are different when the city definition changes, we
+cannot draw reasonable conclusions.\\
+
+The last years have seen many scholars coming forward with policy advice based
+on empirical scaling relationships. It should now be clear that, given the
+current state of knowledge, it is a risky game. Indeed, let us consider the
+above CO\textsubscript{2} example: what should one do to curb CO2 emissions?
+Favour the growth of large urban areas or the repartition of population in less
+populated cities?  Both can be argued by considering data analysis alone. It
+should therefore be obvious that, until they have a satisfactory understanding
+of the mechanisms responsible for the observed behaviours, scientists should
+refrain from giving policy advice that might have unforeseen, disastrous
+consequences. If they choose to do so anyway, policy makers should be wary about
+what is, at best, a shot in the dark
 
 
 \section{Conclusion and perspective}
@@ -231,9 +278,18 @@ about what is, at best, a shot in the dark
 
 Scaling laws are useful tool to probe the system city, but they are not
 everything. They provide an extraordinarily easy way to explore the properties
-of urban systems: the amount of data required is minimal, the treatment
-trivial. However, while it may be useful to declutter the investigation field
-and help clear a couple of paths, and help establish a large-scale understanding
-of the system, this is done at the expense of an extensive coverage of the
-underlying phenomena. Scalings can be seen as a gateway to the study of cities,
-but they cannot be the study itself.
+of urban systems: the amount of data required is minimal, the statistical treatment
+trivial. 
+
+Allometric scaling is useful to declutter the field of investigation, help clear
+a couple of paths, and establish a large-scale understanding of the system. But
+this is done at the expense of an extensive coverage of the underlying
+phenomena.  Scalings can be seen as a gateway to the study of cities, but they
+cannot be the study itself.
+
+Furthermore, there are pressing issues that need to be solved if we want to make
+sense of these empirical results. First, we need to question the definition of
+cities, and understand what systems exactly we are studying with allometric
+scaling. Second, measuring exponents is not enough, and we need to understand
+the main processes that are reponsible for the measured values. This is what we
+have tried to do in the previous Chapter.
