@@ -17,24 +17,25 @@ The world is moving beyond it.} \\ \medskip
 
 The hypothesis that cities organise themselves around a single center of
 activities -- often called Central Business District (CBD) in the US -- may well
-be one of the strongest hypothesis in urban studies. Although no one seriously
+be one of the strongest hypotheses in urban studies. Although no one seriously
 believes in its validity anymore, its influence is still creeping, often
 unnoticed, in many empirical and theoretical works.  In order to deconstruct the
 monocentric model, we first need to understand where it came from in the first
-place, why it was introduced, what evidence it was based on. In this chapter, we
-present a historical perspective on the monocentric hypothesis. First, the
-context in which it was introduced,  how it was gradually realised that cities
-had a decentralised structure, and the emergence of the notion of center. We
-then present a bried review of the methods and tools developed to measure their
-number. Finally, using American and Spanish data and different methods, we show
-that larger cities are more polycentric. This suggests the existence of a
+place, why it was introduced, and what evidence it was based on. 
+
+In this chapter, we present a historical perspective on the monocentric
+hypothesis. First, the context in which it was introduced, how it was gradually
+realised that cities had a decentralised structure, and the emergence of the
+notion of center. We then present a brief review of the methods and tools
+developed to count their number. Finally, using American and Spanish data, we
+show that larger cities are more polycentric. This suggests the existence of a
 transition from a monocentric to a polycentric structure when the population of
 cities increases.
 
-\section{From monocentric, to polycentric and dispersed cities}
+\section{From monocentric, to polycentric cities}
 \label{sec:introduction}
 
-Maybe the least assumings way to represent the density profiles in cities is
+Maybe the least assuming way to represent the density profiles in cities is
 through either cloropleth maps, or 3-dimensional representations. In both cases,
 the $x$ and $y$ coordinates correspond to the original coordinates projected on
 the plane. In the former case, the different values of density are expressed by
@@ -61,26 +62,26 @@ Europe and Australia.\\
 
 3-dimensional representations, on the other hand, use the $z$ coordinate to the
 represent the density values. On Figure~\ref{fig:density_3d} we represent the
-density profiles of two metropolitan areas in the US: Minneapolis-St.  Paul, MN
-and Houston,TX. These two cities are enough to illustrate the difficulties
-associated with studying density profiles.
+density profiles of two metropolitan areas in the US: Minneapolis-St.Paul, MN
+and Houston, TX. 
 
-First, what densities we are talking about? Indeed, people are constantly moving
-throughout the city during the day, and density profiles can only be
-(approximate) snapshots of the city at different instants. Traditionally,
-scholars have considered residence densities (nightime city) and employment
-densities (daytime city). The recent availability of mobile phone data 
-may however give us a more precise, continuous picture of the
-densities during the day~\cite{Louail:2014}.
+These two cities are enough to illustrate the difficulties associated with
+studying density profiles. First, what densities we are talking about? Indeed,
+people are constantly moving throughout the city during the day, and density
+profiles can only be (approximate) snapshots of the city at different instants.
+Traditionally, scholars have considered residence densities (nightime city) and
+employment densities (daytime city). The recent availability of mobile phone
+data may however give us a more precise, continuous picture of the densities
+during the day~\cite{Louail:2014}. In the following, we will consider employment
+densities.
 
 
-Then, how do we makes sense of these patterns? The densities
-represented on Figure~\ref{fig:density_3d} are indeed very complex, and it would
-help our understanding if we could isolate some particular structure.
-Realising that districts of large population tend to be in the interior,
-districts of small population in the exterior Clark proposes in
-$1951$~\cite{Clark:1951} to write the density $\rho$ as a function of the
-distance $d$ from the center
+Then, how do we makes sense of these density patterns? The densities represented
+on Figure~\ref{fig:density_3d} are indeed very complex, and we would like to
+isolate some particular structure. Realising that districts of large population
+tend to be in the interior, and districts of small population in the exterior, Clark
+proposes in $1951$~\cite{Clark:1951} to write the density $\rho$ as a function
+of the distance $d$ from the center
 
 \begin{equation}
     \rho = a\,e^{-d/b} 
@@ -89,29 +90,30 @@ distance $d$ from the center
 Where $a$ is the density at the center, and $b$ the typical distance over which
 the density decreases. To justify his assumption, Clark plots the population
 density of various cities as a function of the distance to the
-center~\cite{Clark:1951}. The monocentric hypothesis is born.\\
+center~\cite{Clark:1951}. Some structure was found. The monocentric hypothesis
+was born.\\
 
 Looking at the density profiles plotted by Clark in 1951~\cite{Clark:1951} for
 many cities across the world, or on Figure~\ref{fig:distance_center_minneapolis}
 for the Minneapolis-St. Paul MSA, one can be
 forgiven for thinking that cities have a monocentric structure. Such profiles
 indeed almost always exhibit a sharp decrease as we go farther from the city
-center -- defined as the areal unit with the highest density. However, this
-pattern is only the signature of a monocentric pattern if one makes the further
-hypothesis that the pattern of employment densities in cites are symmetric
-under rotations around the center. Obviously, this is not the case: cities are
-nowhere isotropic but in the imagination of modelers. 
+center -- defined as the areal unit with the highest density. 
 
-To make this point clearer, we show on
-Figure~\ref{fig:distance_center_minneapolis} both the density profile of the
-Minneapolis-St. Paul MSA and a map where we highlight in black the tracts with
-an employment density greater than $10000\,\text{km}^{-2}$. As one can see, two
-tracts (respectively the historical centers of Minneapolis, and of St. Paul) are
-highlighted. However, the peak in density corresponding to St. Paul is not
-distinguishable on the density profile. Indeed, it is averaged out with smaller
-densities that are located at equidistance to Minneapolis.
+However, this pattern can only be the signature of a monocentric pattern if one
+other hypothesis is verified. Namely that the pattern of employment densities is
+symmetric under rotations around the center. Obviously, this is never the case:
+cities are nowhere isotropic but in the imagination of modelers. To make this
+point clearer, we show on Figure~\ref{fig:distance_center_minneapolis} both the
+density profile of the Minneapolis-St. Paul MSA and a map where we highlight in
+black the tracts with an employment density greater than
+$10000\,\text{km}^{-2}$. As one can see, two tracts (respectively the historical
+centers of Minneapolis, and of St. Paul) are highlighted. However, the peak in
+density corresponding to St. Paul is not distinguishable on the density profile.
+Indeed, it is averaged out with smaller densities that are located at
+equidistance to Minneapolis.
 
-The decreasing exponential model is thus mispecified.
+The decreasing exponential model, however appealing, is thus mispecified.
 
 
 \begin{figure}
@@ -132,10 +134,10 @@ The decreasing exponential model is thus mispecified.
 
 
 So why did Clark's methods and plots did not become a simple curiosity, but were
-instead so widely adopted? Although we cannot explain why such and such and
-things happened, there is little doubt that the echo this idea had in urban
-economics has something to do with it. From an implied assumption in an
-empirical analyis, the monocentric hypothesis only became clearly stated with
+instead so widely adopted? Although it is sometimes difficult to trace back the
+reasons for the adoption of ideas, there is little doubt that the echo this idea had in urban
+economics had something to do with it. Indeed, starting as an implied assumption
+in Clark's empirical analyis, the monocentric hypothesis only became clearly stated with
 the theoretical work of economists.
 
 
@@ -205,27 +207,27 @@ In this context, the first definitions of employment centers independent from
 the exponential model start to emerge, and subcenters start an existence of
 their own. By the $90$s, the idea that cities can be polycentric is
 well-established, and more and more empirical analyses confirm the existence of
-several employment centers.  For instance, \cite{McDonald:1987} identifies the
-employment subcenters in the region of Chicago, IL; \cite{Giuliano:1991} in the
-region of Los Angeles, CA; \cite{Dokmeci:1994} shows that Istanbul's employment
+several employment centers. For instance, McDonald~\cite{McDonald:1987} identifies the
+employment subcenters in the region of Chicago, IL; Giuliano and Small~\cite{Giuliano:1991} in the
+region of Los Angeles, CA; Dokmeci et al.~\cite{Dokmeci:1994} show that Istanbul's employment
 is spread across several centers, etc. 
 
-Finally, the concept of subcenters is expanded in $1991$~\cite{Garreau:1991}, when
-Garreau shows that secondary centers are not necessarily `subcenters' in the
-sense that activities do not always accumulate in the traditional downtown. He
+Finally, the concept of subcenters is expanded in $1991$~\cite{Garreau:1991},
+when Garreau shows that secondary centers are not necessarily `subcenters'.
+Indeed, activities do not always accumulate in the traditional downtown. He
 introduces the concept of `Edge cities': the concentration of business, shopping
 and entertainment at the outskirts of cities, in regions that were previously
-rural, or residential.\\
+rural, or purely residential.\\
+
 
 \section{How to count centers}
 \label{sec:how_to_measure_polycentrity}
 
-The methods to identify the employment subcenters can be divided in
-three categories. The clustering methods, which appeared first, were
-progressively abandonned for regression-based methods, due to their reliance on
-arbitrary cut-offs. Finally, the recent years have seen the emergence of
-distribution-based methods, which leave aside the spatial aspect of the density
-distribution.
+The methods designed to identify employment subcenters can be divided in three
+categories. The clustering methods, which appeared first, were progressively
+abandonned for regression-based methods due to their reliance on arbitrary
+cut-offs. Finally, distribution-based methods have emerged recently, and leave
+aside the spatial aspect of the density distribution.
 
 
 \subsubsection{Clustering methods}
@@ -234,7 +236,7 @@ distribution.
 
 In $1987$, McDonald~\cite{McDonald:1987} remarks that despite being mentionned
 in the empirical and theoretical literature, the features that an employment
-subcenter should have is nowhere discussed. For the first time, he proposes a method to
+subcenter should have are nowhere discussed. For the first time, he proposes a method to
 determine the number of subcenters empirically. Given
 a number $T$ of areal units, we will say that $i$ with employment $E_i$,
 population $P_i$ and surface area $A_i$ is an employment subcenter if:
@@ -242,7 +244,7 @@ population $P_i$ and surface area $A_i$ is an employment subcenter if:
 ratio}
 
 \begin{itemize}
-    \item The gross employment density $\rho_i = E_i/L_i$ is greater than that
+    \item The gross employment density $\rho_i = E_i/A_i$ is greater than that
         of the contiguous units;
 \end{itemize}
 
@@ -263,7 +265,7 @@ Namely that a contiguous set of units $\mathcal{S}$ is a subcenter if
 where the thresholds $\overline{D}$ and $\overline{E}$ are imposed arbitrarily.
 Using this definition, all areal units with a high employment densities are part
 of a subcenter, unless they are small (contain less than $\overline{E}$
-employees), or isolated (i.e. they do not belong to a cluster containing at
+employees) or isolated (i.e. they do not belong to a cluster containing at
 least $\overline{E}$ employees).
 
 
@@ -271,10 +273,10 @@ As mentioned in~\cite{Anas:1998}, because density landscapes are highly
 irregular at fine-scale (look at Figure~\ref{fig:density_3d} for instance), the
 subcenter boundaries are very sensitive to the threshold values. Because there
 are no a priori reason to choose a threshold rather than another, the obtained
-subcenter boundaries are arbitrary, varying from one author, one situation to
-another. In other words, these methods lack a proper consideration of how large is `large' supposed to mean~\cite{McMillen:2003}.
-Ideally, we would need a method based on first principles, that adapts to the
-local specificities.
+subcenter boundaries are arbitrary and may vary from one author, one situation
+to another. In McMillen's words, these methods lack a proper consideration of
+how large is `large' supposed to mean~\cite{McMillen:2003}. Ideally, we
+need a method based on first principles, that adapts to the local specificities.
 
 A further issue is that the number of centers depends on the size of the areal unit, an
 issue that is tied to scale problem discussed in the Modifiable Areal Unit
