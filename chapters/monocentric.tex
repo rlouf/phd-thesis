@@ -266,7 +266,7 @@ where the thresholds $\overline{D}$ and $\overline{E}$ are imposed arbitrarily.
 Using this definition, all areal units with a high employment densities are part
 of a subcenter, unless they are small (contain less than $\overline{E}$
 employees) or isolated (i.e. they do not belong to a cluster containing at
-least $\overline{E}$ employees).
+least $\overline{E}$ employees).\\
 
 
 As mentioned in~\cite{Anas:1998}, because density landscapes are highly
@@ -275,29 +275,30 @@ subcenter boundaries are very sensitive to the threshold values. Because there
 are no a priori reason to choose a threshold rather than another, the obtained
 subcenter boundaries are arbitrary and may vary from one author, one situation
 to another. In McMillen's words, these methods lack a proper consideration of
-how large is `large' supposed to mean~\cite{McMillen:2003}. Ideally, we
-need a method based on first principles, that adapts to the local specificities.
+how large is `large' supposed to mean for the threshold
+values~\cite{McMillen:2003}. Instead of thresholds, it would be preferable to
+have a method based on first principles, that adapts to the local specificities.
 
-A further issue is that the number of centers depends on the size of the areal unit, an
-issue that is tied to scale problem discussed in the Modifiable Areal Unit
-Problem (MAUP)~\cite{Openshaw:1984} literature. On the one hand, small areal units will
-lead to several low employment density units in otherwise very high density
-areas. On the other hand, large areal units are likely to smooth over local
-employment peaks. This begs the question of whether we should use contiguity, or
-rather distance, as a measure of proximity.\\
+A further issue is that the number of centers depends on the size of the areal
+unit, an issue that is tied to scale problem discussed in the Modifiable Areal
+Unit Problem (MAUP)~\cite{Openshaw:1984} literature. On the one hand, small
+areal units will lead to several low employment density units in otherwise very
+high density areas. On the other hand, large areal units are likely to smooth
+over local employment peaks. This begs the question of whether we should use
+contiguity of units, or rather distance, as a measure of proximity.
 
 
 \subsubsection{Regression-based methods}
 \label{ssub:regression_based_methods}
 
-In an attempt to adress these concerns, McMillen~\cite{McMillen:2001} proposes a two stage
-procedure. In the first, allegedly non-parametric stage, the method consists in using a
-geographically weighted regression (GRW, see~\cite{Brunsdon:1998} for more details on
-the topic) to `smooth' the employment density, using distance rather
-than contiguity as a measure of proximity, thus partially solving the issue
-linked with the size of areal units. 
-Candidate subcenters are the units that have unusually high employment densities
-compared to the broad spatial trends.  If we note $\rho_i$ the employment
+In an attempt to address these concerns, McMillen~\cite{McMillen:2001} proposes
+a two stage procedure. In the first allegedly non-parametric stage, the method
+consists in using a geographically weighted regression (GRW,
+see~\cite{Brunsdon:1998} for more details on the topic) to `smooth' the
+employment density, using distance rather than contiguity as a measure of
+proximity, thus partially solving the issue linked with the size of areal units.
+The units that have unusually high employment densities
+compared to the broad spatial trends are designated as candidate subcenters. If we note $\rho_i$ the employment
 density at site $i$, $\hat{\rho}_i$ the density estimated with GWR and
 $\hat{\sigma}_i$ the standard deviation around this estimate, $i$ is said to be
 a \emph{candidate} subcenter if 
@@ -308,17 +309,17 @@ a \emph{candidate} subcenter if
 
 Candidate, because the GWR only identifies fluctuations in the density profile,
 with no consideration of whether these local fluctuations have a sensible impact
-on the employment density.  Identifying which of these candidates are actually
+on the employment density. Identifying which of these candidates are actually
 centers is the goal of the second, semi-parametric procedure. This second
 procedure uses somewhat arbitrary criteria (the first and second largest
 candidates are omitted in the regression, candidates at less than $1$ mile from
-the CBD are omitted) to produce a second set estimates, to which real values are
-compared.\\
+the CBD are omitted) to produce a second set of estimates, to which real values are
+compared to identify the `real' centers among the candidates.\\
 
-Redfearn critizes the first procedure~\cite{Redfearn:2007}, on the ground candidate
+Redfearn critizes the first procedure~\cite{Redfearn:2007}, on the ground that candidate
 subcenters are defined as outliers with respect to an average that uses half of the total
-points, thus losing the local information about employment
-density. The author proposes a non-parametric method that aims at correcting the issues
+points (in the GWR), thus losing the local information about employment
+density. The author proposes another non-parametric method that aims at correcting the issues
 with McMillen's\cite{Redfearn:2007}. The estimation of the employment density is
 done locally in order to keep intact the local structure of the density profile.
 However, arbitrariness still lies in the choice of the span (the amount of data
@@ -330,7 +331,7 @@ other words, regression-based methods are \emph{not} truly non-parametric.\\
 
 
 The approach that we originally took in this thesis is radically different from
-these regression-based methods~\cite{Louf:2013_polycentric}. We start with the
+that of regression-based methods~\cite{Louf:2013_polycentric}. We start with the
 remark that one does not need to know the spatial arrangement of areal units
 with different densities in order to know which ones are most important. Indeed,
 local fluctuations that are registered as centers in the regression-based
@@ -338,8 +339,7 @@ methods are very likely to have a negligible contribution to the total
 employment. Therefore, a good estimate of the number of centers should be given
 by the shape of the employment density distribution alone. Because it does not
 require any spatial knowledge, it makes the extraction of centers fairly easy
-and quick to compute, compared to the previous methods.\\
-
+and quick to compute compared to the previous methods.\\
 
 We start by building the rank plots of employment density $\rho$ inside the
 areal units (see Figure~\ref{fig:rank_plot}). These plots display a decay at least as fast as that of an
@@ -387,15 +387,14 @@ In the case where the rank plot would be strictly exponential, we would have
 \end{equation}
 
 so that the number of centers is mainly determined by $\rho_0$. Small variations
-in $\alpha$ should not change greatly the number $k$ of centers obtained.
+in $\alpha$ should not sensibly change the number $k$ of centers obtained.
 
 The method however suffers from two flaws. First, the use of an arbitrary
-parameter, the threshold $\alpha$ to extract the number of centers. As a result,
-all the criticisms listed earlier also apply: we are not sure to extract the
-`true' number of centers. Furthermore, the method assumes a particular form for
+parameter, the threshold $\alpha$ to extract the number of centers. All the criticisms listed earlier also apply: we are not sure to extract the
+`true' number of centers. Moreover, the method assumes a particular form for
 the density distribution, which is likely to biais the estimation.\\
 
-In a subsequent article, Louail and Barthelemy~\cite{Louail:2014} propose a
+Louail and Barthelemy~\cite{Louail:2014} propose a
 generalisation of the previous method based on the Lorenz curve. \graffito{The
     Lorentz curve is often used in
 Economics to quantify income inequality.} Given the ordered set of
@@ -415,8 +414,8 @@ convex shape, with a more or less pronounced curvature.  The higher the
 curvature of the Lorentz curve, the higher the inequality in terms of employment
 density, and thus the smaller the number of potential centers. 
 
-This lead the authors to define a new criterion to determine the number of
-centers. It is determined by the intersection $F^*$ between the tangent of the
+Following this observation, the authors define a new criterion to determine the number of
+centers. They consider the intersection $F^*$ between the tangent of the
 Lorentz curve at the point $L(F) = 1$ and the axis $F=0$ (see
 Figure~\ref{fig:loubar}. The units that correspond to the values of $F$ between
 $F^*$ and $1$ are defined as centers. This definition has the merit to only
@@ -432,9 +431,9 @@ grey line), and the tangent at the point $L(F) = 1$ used to determine the number
 of centers in the LouBar method.\label{fig:loubar}}
 \end{figure}
 
-Of course, all the methods presented here have their issues (that we discuss 
+Of course, all the methods presented here have issues (that we discuss 
 in Chapter~\ref{chap:monocentric_discussion}), and there is currently no
-consensus on what method should be used to determine the employment centers.
+consensus on what method should be used to find the employment centers.
 More work is needed before we arrive at a satisfactory description of
 urban form. Nevertheless, the results given by these methods -- although slightly
 different -- provide together a compelling evidence for the polycentric
@@ -459,18 +458,16 @@ call this phenomenon the `polycentric transition' of cities.
 \subsubsection{American cities (Census data)}
 \label{ssub:american_cities_census_data_}
 
-
-
 Historical data over long periods of time, on a consistent set of areal units,
 are very rare -- if not impossible to find. However, we do, for one point in
-time, have many cities with very different population value. We can thus compute
+time, have many cities with very different population values. We can thus compute
 and plot the number of centers as a function of population. Of course, as we
 will discuss in more details in Part~\ref{part:scaling}, there is a gap between
 time series and transversal studies that is not completely obvious to
-bridge.  Some cities can be, for historical reasons, locked into a monocentric
-state where the average city would not. For different reasons, another city
+bridge. Some cities can be, for historical reasons, locked into a monocentric
+state when the average city would not. For different reasons, another city
 might as well have developped a polycentric structure more prounounced than
-other cities of the same size have. The idea here, is to look at a large number
+other cities of the same size have. The idea here is to look at a large number
 of cities and measure the average behaviour of this ensemble of cities, hoping
 that marginal cases are indeed marginal.
 
@@ -496,7 +493,7 @@ the data:
 
 At the end of this process, we obtain points that can be understood as coming
 from different realisations of a city. We then plot the number of centers
-obtained for all these realisations as a function of the total population and
+computed for all these realisations as a function of the total population and
 obtain the curve obtained on Figure~\ref{fig:us_centers}.
 
 \begin{figure}
@@ -514,7 +511,7 @@ prepared with Python.\label{fig:us_centers}}
 
 A power-law fit on the average per population bin gives an exponent $\delta =
 1.56 \pm 0.15\,(95\%\,C.I.)$. Thus, we find that on average, the number of
-centers in US cities scales with population size as
+centers in U.S. cities scales with population size as
 
 \begin{equation}
     k_{\,US} \sim P^{\,0.64}
@@ -542,54 +539,57 @@ method to count centers, and a radically different data collection method.
     k_{\,Spain} \sim P^{\,0.64}
 \end{equation}
 
-The numerical values are, surprisingly, equal. We learn from these two empirical studies
-that (1) the larger cities are, the more polycentric they tend to be; (2) the
-average behaviour is well-approximated by a power-law relationship between the
-number of centers and population; (2) the increase of the number of centers with
-population is \emph{sublinear}.  
+The numerical values are inded -- surprisingly -- equal.
 
-This empirical regularity calls for an explanation. We will present in the
-next chapter a model that is able to reproduce this empirical fact. But before
-concluding, let us review quickly the reasons are traditionally
+From these two empirical studies we learn that (1) the larger cities are, the
+more polycentric they tend to be; (2) the average behaviour is well-approximated
+by a power-law relationship between the number of centers and population; (2)
+the increase of the number of centers with population is \emph{sublinear}.  
+
+This empirical regularity calls for an explanation. We will present a model that
+is able to reproduce the sublinear behaviour in the next chapter. But before
+concluding, let us review quickly the reasons that are traditionally
 invoked for the polycentric transition.
 
 \subsection{Reasons invoked for the polycentric transition}
 \label{sec:reasons_invoked_for_the_polycentric_transition}
 
-There are numerous examples where polycentrism finds its origin in the fusion of two
-Metropolises, or the incorporation of satellite municipalities~\cite{LeNechet:2015}. For instance, the Twin Cities in the US, where the cities of
-Minneapolis and St. Paul have grown to an extent where they now form a single
-metropolitan area. The region of the Ruhr in Germany, or the region of Tokyo in
-Japan are other examples. However, we are interested here in an endogeneous
-polycentrism, caused by the growth of a single city.\\
+There are numerous examples where polycentrism finds its origin in the fusion of
+two Metropolises, or the incorporation of satellite
+municipalities~\cite{LeNechet:2015}. The Twin Cities in the U.S., for instance:
+the cities of Minneapolis and St. Paul have grown to such an extent that they now
+form a single metropolitan area. The region of the Ruhr in Germany, or the
+region of Tokyo in Japan are other examples. However, in this thesis, we are only interested in
+an endogeneous polycentrism, caused by the growth of a single city.\\
 
-Already in $1972$, Mills~\cite{Mills:1972}, suggests that congestion in large
-metropolitan areas might be the cause of decentralisation and suburbanisation.
+Already in $1972$, Mills~\cite{Mills:1972} suggests that congestion might be the
+cause of decentralisation and suburbanisation in large metropolitan areas.
 However, we have to wait until $2003$ for McMillen to propose a thorough
 empirical investigation~\cite{McMillen:2003}. The author finds a positive
 correlation between the number of centers, population, and commuting cost.
 Commuting cost is estimated using the peak travel time index index which is
 defined as the ratio between the average travel time at peak congestion time
-over the average travel time at any other time of the day.  Effectively, the
-commuting cost is a measure of the level of congestion in the city.  This
-implies that congestion might be the key factor to understand the polycentric
+over the average travel time at any other time of the day. Effectively, the
+commuting cost is a measure of the level of congestion in the city. In other
+words, congestion might be the key factor to understand the polycentric
 transition of cities.
+
+
 
 \section{Summary}
 \label{sec:summary}
 
-In this chapter, we have presented an historical perspective on the monocentric
-hypothesis, showed how it appeared, disappeared, and how it is still hiding in 
+In this chapter, we have presented a historical perspective on the monocentric
+hypothesis, trying to show why it appeared, disappeared, and how it is still hiding in 
 some of the empirical literature. We then discussed the polycentric hypothesis,
 how it was introduced, and the different methods that have been proposed to
-measure the number of subcenters.
+identify and count the subcenters.
 
-In a second time, we then showed on US and Spanish data that the number of
-activity centers increases on average sublinearly with population size. This
+We then showed on U.S. and Spanish data that the average number of
+activity centers increases sublinearly with population size. This
 proves, we believe, the existence of a polycentric transition of urban areas as
 their population increases. A transition, we saw, that might be due to increased levels
 of congestion in larger cities.
 
 In the next chapter, we will present a model to understand this polycentric
 transition. 
-
