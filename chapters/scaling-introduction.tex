@@ -16,45 +16,42 @@ an integral part of geography theory.} \\ \medskip
 
 As discussed in the introduction of this thesis
 (Chapter~\ref{chap:studying_cities}), cities are paradigmatic examples of
-complex systems. As systems, they can be of thought of as `black boxes'
-with inputs (people, goods, money, information, etc.), a structure (roads,
-buildings, electric cables, etc.) and outputs (Patents, $CO_2$ emissions, etc.).
-
-A simple way to explore the behaviour of such a system is to look at the way it
- behaves when we change its size. That is, how its structure and its
-outputs change when the inputs are altered. Formally speaking, we try to find
-the function $f$ such that the quantity $Y$ -- a measure of the output or the
-structure -- varies as
+complex systems. As systems, they can be of thought of as `black boxes' with
+inputs (people, goods, money, information, etc.), a structure (roads, buildings,
+electric cables, etc.) and outputs (Patents, $CO_2$ emissions, etc.).  A simple
+way to explore the behaviour of such a system is to look at the way it behaves
+when we change its size. That is, how its structure and its outputs change when
+the inputs are altered. Formally speaking, we try to find the function $f$ such
+that the quantity $Y$ -- a measure of the output or the structure -- varies as
 
 \begin{equation}
     Y = f(S)
     \label{eq:functional_form}
 \end{equation}
 
-where $S$ is the size of the system. What is to be considered as the size of the
-city? The answer, adopted by many before this thesis~\cite{Stewart:1947,
-Bettencourt:2007}, is the total number of inhabitants. 
+where $S$ is the size of the system.\\ 
 
-Why population, when the spatial footprint, the total volume occupied by its
-building also seem like reasonable quantities? The honest reason is probably
-purely a a pragmatic one: ``it works''. The afterthought, is that cities are
-more than roads and buildings: cities are the people who inhabit them. People
-are responsible for the changes in wealth, employment, number of patents. People
-need new roads, and it is people who build them. People need electricity, and
-again it is people who run electric cables between buildings. Inhabitants in a
-city are the elements that interact constantly, and in their actions and
-interactions are reponsible for the collective mechanisms that act on a larger
-scale on the city as a whole.  In a sense, in the use of the population $P$ to
-measure the size of a city as a system hides the understanding that cities are
-the people that inhabit them.\\
 
-Functional forms like the one presented in Eq.~\ref{eq:functional_form} with the
-population $P$ used as a proxy for the size of the city turn out to be 
-\emph{allometric scaling relationships}.
+What is to be considered as the size of the city?  The spatial footprint, the
+total volume occupied by its building? The answer adopted by many before this
+thesis~\cite{Stewart:1947, Bettencourt:2007}, is the total number of
+inhabitants. The real reason is probably pragmatic: ``it
+works''. Although, in retrospect, the choice of population makes complete sense. 
 
-Allometric scaling relationships present themselves in the form of a power-law
-relationship between various quantities $Y$ and the population size $P$ of
-cities \emph{in a given system of cities} 
+Cities are indeed more than roads and buildings: cities are the people who
+inhabit them. People are responsible for the changes in wealth, employment,
+number of patents. People need new roads, and it is people who build them.
+People need electricity, and again it is people who run electric cables between
+buildings. Inhabitants in a city are the elements that interact constantly.
+Through their actions and interactions, they are reponsible for the collective
+mechanisms that act on the city as a whole.  In a sense, behind the use of the
+population $P$ to measure the size of a city as a system hides the hypothesis 
+that cities are, first and foremost, the people that inhabit them.\\
+
+As a matter of fact, when we try to plot quantities as a function of the
+population size $P$ of cities, we obtain \emph{allometric scaling
+relationships}. That is, a power-law relationship between various quantities $Y$
+and the population size $P$ of cities \emph{in a given system of cities} 
 
 \begin{equation}
     Y = Y_0\,P^{\,\beta}
@@ -65,9 +62,8 @@ where the exponent $\beta$ can be different from $1$. This type of scaling
 relation, used extensively in Biology~\cite{Thompson:1942} and in
 Physics~\cite{Barenblatt:1996}, is a signature of the various processes
 governing the phenomenon under study, especially when the exponent $\beta$ is
-different from what would be naively expected. 
-
-Three qualitatively different regimes are usually distinguished for the exponent
+different from what would be naively expected. Three qualitatively different
+regimes are usually distinguished for the exponent
 $\beta$~\cite{Bettencourt:2007}
 
 \begin{description}
@@ -76,7 +72,7 @@ $\beta$~\cite{Bettencourt:2007}
         increasing returns with scale in economics.
     \item[Linear] when $\beta=1$. In this situation, the $Y$ per capita is
         constant. This behaviour is characteristic of an extensive system, when
-        the whole is nothing but the sum of its parts.
+        the whole is equal to the sum of its parts.
     \item[Sublinear] when $\beta<1$. In this situation, the $Y$ per capita
         decreases with population size. When $Y$ is the cost in infrastructure,
         this is characteristic of economies of scale.
@@ -107,25 +103,26 @@ $Y$ is defined as\\
 
 
 Several assumptions, although rarely mentionned, hide behind every exhibited
-scaling law relationships.
+scaling law relationships. The first one, is that we are able to unambigusouly
+delineate cities as systems.  While this is trivial in the case of animals (it
+is fairly easy for us to isolate an elephant, or a cat from its environment
+before 
+measuring its mass and its metabolic rate), it is a much more difficult task in
+the case of cities. Indeed, cities do not have fixed boundaries, and their 
+geographical limits evolve with time. They are also open system:
+people are born and die, change residence and companies do the same. 
 
-The first one, is that we are able to unambigusouly delineate cities as systems.
-While this is trivial in the case of animals (it is fairly easy for us to
-isolate an elephant, or a cat from its environment to measure its mass and its
-metabolic rate), it is a much more difficult task in the case of cities.
-Indeed, cities do not have fixed boundaries, the geographical limits of the
-object studied evolves with time, as people are born and die, change residence
-and as companies do the same.  Traditionnally, people have relied on the
-definition given by statistical agencies of the respective countries they were
-studying -- and we will do the same in the next chapter. We will however see, in
-the chapter concluding this part, that the problem of delineating cities is a
-sensible issue and affects greatly scaling analyses. \\
+Traditionnally, people have relied on the definition given by statistical
+agencies of the respective countries they were studying -- and we will do the
+same in the next chapter. We will however see, in the chapter concluding this
+part, that the problem of delineating cities is a sensible issue and affects
+greatly scaling analyses. \\
 
 
 A second issue, rarely -- if ever -- mentionned in the literature, is the
 necessity to define the set of cities to study. Scaling laws are essentially
 cross-sectional relationships, where we measure the quantity $Y$ on a set of
-cities with different populations. But is the set determined? For instance,
+cities with different populations. But how is the set determined? For instance,
 would it make sense to mix French cities, Ukrainian, Canadian and Korean, etc
 cities and plot, say, their total GDP as a function of the population? Would we
 then observe a neat scaling relationship? 
@@ -136,17 +133,17 @@ of their cities. Therefore, plotting cities from different countries together is
 likely to introduce important deviations to the pure scaling relations which are
 not due to the fact that cities in different countries do not follow the same
 processes, but rather because of systemic differences at the country level. As a
-matter of fact, most studies limit themselves to a single country. One should
-bear in mind tha this choice is arbitrary, however. And the problem of chosing
+matter of fact, most studies limit themselves to a single country. But one should
+bear in mind that this choice is arbitrary. And the problem of chosing
 the appropriate set from which to pick the cities is linked to the more general
 problem of defining systems of cites.
 
 
-\subsection{An increasing importance in the urban landscape}
+\subsection{An increasing importance}
 \label{sub:an_increasing_place_in_the_landscape}
 
 
-The epigraph used at the beginning of this chapter, found in Harvey's 1969
+The Chapter's epigraph, from Harvey's 1969
 \emph{Explanation in Geography}, is somewhat prophetic.  Allometric scaling
 relationships only concern $1$ page out of the $500$ pages that the book
 contains, a reflection of the very few empirical results that were available at
@@ -155,8 +152,8 @@ almost $50$ years after Harvey wrote this sentence, it is difficult to deny the
 accuracy of this prophecy. Thanks to the wider availability of data through
 statistical agencies, but also the availability of 'new data' (such as mobile
 phone data), empirical measurements of scaling laws have multiplied, and now
-concern quantities as diverse as the total surface area, the number of patents,
-the quantity of $CO_2$, the number of phone contacts of individuals, etc. 
+concern quantities as diverse as the total surface area, the number of new patents,
+the quantity of $CO_2$ emitted, the number of phone contacts of individuals, etc. 
 The discovery of allometric scaling in cities is not recent~\cite{Stewart:1947},
 but it has undoubtedly caused a stir in the literature about urban systems over
 the last
@@ -164,8 +161,7 @@ decade~\cite{Bettencourt:2007,Pumain:2004,Bettencourt:2013,Louf:2014_scaling,Lou
 
 
 In the next section, we will present a non exhaustive historical review of the
-empirical results on scaling relationships. I will then discuss the existing
-theoretical frameworks. This will lay the ground for our contribution to the
+empirical results on scaling relationships. This will lay the ground for our contribution to the
 debate: a theoretical interpretation of the scalings related to the mobility of
 people, and an estimate for the scaling exponent of the surface area.  
 
@@ -175,7 +171,7 @@ people, and an estimate for the scaling exponent of the surface area.
 \label{sec:a_brief_history_of_allometric_scaling_and_cities} 
 
 Rather than an exposition that is linear in time, we deliberately chose to
-classify the proposed studies according to studied quantity in order to
+classify the proposed studies according to the type of quantity. That way, we  
 emphasize the variety of variables that have been studied. Incidentally, this
 order also reveals the different waves of interest scaling relationships have
 sparked off in the past $6$ decades. 
@@ -196,24 +192,23 @@ Stewart shows
 \end{equation}
 
 The next occurence of this scaling can be found $9$ years later in a study by
-the same author~\cite{Stewart:1958}, using UK census data. From there, it isn't
+the same author~\cite{Stewart:1958}, using UK census data. It isn't
 long until the result percolates in Geography with Boyce in $1963$~\cite{Boyce:1963}.
 In $1965$, Nordbeck's paper~\cite{Nordbeck:1965} also studies the scaling of surface area
 with population, and, for the first time, explicitly refers to allometry in
 biology. Later, Tobler~\cite{Tobler:1969} uses some of the first available
 satellite images to provide the first confirmation using satellite pictures.
-Satellite pictures were also used more recently by Gu\'erois in~\cite{Guerois:2003}.\\
+Satellite pictures were also used more recently by Gu\'erois
+in~\cite{Guerois:2003} (Table~\ref{tab:area}).\\
 
 When applied to morphological definitions of cities, all studies
 (see~\cite{Batty:2011}) give an exponent that varies in the range $[0.70,
 0.90]$. However, different results are obtained for functional definitions of
 cities~\cite{Batty:2011}, or when the set of studied cities span several systems of
-cities~\cite{Fuller:2009}.
-
-Thus, despite being the oldest and most trusted scaling relationship in the
+cities~\cite{Fuller:2009}. Thus, despite being the oldest and most trusted scaling relationship in the
 literature, the relation between the surface area and population size of cities
 exhibits some of the issues we will discuss in
-Chapter~\ref{chap:scaling_implication}.
+Chapter~\ref{chap:scaling_implications}.
 
 
 \begin{table*}[!h]
@@ -239,8 +234,10 @@ cities found in the literature. The scaling for administrative cities, built-up
 areas or cities defined according to a morphological criterion are consistent
 with one another -- at least qualitatively. The exponent for cities with a
 functional definition is however qualitatively different.}
-\label{table:area}
+\label{tab:area}
 \end{table*}
+
+
 
 \subsection{Economic diversity and employment}
 \label{sub:economic_diversity}
@@ -267,9 +264,7 @@ Strangely enough, the data imply
     D \propto P^{\, \beta}
 \end{equation}
 
-with $\beta > 1$, in contradiction with later results.\\
-
-Indeed, Bettencourt et al.\cite{Bettencourt:2014} showed that the professional
+with $\beta > 1$, in contradiction with later results.Indeed, Bettencourt et al.\cite{Bettencourt:2014} showed that the professional
 diversity $D$, measured as the number of professions of different kind in the
 city considered, could be fitted by the following function
 
@@ -279,20 +274,26 @@ city considered, could be fitted by the following function
 
 where $d_0$ is the size of the classification used in the data, $N_0$ is the
 typical saturation size, and $\gamma < 1$ is an exponent expressing the extent to
-which new activities `appear' as the total employment increases. 
+which new activities `appear' as the total employment increases. Far from the
+saturation regime, when $N_e \ll N_0$ (the classification is sufficiently fine), we have 
+
+\begin{equation}
+    D(N_e) \sim A\,N_e^{\,\gamma}
+\end{equation}
 
 \subsubsection{Employment in different activities}
 \label{ssub:employment_in_different_activities}
 
 More recently, Pumain and coauthors~\cite{Pumain:2006}, extending the work done
 by Paulus in his PhD thesis~\cite{Paulus:2004}, showed that the
-employment in different activities in cities scaled as
+employment $E_a$ in different activities $a$ scaled as
 
 \begin{equation}
     E_a \propto P^{\,\beta}
 \end{equation}
 
-with different exponents $\beta$ for the different activities. They observed,
+with different exponents $\beta$ for the different activities
+(Table~\ref{tab:employment}). They observed,
 for the year $1999$ in France, that the exponents could be classified in three
 categories
 
@@ -306,11 +307,14 @@ categories
 
 This result was confirmed recently by Youn et al.~\cite{Youn:2014} (although
 they do not refer to this previous work), who showed that the same behaviour was
-observed for the number of business of a given type. A particularly interesting
-result shown by Pumain et al.~\cite{Pumain:2006} is the evolution of the
-different exponents with time, where we can see a clear increase of the
-exponents for research and developpement, and a clear decrease of the exponents
-related to manufactures of different kinds.\\
+observed for the number of business of a given type. 
+
+A particularly interesting result shown by Pumain et al.~\cite{Pumain:2006} is
+the evolution of the different exponents with time, where we can see a clear
+increase of the exponents for research and developpement, and a clear decrease
+of the exponents related to manufactures of different kinds. We will come back
+to the interpretation of this phenomenon in
+Chapter~\ref{chap:scaling_implications}.\\
 
 \begin{table*}[!h]
     \centering
@@ -329,19 +333,19 @@ economic sector. We give an example for each of the `innovative'
 (superlinear),`common' (linear) and `mature' (sublinear) categories defined by
 Pumain et al.~\cite{Pumain:2006}. The exponents were obtained from~\cite{Pumain:2006} and concern
 French $1999$ `Aires urbaines'.} 
-\label{table:employment} 
+\label{tab:employment} 
 \end{table*}
 
 \subsection{Wealth}
 \label{sub:wealth}
 
-Although the notion of increasing returns with the size of the agglomeration is
+The notion of increasing returns with the size of the agglomeration is
 often discussed in economics, although emprical proofs are hard to find. The
 superlinear scaling of the GDP of american cities as a function of their
 population may be the most striking example of such increasing
 returns~\cite{Bettencourt:2007}. In the same article, Bettencourt et al. showed
-that the number of patents (used as a proxy for creativity) also scaled
-superlinearly with population size in the US.
+that the number of patents (used as a proxy for creativity), and wages also scaled
+superlinearly with population size in the US (see Table~\ref{tab:wealth}).
 
 Because larger cities create proportionally more wealth than smaller cities, we
 can wonder whether this supplement of wealth allows to sustain proportionally
@@ -366,7 +370,7 @@ al.~\cite{Bettencourt:2007}\\
 economic vitality and creativity scale superlinearly with population size.
 This does not translate however in larger employment rates, as the number of
 employees scales linearly with population size.} 
-\label{table:wealth} 
+\label{tab:wealth} 
 \end{table*}
 
 \subsection{Human interactions}
@@ -380,7 +384,8 @@ al.~\cite{Schlapfer:2014} looked at the scaling of the cumulative number of
 contacts $K$ that people had over the phone, using mobile phone data in
 Portugal, and landlines in the UK. They also looked at the cumulative call
 volume (total number of minutes called) and the cumulative number of calls, and
-found that the three quantities scale superlinearly with population size. 
+found that the three quantities scale superlinearly with population size (see
+Table~\ref{tab:interactions}). 
 
 They further found that the number of non-returned calls showed a larger
 exponents than the number of calls, meaning that the number of solicitations an
@@ -411,7 +416,8 @@ Cumulative number of calls & 1.13 & Administrative (Portugal)\\
     linear scaling, although the number of points (9) is not large enough to
     conclude. The data were obtained from a mobile phone provider, and all
     quantities are rescaled to take into
-account the variation of the operator's coverage between cities.}
+    account the variation of the operator's coverage between
+cities.\label{tab:interactions}}
 \end{table*}
 
 \subsection{Mobility of individuals, and environmental impact}
@@ -428,10 +434,11 @@ surface area scales sublinearly with population size, with a non-trivial
 exponent (that is, different from $1/2$. More details in the next chapter). We
 showed in a later study~\cite{Louf:2014_scaling} that the total distance driven
 scales linearly with population size in Urban Areas.
-Also related to commuting and the use of personal vehicles in general is the
-evolution of the total comsumption of gasoline as a function of city sizes.
+Also related to commuting, and the use of personal vehicles, is the
+evolution of the total comsumption of gasoline with city size.
 Bettencourt et al. showed that gasoline sales in Metropolitan Statistical Areas
-scaled sublinearly with population size~\cite{Bettencourt:2007}. 
+scaled sublinearly with population size~\cite{Bettencourt:2007} (see
+Table~\ref{tab:mobility} for values). 
 
 Hopefully, new data such as mobile phone data should be
 able to inform us about other trips, which represent no less than 80\% of all
@@ -471,7 +478,8 @@ $CO_2$ emissions & \emph{0.93} & \emph{Functional} (US) & Fragkias et al.~\cite{
     delineate cities: Fragkias et al.~\cite{Fragkias:2013} rely on the Metropolitan Statistical Areas
     defined by the Census Bureau, Oliveira et al.~\cite{Oliveira:2014} rely on
     the City Clustering Algorithm~\cite{Rozenfeld:2008} (morphological
-    criterion) while we rely on the Urbans Areas defined by the Census Bureau.
+    criterion) while we rely on the Urbans Areas defined by the Census
+    Bureau.\label{tab:mobility}
 }
 \end{table*}
 
@@ -484,7 +492,8 @@ We can also wonder how the consumption of basic commodities (housing, water,
 electricity) per capita changes with population size. By far the most expected
 result, Bettencourt et al. showed~\cite{Bettencourt:2007} that the total water
 consumption (in China), the total electrical consumption (in China),  and the
-total housing (in the US) are proportional to the population.\\
+total housing (in the US) are proportional to the population (see
+Table~\ref{tab:commodities}).\\
 
 \begin{table*}[!h]
     \centering
@@ -500,7 +509,7 @@ Total water consumption & 1.01 & Administrative (China) & Bettencourt et al.~\ci
 \caption{{\bf Basic commodities. } Scaling of the total housing, electrical
     consumption and water consumption with population size. All exponents are
     compatible with a linear behaviour (within the $95\%$ confidence interval
-    error bars).
+    error bars).\label{tab:commodities}
 }
 \end{table*}
 
@@ -515,14 +524,15 @@ be answered by looking at the scaling of the length of roads, cables, etc. in
 cities: if the exponent is smaller than one, larger cities need less
 infrastructure per capita.
 
-Veregin and Tobler, using the 1980 Us Census DIME files (a lot less convenient
+Veregin and Tobler, using the 1980 U.S. Census DIME files (a lot less convenient
 to use than shapefiles!) showed that the number of street segments--the portion
 of road between two intersections--scaled sublinearly with the size of urban
-areas~\cite{Veregin:1997}. Arguably, the total length of the street network is
-more interesting to measure costs in terms of infrastructure, and we have to
-wait until our study in 2014~\cite{Louf:2014_scaling}, to
-have evidence for the sublinear scaling of total street length with the
-population size of urban areas. 
+areas~\cite{Veregin:1997} (see Table~\ref{tab:infrastructure}). 
+
+Arguably, the total length of the street network is more relevant to measure
+costs in terms of infrastructure. In~\cite{Louf:2014_scaling}, we provide
+evidence for the sublinear scaling of total street length with the population
+size of urban areas (Table~\ref{tab:infrastructure}). 
 
 Finally, Bettencourt et al. showed that the length of electric cables in German
 cities scaled sublinearly with population size~\cite{Bettencourt:2007}. So far,
@@ -543,7 +553,7 @@ Electric cables length & 0.87 & Administrative (Germany) & Bettencourt et al.~\c
     the total length of roads and the total length of electrical cables of
     cities as a function of population. The three quantities exhibit a sublinear
     scaling behaviour, implying that larger cities need less infrastructure per
-    capita, thereby realising economies of scale.
+    capita, thereby realising economies of scale.\label{tab:infrastructure}
 }
 \end{table*}
 
@@ -555,21 +565,20 @@ This brief review of the literature beggs several questions.
 
 First, most of the scaling exponents that are found in the literature (all but
 linear scalings) are highly non-trivial, in the sense that their value looks
-completely arbitrary. While we argued that these exponents where the signature
-of the processes happening within cities, it is not a-priori clear what are the
-mechanisms that lead to these values. In the following Chapter, we will provide
-a model that reproduces the exponents observed on quantities that are relatd to
-the mobility of individuals.
+completely arbitrary. We argued at the beginning of this Chapter that these
+exponents where the signature of the processes happening within cities. But it
+is not clear what mechanisms can lead to these values. In the following Chapter,
+we will provide a model that reproduces the exponents observed on quantities
+that are relatd to the mobility of individuals.
 
 A second issue has to do with the fact that studies find different exponent for
 the exact same quantities. The problem does not lie so much with the numerical
 differences, but in the qualitative difference: some quantities are found to
-scale sublinearly in a context, and superlinearly in another. 
-
-For instance, the $CO_2$ emissions scale differently with population size in
-different studies. While studies focusing on Urban Areas or equivalent (in the
-U.S.) find that emissions scale superlinearly with population
-size~\cite{Louf:2014_scaling, Oliveira:2014}, studies interested in Metropolitan
-Statistical Areas report a sublinear scaling~\cite{Fragkias:2013}. This calls
-for an explanation. We will sketch such an explanation in
-Chapters~\cite{chap:scaling_model} and~\cite{chap:scaling_implications}.
+scale sublinearly in a context, and superlinearly in another. For instance, the
+$CO_2$ emissions scale differently with population size in different studies.
+While studies focusing on Urban Areas or equivalent (in the U.S.) find that
+emissions scale superlinearly with population size~\cite{Louf:2014_scaling,
+Oliveira:2014}, studies interested in Metropolitan Statistical Areas report a
+sublinear scaling~\cite{Fragkias:2013}. This calls for an explanation that we
+will sketch in Chapters~\ref{chap:scaling_model}
+and~\ref{chap:scaling_implications}.
