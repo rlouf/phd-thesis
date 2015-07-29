@@ -173,21 +173,47 @@ a better understanding: Simini's radiation model~\cite{Simini:2012,Simini:2013}
 % Agent based model must be included somwehere here!
 
 At the same time, the number of contributions to the field from authors who do
-not have a geography (or economics, urbanism, etc. for that matter) has been
-increasing over the pas years. After all, I am a theoretical physicist by
-training, this thesis will be officially be registered as a theoretical physics
-thesis. So, if the contributions of outsiders are not new, they are changing in
-number and nature. To the point where we can wonder whether some of these
-`outsiders' should still be considered as such.
+not have a geography (or economics, urbanism, etc. for that matter) affiliation
+has been increasing over the pas years. After all, I am a theoretical physicist
+by training, this thesis will be officially be registered as a theoretical
+physics thesis. So, if the contributions of outsiders are not new, they are
+changing in number and nature. To the point where we can wonder whether some of
+these `outsiders' should still be considered as such.
 
 
 
-    \subsection{New data?}
-    \label{sub:new_data}
+\subsection{New data?}
+\label{sub:new_data}
 
-Population Mapping usinf mobile phone data~\cite{Deville:2014}
-Lots of talks about new data, but I have used almost none during my thesis.
-FourSquare~\cite{Noulas:2012}, Twitter... Credit cards~\cite{Lenormand:2015}
+Besides the import of methods from other disciplines, it is often argued that
+the influx of new data, thanks to the digitization of our lives, is a revolution
+in itself. 
+
+The most important new source of data come from the wide use of mobile phones
+across the world~\cite{Gonzalez:2008,Fen-Chong:2012}. They consist, for each individual, of a
+list of antenna location to which the individual was the closest at a given time
+(either when he used the phone, or when he switched from an antenna to another).
+Naively, one could think that mobile phone data are better than census-based
+data: they give a \emph{continuous} information about the flow of individuals
+within the city (and not only limited to commuting), they cover a larger part of
+the population (which is critical in developing countries where censuses are not
+widely used due to the costs involved, while mobile phones have a high
+penetration rate), and are more spatially precise than released census data in
+urban areas (see Figure~\ref{fig:IRIS_phone} for a comparison between the smallest
+INSEE areal units, and mobile phone antennas in Paris). But one needs to be
+careful. If mobile phone data are fine to monitor aggregate quantities (such as
+origin-destination commuting matrices~\cite{Lenormand:2014}, or to map
+population changes during the day~\cite{Louail:2014}, or year~\cite{Deville:2014}), one should be careful with the study of
+individual trajectories (such as in the
+seminal~\cite{Gonzalez:2008,Song:2010_modelling,Song:2010_limits}). Indeed, the
+fact that positions are recorded every time a called is passed by the user,
+events with a powerlaw inter-event time~\cite{Song:2010_modelling} and that are
+probably correlated with locations, is likely to introduce an important biais in
+the obtained trajectories. Not mentioning the spatial sampling introduced by the
+fact that positions are attached to a finite number of antennas. Unfortunately,
+there are no studies looking at the impact of these two samplings on the
+properties of the observed trajectories. In the meantime, one should refrain
+from using such data to study individual trajectories.
 
 \begin{figure}
     \centering
@@ -200,53 +226,55 @@ FourSquare~\cite{Noulas:2012}, Twitter... Credit cards~\cite{Lenormand:2015}
     arrondissements).\label{fig:IRIS_phone}}
 \end{figure}
 
-Mobile phone data are spatially more precise. They give us a \emph{continuous}
-information about the flow of individuals within the city, and not only
-commuting.
+Mobile phone data are not the only source of data. Because mobile phones carry
+GPS chips that are used by certain applications, applications such as
+FourSquare~\cite{Noulas:2012} or Twitter~\cite{Lenormand:2014_tweets}. Last, but
+not least, Credit card companies have recently started to release datasets
+regarding the spending of individuals~\cite{Lenormand:2015}.\\
 
-But be careful. If they are ok to monitor aggregate
-quantities~\cite{Lenormand:2014}, be careful of
-individuals trajectories because sampled in a weird way.
+So, new data (mainly mobile phone data) are now available and allow to give a
+picture of the city that was before unavailable. The contribution of these new
+data is particularly useful for the mobility of people besides commuting
+pattern~\cite{Louail:2014}, or for developping country where there are little
+census data available~\cite{Blondel:2012}. Are they so overlwhelmingly different
+from previously available data to deserve the title of `revolution'? Nothing is
+less certain: in this thesis, for instance, I have not used these `new data' at
+all, and we are still waiting for important results that these data could teach
+us and that we could not access with more traditional data. Only time will tell,
+but the term `revolution' is certainly not warranted yet.
 
-    \subsection{A technological convergence}
-    \label{sub:a_technological_convergence} 
 
 
+\subsection{A technological convergence}
+\label{sub:a_technological_convergence} 
 
 Interdisciplinary collaborations already existed, data were already there. So
 what is the qualitative difference between the state of the field say $20$ years
-ago, and the state of the field as it is now, if any?\cite{Batty:2008,Batty:2012,Batty:2013} seeing the city as flows and networks.
+ago, and the state of the field as it is now, if any? A factor that is often
+overlooked is the recent technological leap in the treatment of information,
+including spatial information. Thanks to the development of GIS software as well
+as spatial databases and libraries, the treatment of geographical data has never
+been simpler. Added to this are the emergence of powerful scripting languages, R
+and Python, which allow to quickly implement complex data analysis workflow or
+simulations, and reduce dramatically the time spent writing code. 
 
-\cite{Makse:1995} Modelling urban growth with diffusion limited aggregation
-\cite{Rozenfeld:2008} Laws of population growth, using CCA algorithm to define
-urban areas.
+Internet is also progressively changing the way research is done. Census data
+are more and more easily accessible available online. Open data repositories,
+although far from perfect, are emerging. Online platforms such as
+\url{www.github.com} allow to share and collaborate on code. All in all,
+the access and processing of information is getting easier and easier.\\
 
 
-Agent-based models. Physicists have learned to be wary of the attempt to
-describe in a deterministic framework the interactions of thousands, billions of
-particles. Take a very simple model: the gas of hard spheres. Hard spheres are
-simple objects: they have a fixed radius, cannot interpenetrate one another.
-Their behaviour is well known, described by Newton's laws of motion, and we can
-in theory solve all the equations describing their movements. In fact, we could
-imagine, knowing the initial conditions, solve these equations and thus follow
-the motion of every single particle (its position and speed) over time. In
-practice, computers are way better than we are at doing that, and can easily follow for
-us the trajectories of millions of spheres---I have coded that myself as a
-student. So we have a very simple system, whose behaviour is perfectly known and
-for which we can write exact dynamical equations, thus knowing perfectly its
-time evolution at any arbitrary instant in the future. So what? What do we learn
-from this simulated motion? What did we understand about the \emph{collective}
-motion of spheres that we did not already know performing these simulations?
-There is too much information for us to understand. In fact, there is as much
-information in these simulations than there is in the original phenomenon, and
-our understanding has not improved.
-Facing the same questions, the fathers of statistical physics proposed to
-extract some simpler, macroscopic information using probabilistic arguments.
+Taken individually, the introduction of methods from other disciplines, the
+increasing amount and specificity of available data and the technological
+progresses in the treatment of information are probably not enough to justify
+the term `revolution'. Taken together, however, they could mark the beginning of
+a qualitative rupture in the way we understand cities.
 
-Now, regarding social system, the context is even worse. We don't even know the
-laws that determine the behaviour of individuals... we do not have the
-equivalent of Newton's dynamics to describe the evolution of individuals in time
-and their interactions. It is thus difficult what we would gain from simulating
-the motions of thousands, millions of them using massive simulations. Even if
-the laws were right, what would we learn from these simulations?
-
+It is too premature to conclude that the convergence of the aforementioned will
+necessarily deeply change our understanding of cities. Only the future can tell
+us whether new regularities, new laws are about to be discovered and more
+phenomena to be understood. But where there is data, there is definitely hope.
+Provided the correct methodology is used. In the following Chapter, we will
+introduce the broad methodological prescriptions that were followed during this
+thesis.
