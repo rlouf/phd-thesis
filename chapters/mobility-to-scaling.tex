@@ -12,7 +12,7 @@ and with five I can make him wiggle his trunk'} \\ \medskip
 
 \bigskip
 
-A common trait shared by all complex systems --including cities-- is the
+A common trait shared by all complex systems -- including cities -- is the
 existence of a large variety of processes occuring over a wide range of time and
 spatial scales. The main obstacle to the understanding of these systems
 therefore resides in uncovering the hierarchy of processes and in singling out
@@ -26,12 +26,14 @@ a theoretical understanding of many observed empirical regularities in cities is
 still missing.\\
 
 Here we show that the spatial structure of the mobility pattern
-controls the behaviour of many quantities in urban systems. Indeed, cities are
+controls the scaling behaviour of many quantities in urban systems. Indeed, cities are
 not only defined by the spatial organisation of places fulfilling different
-functions --shops, places of residence, workplaces, etc.-- but also by the way
+functions -- shops, places of residence, workplaces, etc. -- but also by the way
 indivduals move among them. Understanding where people live, where and how they
 travel within the city thus appears as a necessary step towards a scientific
 theory of cities.\\ 
+
+
 
 \section{A naive approach}
 \label{sec:elementary_understanding_of_the_scaling_relationships}
@@ -50,7 +52,7 @@ field~\cite{Stewart:1947, Batty:2011}.
 
 \paragraph{Naive argument.}  A first crude approach is to assume
 that cities evolve in such a way that their population density $\rho = P/A$
-remains constant. This assumption straighforwardly implies that the area should
+remains constant. This assumption immediately implies that the area should
 scale linearly with population
 %
 \begin{equation} 
@@ -63,7 +65,7 @@ assumption of a constant density is then equivalent to the one of a constant
 average surface per capita).
 
 \paragraph{Reality.} The naive argument does not compare well with reality. We
-plot the scaling of the surface area versus population for US Urban Areas on
+plot the scaling of the surface area versus population for U.S. Urban Areas on
 Figure~\ref{fig:scaling_area}. A fit assuming a power-law dependence gives an exponent
 
 \graffito{All $\pm$ intervals are $95\%$ confidence intervals.}
@@ -72,15 +74,15 @@ Figure~\ref{fig:scaling_area}. A fit assuming a power-law dependence gives an ex
 \end{equation}
 
 A result which agrees with previous measurements made on morphologically defined
-cities~\cite{Batty:2011}. This means that the average surface occupied by each individual decreases with
-city size. Or equivalently, that the population density increases with city size.\\
-We note that the prediction given by the naive model is quantitatively -- and
-worse, qualitatively -- different from the behaviour observed in the data.
+cities (see~\cite{Batty:2011} or Chapter~\ref{chap:scaling_introduction}). This means that the average surface occupied by each individual decreases with
+city size. Or equivalently, that the population density increases with city size.
+The prediction given by the naive model is therefore quantitatively -- and
+worse, qualitatively -- different from the behaviour observed empirically.
 
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/scaling_area.pdf}
-    \caption{{\bf Spatial footprint.} Scaling of the surface area of US urban areas with population size,
+    \caption{{\bf Spatial footprint.} Scaling of the surface area of U.S. urban areas with population size,
         and what would be expected with a naive model (blue solid line).
     A fit assuming a powerlaw dependence (dashed line) gives an exponent
     $\beta_A = 0.85 \pm 0.01\,(r^2 = 0.93)$.\label{fig:scaling_area}}
@@ -126,7 +128,7 @@ previously in Eq.~\ref{eq:area_naive} we finally get
 \end{equation}
 
 \paragraph{Reality.} Again, the naive argument does not compare well with
-reality. We fit the data for US urban areas (see
+reality. We fit the data for U.S. Urban Areas (see
 Figure~\ref{fig:scaling_lanemiles}) assuming a powerlaw dependence and find an
 exponent
 
@@ -134,15 +136,16 @@ exponent
     \boxed{\beta_R \sim 0.765 \pm 0.033\;(r^2 = 0.92)}
 \end{equation}
 
-Note that since the relation between the length and the number of nodes given by
-Eq.~\ref{eq:length_nodes} and the relation between number of intersections and
-population have been verified independently in the literature. The discrepancy
-is therefore likely due to the scaling of the surface area.
+Note that the relation between the length and the number of nodes given by
+Eq.~\ref{eq:length_nodes}, as well as the relation between number of
+intersections and population, have been verified independently in the
+literature. The observed discrepancy on the exponent of $L_N$ is therefore
+certainly due to the scaling of the surface area.
 
 \begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-scaling/scaling_lanemiles.pdf}
-    \caption{{\bf Length of roads.} Scaling of the total length of roads in US urban areas versu the
+    \caption{{\bf Length of roads.} Scaling of the total length of roads in U.S. Urban Areas versu the
     total population. A fit assuming a powerlaw dependence (dashed grey line)
 gives an exponent $\beta_R \sim 0.765 \pm 0.033$ ($r^2=0.92$). The behaviour is
 qualitatively different from what would be expected with a naive mode (solid
@@ -158,17 +161,17 @@ The total commuting distance $L_{tot}$ is determined by two different
 constraints. First the individual constraint: individuals make the decision
 about where they are going to live and work; they have their own behaviour and
 limitations. However, the individuals' choices are also limited by the city
-structure itself, that is by how employment and residences are spread across the
+structure itself, that is by the respective distributions of jobs and residences across the
 city.
 
 
 
 \subsubsection{Influence of the individual constraint} 
 
-The first constraint on this distance comes from individuals's limitations and
+The first constraint on the commuting distance comes from individuals's limitations and
 behaviour. We make here the simple assumption that individuals choose their
 residence and work place such that their total commuting distance is fixed (or
-at least smaller than a certain value) and equal on average to $\ell_C$. In that
+at least, is smaller than a certain value) and equal on average to $\ell_C$. In that
 case, we would simply have
 
 \begin{equation} 
@@ -179,24 +182,20 @@ case, we would simply have
 (by constant, we mean independent from the population size of the city). As
 surprising as it may seem, the data show that $L_{tot}/P$ can indeed be considered
  independent from $P$ (with a value of approximately $23$ miles for
-the US, see Figure~\ref{fig:LtotoverP}), in agreement with the individual
+the U.S., see Figure~\ref{fig:LtotoverP}), in agreement with the individual
 constraint assumption (Eq. \ref{eq:assum}). This finding is also in agreement
 with the results drawn from census data in Germany by~\cite{Wilkerson:2014}.
 This does not mean, of course, that the distance driven is the same for every
 city. As one can see on Figure~\ref{fig:LtotoverP}, the fluctuations are quite
-important between cities. The important point, though, is that the distance does not depend on the population size.
-Although this assumption of a constant distance is simple and verified on the US
-data, we think that it deserves to be systematically tested on other datasets
-for other countries and cities. 
+important between cities.  
 
 \begin{figure}[!h]
     \includegraphics[width=1.0\textwidth]{gfx/chapter-scaling/figure_2.pdf}
     \caption{{\bf Commuting distance \& individual choice.} Constant daily driven distance per capita. (a) daily total driven
         distance per capita as a function of population for 441 urbanised area
-        in the US in 2010. The data shown in the plot are compatible with a
+        in the U.S. in 2010. The data shown in the plot are compatible with a
     population-independent behaviour. (b) Histogram of the daily total driven
-distance per capita for the same cities. The average daily driven distance for
-these cities is $23$ miles, and the standard deviation $7$ miles.}
+distance per capita for the same cities. The average daily driven distance is $23$ miles, and the standard deviation $7$ miles.}
 \label{fig:LtotoverP} 
 \end{figure}
 
@@ -249,7 +248,7 @@ monocentric and decentralised cities
     \centering
     \includegraphics[width=0.9\textwidth]{gfx/chapter-scaling/scaling_commuting_norm.pdf}
     \caption{{\bf Commuting distance \& city structure.} Scaling of the total yearly commuted distance normalised by the
-    city's surface area with population size for US Urban Areas. The blue lines
+    city's surface area with population size for U.S. Urban Areas. The blue lines
 show the behaviours that would be expected for a monocentric and a totally
 decentralised city. The dashed line represents the fit assuming a powerlaw
 dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (r^2 =
@@ -259,15 +258,14 @@ dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (r^2 =
 
 This comes as another evidence -- different from that presented in
 Chapter~\ref{chap:monocentric_introduction} -- that cities do not have a
-strictly monocentric structure. This result cast some further doubts
-about the model by Bettencourt~\cite{Bettencourt:2013} which assumes implicitely that cities are always
-monocentric.\\
+strictly monocentric structure. This result cast some further doubts about the
+model by Bettencourt~\cite{Bettencourt:2013} which implicitely assumes that
+cities are monocentric.\\
 
 So far, so good. But how can we understand the non-trivial exponent that is observed? This is
 where the limiting case are helpful: if the exponent sits between the ones that
 would be obtained in a monocentric or decentralised city, surely, cities must
-adopt an intermediate structure. One candidate stands out: the polycentric city (see
-Figure~\ref{fig:polycentric}).
+adopt an intermediate structure. 
 
 \begin{figure}[!h]
     \centering
@@ -276,8 +274,9 @@ Figure~\ref{fig:polycentric}).
     monocentric and totally decentralised situations. \label{fig:polycentric}}
 \end{figure}
 
-Let us consider a polycentric city with $k$ employment centers. The typical
-distance commuted by individuals is given by
+One candidate stands out: the polycentric city (see
+Figure~\ref{fig:polycentric}). Let us thus consider a polycentric city with $k$
+employment centers. The typical distance commuted by individuals is then given by
 
 \begin{equation}
     \ell_c \sim \sqrt{\frac{A}{k}}
@@ -291,10 +290,8 @@ So that
 
 Therefore if, as we showed in the previous part,  the number of centers
 increases sublinearly with population, we would have a scaling of the form
-$L_{tot}/\sqrt{A}\sim P^{\,\beta_L}$ where $\beta_L \in [1/2,1]$. 
-
-This expression is consistent with that of $A/\lambda^2$
-and $L_{tot}/P$ if
+$L_{tot}/\sqrt{A}\sim P^{\,\beta_L}$ where $\beta_L \in [1/2,1]$. The previous
+expression is consistent with that of $A/\lambda^2$ and $L_{tot}/P$ if
 
 \begin{equation} 
     \beta_L = 1-\frac{\beta_A}{2} 
@@ -336,7 +333,7 @@ $L_{tot} /P$ &  $1$ & $0.03\; (r^2=0.04)$\\
 The previous results, in particular the behaviour of the total commuting length
 with population, hint at the necessity to better describe the structure of the
 mobility patterns (Table~\ref{table:naive}). This is exactly what the model presented in the previous
-does.  Using the relation that we derived for the number of centers, we will see
+chapter does.  Using the relation that we derived for the number of centers, we will see
 how we can understand the values of the exponents presented earlier in this
 chapter. We will also see how the model allows us to understand the scaling of
 other quantities, namely the total time spent in traffic and the total $CO_2$
@@ -434,15 +431,15 @@ The final expression for the area is then here given by
 where $\delta=\frac{\mu}{2\mu+1}$. The exponent $\delta$ is smaller than $1/2$
 whatever $\mu\geq 0$, which implies that the density of cities increases
 \emph{sublinearly} with population. In other words, the density of cities
-\emph{increases}  with population. We verify this prediction with
-data about land area of urbanized areas in the US (Figure~\cite{fig:scaling_area}). We find
+\emph{increases}  with population. This prediction is verified with data about
+land area of urbanized areas in the U.S. (Figure~\ref{fig:scaling_area}). We find
 $\beta_A = 0.85 \pm 0.01\;$ which is not too far from the
 theoretical value $2\delta_{th} = 0.64 \pm 0.12$, equal to
 $\alpha$ in this case.\\
 
-Because the area of an urban system results from centuries of evolution, we do
-not a priori expect our model --where individual vehicles are assumed to be the
-only vector of mobility-- to give a prediction valid for all countries and all
+Because the area of a city results from centuries of evolution, we do
+not a priori expect our model -- where individual vehicles are assumed to be the
+only vector of mobility -- to give a prediction valid for all countries and all
 times. Nevertheless, these results give us reasons to believe that the spatial
 structure of the journey-to-work commuting should still be the dominant factor
 in the dependence of land area on population. In the following, we will use the
@@ -458,9 +455,9 @@ Using Eq.~\ref{eq:assum} and Eq.~\ref{eq:area} we are now able to compute $L_{to
     \label{eq:travelled_length}
 \end{equation}
 
-We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the US on
+We plot $L_{tot} / \sqrt{A}$ for urbanized areas in the U.S. on
 Figure~\ref{fig:scaling_Ltot_norm}, and one
-can check in Table~\ref{table:scaling} that the exponent predicted from the previously measured
+can verify in Table~\ref{table:results} that the exponent predicted from the previously measured
 value of $\alpha$ agrees well with the exponent measured on the data.
 
 
@@ -476,8 +473,8 @@ The quantity $\delta$ is less than $1/2$, which implies that $L_N$ scales
 \emph{sublinearly} with the city's population size. In other words, larger
 cities need less roads per capita than smaller ones: we recover the fact that
 agglomeration of people in urban centers involves economies of scale for
-infrastructures. Within the fitting assumption (Eq.\ref{eq:fit}), we would
-obtain $(1+a)/2$.
+infrastructures. 
+
 
 \subsection{Total delay due to congestion}
 
@@ -489,7 +486,7 @@ obtain $(1+a)/2$.
 population size yields an exponent $\beta_D = 1.270 \pm 0.067\;(r^2=0.97)$.\label{fig:scaling_delay}}
 \end{figure}
 
-Unfortunately, agglomeration in cities does not only generate economies.
+Unfortunately, the agglomeration of activities in cities does not only generate economies.
 Congestion, for instance, is a major diseconomy associated with the
 concentration of people in a given area. A simple way to quantify the
 impairement caused by traffic congestion is through the total delay it
@@ -526,7 +523,7 @@ economical losses \emph{per capita} due to the time lost in congestion --and the
 corresponding strain on people's life-- increase with the size of the city. 
 
 The prediction $1+\delta = 1.32$ agrees well with the empirical measure (see
-Table~\ref{table:scaling} and Figure~\ref{fig:scaling_delay})
+Table~\ref{table:results} and Figure~\ref{fig:scaling_delay})
 
 \begin{equation}
     \boxed{\beta_D = 1.270 \pm 0.067\;(r^2 = 0.97)}
@@ -573,7 +570,7 @@ and the total daily transport-related $CO_2$ emission per capita thus scales as
 The quantity of $CO_2$ emitted per capita in cities thus increases with the size
 of the city, a consequence of congestion. This prediction agrees with the
 exponent we measure (Figurere~\ref{fig:scaling_co2}) on data gathered for US and OECD cities (see
-Table~\ref{table:scaling})
+Table~\ref{table:results})
 
 \begin{equation}
     \boxed{\beta_C = 1.262 \pm 0.089\;(r^2=0.94)}
@@ -629,7 +626,7 @@ given by
 
 In other words, the \emph{individual commuting time increases with the size of the
 city}. Note that not only is this a consequence of the model, but also of the
-data analaysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
+data analysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
 
 \subsection{Newman \& Kenworthy}
 
@@ -669,9 +666,9 @@ corresponding to cities that were in the original study~\cite{Newman:1989} are
 highlighted. The relation is a lot less clear than that presented originally.  
 
 We then plot the same quantity as a function of $\sqrt{A}$, the prediction given
-by Eq.~\ref{eq:nk_area}, on Figure~\ref{fig:nk_revisited}. As one can see, the
+by Eq.~\ref{eq:nk_area}, on Figure~\ref{fig:nk_model}. As one can see, the
 prediction is far from perfectly followed. If anything, this figure, combined to
-Figure~\ref{fig:newmann_kenworthy} show that the debate, in the absence of a
+Figure~\ref{fig:newman_kenworthy} show that the debate, in the absence of a
 clear-cut conclusion, is not over. At this stage, more data about gasoline
 consumption -- preferably for cities belonging to the same system of cities --
 is needed to explore this prediction.
