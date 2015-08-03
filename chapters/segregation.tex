@@ -637,9 +637,9 @@ $P=0.26$.
 
 \begin{figure} 
     \includegraphics[width=0.7\textwidth]{gfx/chapter-segregation/neighbourhoods_polycentrism.pdf}\\
-    \caption{{Poly-neighbourhoods. } Distribution of the ratio of the size of the
-        largest and second largest neighbourhoods for each class for all cities in our
-        datset. Higher- and lower-income househols tend to concentrate in single
+    \caption{{\bf Poly-neighbourhoods. } Distribution of the ratio of the size of the
+        largest and second largest neighbourhoods for each class for all MSA in
+        the US. Higher- and lower-income househols tend to concentrate in single
         neighbourhood, with a secondary center that is on average $22\%$ and
         $26\%$ the size of the largest one, respectively. Middle-income
         households tend to be more dispersed, with a secondary neighbourhood that is on
@@ -647,7 +647,6 @@ $P=0.26$.
         \label{fig:polycentrism} 
 \end{figure}
 
-% Corrections up to HERE MOFO.
  \subsection{Scaling of the number of neighbourhoods}
        \label{ssub:dependence_on_city_size}
        
@@ -688,7 +687,6 @@ population size). The values of the exponents are
 
 One is tempted to conclude from these numbers that the different classes
 become more spatially coherent as the population increases. 
-
 Yet, this conclusion only holds if the number of areal units in which each class
 is overrepresented does not itself vary sublinearly with population size. We
 plot on Figure~\ref{fig:overrepresented} these numbers as a
@@ -728,37 +726,39 @@ core (urbanized area), where the population density is higher. The second
 approach, in an attempt to get rid of arbitrary boundaries, consists in plotting
 indicators of wealth as a function of distance to the
 center~\cite{Glaeser:2008}. This approach, inspired by the monocentric and
-isotropic city of many economic studies such as the Von Thunen or the
+isotropic city of many economic studies such as the Von Th\"unen or the
 Alonso-Muth-Mills model~\cite{Brueckner:1987}, has however a serious flaw:
 cities are not isotropic and are spread unevenly in space, leading to very
 irregular shapes~\cite{Makse:1995}. Representing any quantity versus the
-distance to a center thus amounts to average over very different areas and in
+distance to a center thus amounts to average over very different areas and is necessarily misleading in
 clear polycentric cases (as it is the case for large cities
-~\cite{Louf:2013_polycentric})
-is necessarily misleading. The notion of distance to the center is indeed
+~\cite{Louf:2013_polycentric}. See also
+Chapter~\ref{chap:monocentric_introduction}). The notion of distance to the center is indeed
 meaningless in polycentric situations.\\
 
 
 We propose here a different approach that does not require the
 definition of a distance to the center. Instead, we plot the average
 representation computed over all areal units (census-blocks in this
-dataset) with a given density population $\rho$.
-
+dataset) with a given density population $\rho$, as a function of the density
+$\rho$. Indeed, what is usually meant by `center' of a city are the areas with
+the highest residential (or employment) densities. 
 
 Our findings shed a new light on the difference of social composition
 between the high-density and low-density areas in cities. As shown on
-Figure~\ref{fig:high_low_densities}, we find that on average,
-low-density regions in cities are on average rich neighbourhoods,
-although the effect is less pronounced as in the center. There is
-however a surprising result: areas with very large densities
-(typically above $20,000$ inhabitant$/\text{km}^2$) are on average
-rich neighbourhoods. While slightly lower densities are on average poor
-neighbourhoods. Only few cities in the US have neighborhoods that
-reach the threshold of $20,000$ inhabitants per km$^2$, which can
-explain why we observe in most cases poor centers and rich suburbs. We
-can wonder whether the difference usually discussed between north
-american and european cities does not come, in fact, from differences
-in terms of densities. 
+Figure~\ref{fig:high_low_densities}, we find that rich households are
+overrepresented in low-density regions on average. While this agrees well with
+the opinion people have of suburbian America, there is a more surprising result:
+higher income households are also overrepresented in areas with very large densities
+(typically above $20,000$ inhabitant$/\text{km}^2$). In between, neighborhoud
+with intermediate values of density (between $1,000$ and $20,000$
+inhabitants$/\text{km}^2$), are lower-income neighbourhoods. 
+
+Only few cities in the US have neighbourhoods that reach the threshold of
+$20,000$ inhabitants per km$^2$, which can explain why we observe in most cases
+poor centers and rich suburbs. We can wonder whether the difference usually
+discussed between North American and European cities does not come, in fact,
+from differences in terms of densities. 
 
 \begin{figure}
     \centering
@@ -796,15 +796,15 @@ not change with city size, the neighbourhoods are geographically more coherent
 as cities get larger, which corresponds in effect to an increased level of
 segregation as the size of the city increases. The behaviors of different
 categories are very coherent and we showed that we could simplify the
-description of these complex systems by considering a small number of
-categories. This is an important point which will simplify the description and
-modeling of stratification mechanisms.
+description of these complex systems by reducing the sometimes large number of
+categories to a small number of classes. This is an important point which will
+simplify the description and modeling of stratification mechanisms.
 
 Our results point to the intriguing fact that higher-income households are on
 average overrepresented in very dense areas. Such high density areas are
-relatively rare in the US, which might explain in part why we observe poor
-centers and rich suburbs and rich centers essentially in Europe where the
-density is very large. This result echoes Jacobs' analysis~\cite{Jacobs:1961}
+relatively rare in the US, which might explain in part why authors have
+traditionally simplified the picture, talking about poor
+centers and rich suburbs. This result echoes Jane Jacobs' analysis~\cite{Jacobs:1961}
 that neighbourhoods with the highest dwelling densities usually are the ones
 exhibiting the most vitality, and therefore the most attractive. Of course, high
 densities are not everything, and some high-density neighbourhoods also are
@@ -812,7 +812,7 @@ lower-income neighbourhoods. Further investigations along these lines may
 provide quantitative insights into the mechanisms leading to urban decline or
 urban regeneration.\\
 
-In this study, we have tried to highlight the \emph{spatial} pattern of
+In this Chapter, we have tried to highlight the \emph{spatial} pattern of
 segregation.  We believe that the identification of neighbourhoods that our
 method permits will allow a finer-scale investigation of these spatial patterns.
 The fundamental issue that runs beneath, however,  is the need for a useful,
@@ -821,8 +821,7 @@ has a huge potential of applications. We note that the problem is tightly
 linked, if not identical, to the one we encountered while trying to describe the
 spatial distribution of density in Chapter~\ref{chap:monocentric_discussion}.
 
-A shortcoming of the current measures of segregation is the lack of spatial
-consideration, and proper theoretical foundations. The most widely-used measure,
+Before closing this Chapter, let us note that the most widely-used measure,
 the dissimilarity~\cite{Duncan:1955m} index, suffers from two flaws. First, it
 is based on the concentration (Equation~\ref{eq:concentration}), and its usual
 interpretation in terms of proportion of a given class that should relocate to
@@ -831,4 +830,4 @@ Figure~\ref{fig:checkerboard}, intra-tract measures cannot distinguish between
 different spatial arrangements (hence different patterns of segregation). The
 dissimilarity, an intra-tract measure, therefore falls short of expectations. We
 therefore need to design a new index of segregation that addresses these
-shortcomings.
+shortcomings in future work.
