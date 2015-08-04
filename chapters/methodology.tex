@@ -36,7 +36,8 @@ analyses, in the absence of convincing models to explain these regularities, it
 is not always clear what we learn about cities.
 
 In this chapter, we will try to specify what we mean by model, and explain with
-a concrete example why data analysis is not enough understand the system.
+a concrete example why data analysis is not enough understand the behaviour of
+systems.
 
 
 \section{Of models and theories}
@@ -109,31 +110,30 @@ simplified, barebone description of the processes that shape the system.\\
 \subsection{Theory, not analogy}
 \label{sub:theory_not_analogy}
 
-Expressive words and expression are too often used as a substitute for a real
-understanding of the system. But, however intellectually appealing they are,
-metaphors are not a theory. For instance, what do we understand from the
-comparison of cities with biological systems? What new knowledge do we gain? The
-genius of metaphors is not to provide interesting ideas that are ready to be
-applied to a specific field. Rather, it is to trigger very different ideas into
-different people. Yet, what we need to highlight are regularities, not
-similarities.\\
+Unfortunately, expressive words and metaphors are too often used as a substitute
+for a real understanding of the system. But, however intellectually appealing
+they are, metaphors are not a theory. For instance, what do we understand from
+the comparison of cities with biological systems? What new knowledge do we gain?
+Metaphors do not provide interesting ideas that are ready to be applied to a
+specific field. Rather, they trigger very different ideas into different people,
+which explains their recurrent success. Yet, what we need to highlight are
+regularities, not similarities.\\
 
-What we need to avoid at all costs are models that are only loosely connected to
-reality through some intellectual trick, be it analogy or metaphor. There is
-a lot of confusion, and little understanding to be gained that way. In the words
-of Einstein, Podolsky and Rosen
+We also need to avoid models that are only loosely connected to reality, analogy
+or metaphor. There is a lot of confusion, and little understanding to be gained
+that way. In the words of Einstein, Podolsky and Rosen
 
 \begin{quote}
     In a complete theory, there is an element corresponding to each element of
     reality.~\cite{Einstein:1935}
 \end{quote}
 
-We need to make sure that most -- if not all -- elements (variables) of our
-models are related to a quantity that is measurable. This is what we tried to do
-in this thesis. We also pay a special attention to the rigour in the language
-used. We qualify suggestions, by presenting them as such.  This kind of work may
-be less suggestive, the vocabulary used less expressive, but it is a necessary
-step towards a science of cities. We need to clear the language of unfruitful
+In this thesis, we tried to make sure that most -- if not all -- elements
+(variables) of our models are related to a quantity that is measurable. We also
+paid a special attention to the rigour in the language used. We qualify
+suggestions, by presenting them as such.  This kind of work may be less
+suggestive, the vocabulary used less expressive, but it is a necessary step
+towards a science of cities. We need to clear the language of unfruitful
 metaphors and fill the gap with mechanisms.
 
 
@@ -181,12 +181,12 @@ Richard Feynman's statement used as an epigraph in this chapter might be an
 oversimplified, narrow view of what Science is and how it proceeds. It
 nevertheless hits the nail right in the head, by isolating the core component of
 what Science is: a tight relation with empirical analysis. Data are needed, at
-first to give us ideas about how the system works: stylized facts. We then
+first, to give us ideas about how the system works: stylized facts. We then
 usually try to build a simplified version of the system, a model, that is able
 to reproduce the stylized facts. Because of the simplification entailed, the
 model highlights the most important features of the phenomenon and allows us to
 understand the behaviour of the system. Finally, we use data again to test the
-prediction of the model and assess their validity and/or limitations.
+predictions of the model and assess their validity and/or limitations.
 
 In this thesis, we adopt a quantitative approach to the the study of cities. In
 other words, we extract information about urban systems using measured
@@ -227,18 +227,18 @@ there is nothing new about them. Arguably, the reason why we are able to
 function at all as individuals is because our brain is capable of computing
 correlations all the time. Take chairs. Chairs are fairly simple objects. Yet,
 they come in all kind of colors, material and shapes. And despite this
-potentially infinte diversity, I am able to recognise a chair when I see one. I
-also have a notion of what a chair is to be used for. Although we do not
+potentially infinite diversity, we are able to recognise a chair when we see
+one. We also have a notion of what a chair is to be used for. Although we do not
 ackowledge it often, we are capable of surprisingly high levels of abstraction
-and generalisation. Because we correlate, all the time. Science starts with the
+and generalisation. Because our brains correlate, all the time. Science starts with the
 observation of these regularities. For instance, that the sun always appears at
 the same place and disappears in the opposite directions. That seasons come and
-go regularly. That after the night always comes the day. Is it useful? Yes, for
-limited applications. Does it make it science? No. Science is when one goes
-beyond the simple observation of correlations, and tries to write down a model,
+go regularly. That after the night always comes the day. Are pure correlations useful? Yes, for
+limited applications. Do they constitute science? No. Science is when one goes
+beyond the simple observation of correlations, and tries 
 to understand the mechanisms responsible for the correlations we observe.\\
 
-Data is not enough, we must build model, theories.
+In short, data is not enough: we must build models, theories.
 
 
 \subsection{An example: The law of metropolises}
@@ -247,12 +247,11 @@ Data is not enough, we must build model, theories.
 \subsubsection{Statement}
 \label{sub:statement}
 
-The above discourse may seem a bit abstract (maybe because it is?), so let us
-see the shortcomings of pure data analysis on a simple example, related to
-cities.
+The above discourse may seem a bit abstract, so let us observe the shortcomings
+of pure data analysis on a simple example, related to cities.
 
-Using the GEOPOLIS database, Moriconi-Ebrard derived a general transversal rule about system
-of cities, that he called \emph{law of metropolises}~\cite{Pumain:1997}. If we
+Using the GEOPOLIS database, Moriconi-Ebrard and Pumain derived a general transversal rule about system
+of cities, that they called \emph{law of metropolises}~\cite{Pumain:1997}. If we
 note $P_U$ the urban population of systems of cities, and $P_1$ the size of
 their largest city~\graffito{The original regularity was observed for what the
 author calls 'metropolises', which are roughly equivalent to the largest city in
@@ -260,7 +259,7 @@ terms of population.}, we can
 plot $P_1$ versus $P_U$ for all systems of cities and obtain the plot on
 Figure~\ref{fig:metropolises}.
 
-\begin{figure}[!h]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-intro/law_metropolises.pdf}
     \caption{{\bf The law of metropolises.} Population of the largest city of
@@ -342,10 +341,10 @@ relation holds
 As one can see on Figure\ref{fig:metropolises_debunked}, the formula given by
 Eq.~\ref{eq:metropolises_debunked} fit the data as well as the previous one.
 
-\begin{figure}[!h]
+\begin{figure}
     \centering
     \includegraphics[width=\textwidth]{gfx/chapter-intro/law_metropolises_debunked.pdf}
-    \caption{{\bf The law of metropolises revisted.} $P_1 \ln(P_1)$ versus the total urban population $P_u$ in that
+    \caption{{\bf The law of metropolises revisited.} $P_1 \ln(P_1)$ versus the total urban population $P_u$ in that
 system. The dashed line shows the result of a linear fit, which agrees as well
 with the data as does the powerlaw relation assumed in~\cite{Pumain:1997}. Data for the total urban
 population and the population of the largest city of countries in the year
@@ -369,20 +368,17 @@ least-assuming to consider $P_1 \ln P_1 \sim P_u$.
 
 So, not only is the \emph{law of metropolises} not a fundamental relation, it is
 rigorously wrong. 
-
 This teaches us that, given the range of variations of the measured
 quantities, it is very difficult to distinguish empirically a powerlaw
 relationship from something qualitatively different such as $Y \ln Y \sim P$.
 One should therefore be wary of interpreting empirical relationships,
-like the one originally found in~\cite{Pumain:1987}, unless a mechanistic
+like the one originally found in~\cite{Pumain:1997}, unless a mechanistic
 explanation of the fitted relationship is provided. As a matter of fact, what
 was thought as a fundamental law might end up being trivial and without great
 interest.
 
-We will discuss the limitations of data analysis again in
-Chapter~\cite{chap:scaling-implications}, when
-discussing the conclusions we can draw from the analysis of scaling
-relationships.
+We will further discuss the limitations of data analysis in
+Chapter~\ref{chap:scaling-implications}, after having studied scaling relationships.
 
 
 

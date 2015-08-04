@@ -14,35 +14,3 @@
 \automark[section]{chapter}
 \renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
-
-\clearpage
-
-\begingroup 
-\let\clearpage\relax
-\let\cleardoublepage\relax
-\let\cleardoublepage\relax
-
-    
-       
-%----------------------------------------------------------------------------------------
-%	Acronyms
-%----------------------------------------------------------------------------------------
-
-\refstepcounter{dummy}
-%\addcontentsline{toc}{chapter}{Acronyms} % Uncomment if you would like the acronyms to appear in the table of contents
-\pdfbookmark[1]{Acronyms}{acronyms} % Bookmark name visible in a PDF viewer
-
-\markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
-
-\chapter*{Acronyms}
-
-\begin{acronym}[UML]
-\acro{CBSA}{Combined Statistical Area}
-\acro{CBD}{Central Business District}
-\acro{GWR}{Geographically Weighted Regression}
-\acro{MSA}{Metropolitan Statistical Areas}
-\acro{MST}{Minimum Spanning Tree}
-\acro{UA}{Urban Areas}
-\end{acronym}  
-                   
-\endgroup
