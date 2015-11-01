@@ -148,7 +148,7 @@ certainly due to the scaling of the surface area.
     \caption{{\bf Length of roads.} Scaling of the total length of roads in US Urban Areas versu the
     total population. A fit assuming a powerlaw dependence (dashed grey line)
 gives an exponent $\beta_R \sim 0.765 \pm 0.033$ ($r^2=0.92$). The behaviour is
-qualitatively different from what would be expected with a naive mode (solid
+qualitatively different from what would be expected with a naive model (solid
 blue line).\label{fig:scaling_lanemiles}}
 \end{figure}
 
@@ -168,7 +168,7 @@ city.
 
 \subsubsection{Influence of the individual constraint} 
 
-The first constraint on the commuting distance comes from individuals's limitations and
+The first constraint on the commuting distance comes from individuals' limitations and
 behaviour. We make here the simple assumption that individuals choose their
 residence and work place such that their total commuting distance is fixed (or
 at least, is smaller than a certain value) and equal on average to $\ell_C$. In that
@@ -258,7 +258,7 @@ dependence, which yields an exponent $\beta =  0.595 \pm 0.026\, (r^2 =
 
 This comes as another evidence -- different from that presented in
 Chapter~\ref{chap:monocentric_introduction} -- that cities do not have a
-strictly monocentric structure. This result cast some further doubts about the
+strictly monocentric structure. This result casts some further doubts about the
 model by Bettencourt~\cite{Bettencourt:2013} which implicitely assumes that
 cities are monocentric.\\
 
@@ -333,7 +333,9 @@ $L_{tot} /P$ &  $1$ & $0.03\; (r^2=0.04)$\\
 The previous results, in particular the behaviour of the total commuting length
 with population, hint at the necessity to better describe the structure of the
 mobility patterns (Table~\ref{table:naive}). This is exactly what the model presented in the previous
-chapter does.  Using the relation that we derived for the number of centers, we will see
+chapter does. 
+
+Using the relation that we derived for the number of centers, we will see
 how we can understand the values of the exponents presented earlier in this
 chapter. We will also see how the model allows us to understand the scaling of
 other quantities, namely the total time spent in traffic and the total $CO_2$
@@ -349,7 +351,9 @@ According to the model introduced in Chapter~\ref{chap:monocentric_model}, the n
 
 and we need an additional equation in order to get a closed system. Here we
 focus on the area and its evolution with the population size, which reflects the
-growth process of the city. In the following, we will investigate two different
+growth process of the city. 
+
+In the following, we will investigate two different
 approaches. It is worth noting that both approaches give results in qualitative
 agreement, showing that some stylized facts ---such as super- or sublinearity---
 are very robust.\\ 
@@ -364,7 +368,7 @@ can assume that the area behaves as
     \label{eq:fit}
 \end{equation}
 
-where $a$ is the exponent to be determined, through fits on data. The empirical
+where $a$ is the exponent to be determined by fitting data. The empirical
 value for the exponent for the US data is $a\simeq 0.85$. Once this exponent is
 given we can then compute the various exponent for the quantities of interest.
 We get for the number of centers $k$
@@ -386,7 +390,9 @@ population.\\
 Let us now assume that the scaling of $A$ with population is determined by the
 number of activity centers and the constant commuting length of individuals.
 This means that the growth of the area is controlled by the appearance of new
-activity centers. if we assume that a city is organized around $k$ activity
+activity centers. 
+
+If we assume that a city is organized around $k$ activity
 centers and that the attraction basin of each of these centers are spatially
 separated~\cite{Louf:2013_polycentric} (See on Figure~\ref{fig:polycentric}), we then have  $A \sim k\, A_1$ where $A_1$ is the
 area of each subcenter's attraction basin. This area $A_1$ is related to the
@@ -429,7 +435,7 @@ The final expression for the area is then here given by
 \end{equation}
 
 where $\delta=\frac{\mu}{2\mu+1}$. The exponent $\delta$ is smaller than $1/2$
-whatever $\mu\geq 0$, which implies that the density of cities increases
+whatever $\mu\geq 0$, which implies that the surface area of cities increases
 \emph{sublinearly} with population. In other words, the density of cities
 \emph{increases}  with population. This prediction is verified with data about
 land area of urbanized areas in the US (Figure~\ref{fig:scaling_area}). We find
@@ -441,7 +447,7 @@ Because the area of a city results from centuries of evolution, we do
 not a priori expect our model -- where individual vehicles are assumed to be the
 only vector of mobility -- to give a prediction valid for all countries and all
 times. Nevertheless, these results give us reasons to believe that the spatial
-structure of the journey-to-work commuting should still be the dominant factor
+structure of the journey-to-work commuting might be the dominant factor
 in the dependence of land area on population. In the following, we will use the
 above numerical value to compute other scaling exponents.
 
@@ -472,7 +478,7 @@ If we use the previously derived expression for the area $A$, we find
 The quantity $\delta$ is less than $1/2$, which implies that $L_N$ scales
 \emph{sublinearly} with the city's population size. In other words, larger
 cities need less roads per capita than smaller ones: we recover the fact that
-agglomeration of people in urban centers involves economies of scale for
+ the agglomeration of people in urban centers involves economies of scale for
 infrastructures. 
 
 
@@ -529,7 +535,7 @@ Table~\ref{table:results} and Figure~\ref{fig:scaling_delay})
     \boxed{\beta_D = 1.270 \pm 0.067\;(r^2 = 0.97)}
 \end{equation}
 
-\subsection{Transport related $CO_2$ emission. Gasoline consumption}
+\subsection{Transport related $CO_2$ emissions}
 
 Another diseconomy associated with congestion is the quantity of $CO_2$ emitted
 by cars and the gasoline consumed by motor vehicles. This amount not only
@@ -599,7 +605,7 @@ $Q_{CO_2} \sim P^{1.212 \pm 0.098} (r^2=0.83)$ for the OECD data.
 The total commuting time $T$ can be written as
 
 \begin{equation}
-    T = \tau_0 + \delta_\tau
+    T = \tau_0 + \delta\,\tau
 \end{equation}
 
 where $\tau_0 = L_{tot} / v \sim P$ is the free-flow commuting time and $\delta
@@ -626,7 +632,11 @@ given by
 
 In other words, the \emph{individual commuting time increases with the size of the
 city}. Note that not only is this a consequence of the model, but also of the
-data analysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time budget hypothesis is thus refuted.
+data analysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time
+budget hypothesis is thus refuted. The reason for the discrepancy between
+previous measures and our results comes from the fact that these studies
+considered averages over large regions, rather than averages at the city
+level.
 
 \subsection{Newman \& Kenworthy}
 
@@ -636,7 +646,7 @@ data analysis (see Figure~\ref{fig:scaling_delay}). The constant travel-time bud
     \caption{{\bf Newman \& Kenworthy.} Per capita $CO_2$ emissions versus the population density of cities
     belonging to OECD countries. The cities also present in the Newman \&
     Kenworthy dataset are represented in red. This curve casts serious doubt on
-the fact that energy consumption are a simple funtion of
+the fact that energy consumption is a simple funtion of
 density.\label{fig:newman_kenworthy}}
 \end{figure}
 
@@ -657,13 +667,12 @@ as
     \label{eq:nk_area}
 \end{equation}
 
-and is therefore not a simple function of the city density, in contrast with
+and is therefore not a simple function of population density, in contrast with
 what was suggested by the seminal paper of Newman and
-Kenworthy~\cite{Newman:1989}. We plot on Figure~\ref{fig:newman_kenworthy}, we
-plot the average individual $CO_2$ emissions (used as a proxy for gasoline
+Kenworthy~\cite{Newman:1989}. We plot on Figure~\ref{fig:newman_kenworthy},  the average individual $CO_2$ emissions (used as a proxy for gasoline
 consumption) as a function of the density for OECD cities. The points
 corresponding to cities that were in the original study~\cite{Newman:1989} are
-highlighted. The relation is a lot less clear than that presented originally.  
+highlighted. The relation is a lot less clear than the one presented originally.  
 
 We then plot the same quantity as a function of $\sqrt{A}$, the prediction given
 by Eq.~\ref{eq:nk_area}, on Figure~\ref{fig:nk_model}. As one can see, the
@@ -688,7 +697,7 @@ of cities (and thus have a different prefactor).\label{fig:nk_model}}
 Although polycentricity emerges naturally from our model as a result of
 congestion, many circumstances can prevent or foster the appearance of new
 activity centers in a city. There are many debates as to whether policies should
-favour polycentric or monocentric developpement of cities. Most of them are
+favour polycentric or monocentric developement of cities. Most of them are
 based on ideologies and opinions about how cities should be, very few are based
 on a quantitative understanding of the city as a complex system. Although this
 only represents a small part of the debate, our model allows to quantify the
@@ -721,7 +730,7 @@ intuition. More precisely the ratio of delays is given by
 where the exponent is of order $\beta \approx 0.57\;$. Therefore, even though
 diseconomies associated with polycentric cities scale superlinearly with
 population, it would be even worse if we did not let cities evolve from the
-monocentric case. The same reasoning applies to the consumption of gasoline and
+monocentric situation. The same reasoning applies to the consumption of gasoline and
 the $CO_2$ emissions. 
 
 This suggests that, everything else being equal,
@@ -775,7 +784,7 @@ Nations' 2011 World Urban Propects.}
 increase~\cite{Bettencourt:2007} but not enough to compensate for the negative
 effects of congestion. As a result, if the individual car stays the dominant
 transportation mode, cities will put more strain on people's life, while acting
-as catalysts for the production of $CO_2$ greenhouse gas, responsible for an
+as catalysts for the production of $CO_2$ greenhouse gas, which is responsible for an
 overall increase of the planet's temperature~\cite{Oreskes:2004}. 
 
 It is currently believed that advantages associated with living in a large city
