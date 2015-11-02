@@ -21,7 +21,7 @@ To understand is to perceive patterns.} \\ \medskip
 There are many different ways in which a spatial pattern can deviate from its
 randomised counterpart, and at least as many different measures one could
 perform. In this chapter, we will try to quantify these patterns in a way that
-allows to \emph{understand} the phenomenon of segregation.\\
+may allow us to \emph{understand} the phenomenon of segregation.\\
 
 Of course, segregation has been extensively studied in the literature. However,
 we identify several difficulties in the current empirical picture.
@@ -46,7 +46,7 @@ where the poorest and richest concentrate if they want to design efficient
 policies to curb, or compensate for, the existing segregation. Furthermore, 
 a local description of the repartition of the different categories is the first
 step towards the exploration of the mechanisms responsible for segregation: it
-is necessary to gather hints, as well as empirical regularities that are
+is necessary to gather hints (as well as empirical regularities) that are
 essential to build a reasonable model. 
 In other words, we need to provide a clear {\it spatial} information on the
 pattern of segregation.\\
@@ -74,8 +74,8 @@ In the following, we propose to answer the following questions
     \item How can we quantify the presence of the different categories in areal
         units? Can we say whether they are overrepresented or normally
         represented? How can we define neighbourhoods?
-    \item How can we quantify interactions between the different categories?
-    \item How to define meaningful classes from the original data?
+    \item Can we quantify interactions between the different categories?
+    \item Can we define meaningful classes from the original data?
     \item Do classes tend to leave in geographically coherent areas, or are they
         scattered across the city?
     \item Is there a difference between the city center and the suburbs? How
@@ -85,31 +85,31 @@ In the following, we propose to answer the following questions
 \subsection{Notations}
 \label{sub:notations}
 
-In the following, we will illustrate our measures using data from the $2000$
-US Census on the income of households per Census blockgroup. Data present
-themselves as households sorted in different categories, and in different
-tracts. There are $N$ individuals and  $T$ tracts in the considered geographical
-area, and we note $N_\alpha$ the number of individuals belonging to the category
-$\alpha$.  Finally, we write $n(t)$ the total number of individuals living in
-the tract $t$, and $n_\alpha(t)$ the total number of individuals who belong to
-category $\alpha$ living in the tract $t$.
+In the following, we will illustrate our measures using data from the $2000$ US
+Census on the income of households per Census blockgroup. Data present
+themselves as a number of households per blockgroup, sorted in different income
+categories. There are $N$ individuals and  $T$ tracts in the considered
+geographical area, and we note $N_\alpha$ the number of individuals belonging to
+the category $\alpha$.  Finally, we write $n(t)$ the total number of individuals
+living in the tract $t$, and $n_\alpha(t)$ the total number of individuals who
+belong to category $\alpha$ living in the tract $t$.
 
 
 
 \section{Presence of categories}
 \label{sec:presence_of_categories}
 
-In ordre to quantify segregation, we first need to measure the extent to which
+In order to quantify segregation, we first need to measure the extent to which
 categories are spread unevenly across space. Therefore, we start our analysis
 with a discussion on how to quantify the presence of a category in areal units.
 Several indicators exist, and one needs to be aware of their meaning, their
 qualities and their shortcomings. 
 
 
-\subsection{Concentration}
+\subsection{Concentration index}
 \label{sub:concentration}
 
-The concentration measures the proportion of individuals from category $\alpha$
+The concentration index measures the proportion of individuals from category $\alpha$
 in the areal unit $t$. 
 
 \begin{equation}
@@ -123,32 +123,32 @@ geographical zone as a whole.
 
 Nevertheless, its value strongly depends on the total population of the areal
 unit we are studying: more populated areal units mechanically entail higher
-values of the concentration. Segregation measures based on the concentration
+values of concentration. Segregation measures based on the concentration
 (such as the dissimilarity index) will therefore be dominated by the values in
 highly populated areal units. This also makes values of concentration difficult
 to intepret: we don't know whether large (repectively low) values of
 concentration are the result of a large (respective low) population, or of a
-local concentration of the individuals in the area. 
+local concentration of individuals in the area. 
 
 
-\subsection{Proportion}
+\subsection{Proportion index}
 \label{sub:proportion}
 
 Sometimes, we would prefer to know the proportion of individuals of a given
-category in a unit. In our notations, the proportion is simply defined as 
+category in a unit. In our notations, the proportion index is simply defined as 
 
 \begin{equation}
     p(t) = \frac{n_\alpha(t)}{n(t)}
 \end{equation}
 
-Although the values of the proportion are easier to interpret (``x\% of the
-individuals living in this areal units belong to such category''), they are
+Although the values of the proportion index are easier to interpret (``x\% of the
+individuals living in this areal unit belong to such category''), they are
 not a good indicator of segregation. 
 
 Indeed, they strongly depend on the relative proportion of individuals of the
 category in the geographical area being studied. For instance, in a city where
 $90\%$ of the individuals belong to category $A$, the proportion of people
-belonging to category $A$ is very likely to be high in any tract in the city.
+belonging to category $A$ is very likely to be high in all areal units in the city.
 The measure of proportion is therefore strongly tied to the overall inequality
 levels.
 
@@ -161,7 +161,7 @@ levels.
 
 The representation solves the problems linked to both measures of concentration
 and proportion. The idea behind the measure of representation is that
-segregation is, as we argued in Chapter~\ref{chap:segregation_introduction}) a
+segregation is, as we argued in Chapter~\ref{chap:segregation_introduction}, a
 departure from the situation where households would be spatially distributed
 at random. The properties of such a `random', unsegregated city are well known,
 and the distribution of categories in each areal unit is given by a binomial
@@ -192,15 +192,15 @@ aforementioned shortcomings.\\
 
 
 The representation $r_\alpha(t)$ takes values between $0$ (when no
-individuals form the category $\alpha$ are present in $t$) and
+individuals from the category $\alpha$ are present in $t$) and
 $\frac{N}{N_\alpha}$ (when all individuals in $t$ belong to the category
 $\alpha$). In a city where individuals are distributed uniformly
 (see Chapter~\ref{chap:segregation_introduction}), $r_\alpha(t) = 1$ in every
 tract $t$.\\
 
 
-In the unsegregated situation, the values of the representation are likely to be
-close to $1$, but not necessarily strictly equal to $1$. Furthermore, there is a
+In an unsegregated situation, the values of the representation are likely to be
+close to $1$, but not necessarily strictly equal to $1$. There is indeed a
 non-zero probability for any distribution to be obtained by chance. It is
 therefore not obvious whether a given value of representation could have been
 obtained in the unsegregated configuration. However, to quantify segregation, we
@@ -241,15 +241,15 @@ of population distributions from the unsegregated city. As we will show below,
 it is also the building block for measuring the level of repulsion or attraction
 between populations -- allowing us to uncover the different classes -- and to
 identify the neighbourhoods where the different categories concentrate. 
-Last,
-but not least, the representation defined here does not depend on the class
-structure at the city scale, but only on the spatial repartition on individuals
-belonging to each class. This is essential to be able to compare different
-cities where the group compositions -- or inequality -- might differ. Inequality
-and segregation are indeed two separate concepts, and the way they are measured should
-be distinct from one another. In that sense, the representation is preferable to
-the measures of concentration or representation as a basis to the quantification
-of segregation.
+
+Last, but not least, the representation defined here does not depend on the
+class structure at the city scale, but only on the spatial repartition of
+individuals belonging to each class. This is essential to be able to compare
+different cities where the group compositions -- or inequality -- might differ.
+Inequality and segregation are indeed two separate concepts, and the way they
+are measured should be distinct from one another. In that sense, the
+representation is preferable to the measures of concentration or representation
+as a basis to quantify segregation.
 
 
 \section{Measuring the attraction and repulsion of categories}
@@ -261,17 +261,20 @@ of segregation.
 If we want to uncover the mechanisms underlying segregated patterns, it is
 important to measure and understand the interactions between categories.
 However, existing measures do not allow to quantify to which extent different populations
-attract or repel one another. 
+attract or repel one another. What we mean here by interaction is the
+co-presence of the different categories in the same areal units, thus potential
+interactions. This is the best one can do in the absence of data on the actual
+interactions between individuals.
 
-The meaure we define is inspired by the M-value first introduced by Marcon \&
+The measure we define is inspired by the M-value first introduced by Marcon \&
 Puech in the economics literature~\cite{Marcon:2009} and used as a measure of
 interaction in \cite{Jensen:2006}.  These authors were interested in measuring
-the geographic concentration of different type of  industries. While previous
+the geographic concentration of different types of industries. While previous
 measures (such as Ripley's K-value) allow to identify departures from a random
 (Poisson) distribution, the M-value's interest resides in the possibility to
 evaluate different industries' tendency to co-locate.\\
 
-The idea, in the context of segregation is simple. We consider two categories
+The idea, in the context of segregation, is simple. We consider two categories
 $\alpha$ and $\beta$ and we would like to measure to which extent they are
 co-located in the same areal unit. Essentially, we measure the representation of
 the category $\beta$ as witnessed on average by the individuals in category
@@ -284,16 +287,16 @@ $\alpha$, and obtain the following quantity $E_{\alpha\beta}$
 Although it is not obvious with this formulation, this measure is symmetric:
 $E_{\alpha \beta} = E_{\beta \alpha}$. Effectively, the E-value is a measure of exposure,
 according to the typology of segregation measures found in~\cite{Massey:1988}.
-It is however different form the traditional measure of exposure found in the
-literature~\cite{Bell:1954}, as it allows to distinguish the contexts in
-which categories attract or repel one another.\\
+It is however different from the traditional measure of exposure found in the
+literature~\cite{Bell:1954}, as it allows to distinguish between the situations
+where categories attract, or repel one another.\\
 
 In the case of an unsegregated city, every household in $\alpha$ sees
 on average $r_\beta = 1$ and we have $E_{\alpha \beta} = 1$. 
 If populations $\alpha$ and $\beta$ {\em attract} one another, that is if they
 tend to be overrepresented in the same areal units, every household $\alpha$
 sees $r_\beta > 1$ and we have $E_{\alpha \beta} > 1$ at the city scale. 
-On the other hand, is they
+On the other hand, if they
 {\em repel} one another, every household $\alpha$ sees $r_\beta < 1$
 and we have $E_{\alpha \beta} <1$ at the city scale. 
 
@@ -302,14 +305,13 @@ and we have $E_{\alpha \beta} <1$ at the city scale.
 \label{sub:extreme_values}
 
 The minimum of the exposure for two classes $\alpha$ and $\beta$ is obtained
-when these two categories are never present together in the same areal unit and
-then
+when these two categories are never present together in the same areal unit. Then
 
 \begin{equation}
     E_{\alpha\,\beta}^{min} = 0 
 \end{equation}
 
-and the maximum is obtained when the two classes are alone in the system and
+and the theoretical maximum is obtained when the two classes are alone in the system and
 otherwise distributed at random
 
 \begin{equation}
@@ -354,50 +356,54 @@ others, the isolation reaches its maximum value
 \label{sub:defining_classes}
 
 
-The study of segregation must be rooted in a particular definition of categories
+The study of income segregation must be rooted in a particular definition of categories
 (or classes). There is however no consensus in the literature about how to
 separate households in different classes according to their income, and studies
 generally rely on more or less arbitrary divisions. While in some particular
-cases grouping the original categories in pre-defined categories is justified,
+cases grouping the original categories in pre-defined classes is justified,
 most authors do so for mere convenience. However, as some sociologists
 have already pointed out~\cite{Emirbayer:1997}, imposing the existence of
 absolute, artificial entities is necessarily going to skew our reading of the
 data. Entities such as social classes do not have an existence of their own.
 Grouping the individuals into arbitrary classes when studying segregation is
-problematic: it amounts to imposing a class structure on the society before
+thus problematic: it amounts to imposing a class structure on the society before
 assessing the existence of this structure (which manifests itself by the
 differentiated spatial repartition of individuals with different income,
 segregation).
 Furthemore, in the absence of recognized standards, different authors will
-likely have dissimilar definitions of classes, making the comparisons between
+likely have different definitions of classes, making the comparisons between
 different results in the literature difficult.\\
 
 Here, instead of imposing an arbitrary class structure , we let the class
 structure emerge from the data themselves. Our starting hypothesis is the
 following: if there is such a thing as a social stratification based on income,
-it should be reflected in the households' behaviours. Households belonging to
+it should be reflected in the households' behaviours. The hypothesis is that households belonging to
 the same class should tend to live together, while households belonging to
-different classes should tend to avoid one another. The idea is thus to define
+different classes should tend to avoid one another (It is worth noting that this
+\emph{horizontal} definition of segregation is not relevant in every context; in
+the 19th century Paris for instance, segregation was also vertical, with rich families
+living in the lowest floors of buildings while poor individuals did tend to
+live in the highest flats). The idea is thus to define
 classes based on the way they manifest themselves through the spatial
 repartition of the different categories. Of course, spatial proximity does not
 necessarily imply social proximity. In particular, Chamboredon showed that in
 some big French housing projects, households belonging to different social
-classes were artificially brought in close proximity to one another while not
-interacting with one another~\cite{Chamboredon:1970}\graffito{The work of
+classes were artificially brought in close proximity to one another but did not
+necessarily interact with one another~\cite{Chamboredon:1970}\graffito{The work of
 Chamboredon was kindly brought to my attention by Yann Renisio.}. We thus assume
 here that the social class of housing tenants is not determined in a top-down
 fashion, so that the spatial repartition of different income classes reflects
-the nature of the interaction between these classes.
+the nature of the interaction between these classes. 
 
 
 \subsection{Income classes in the US}
 \label{sub:income_classes_in_the_u_s_}
 
-We choose as a starting point the finest income subdivision given by the census
-bureau ($16$ subdivisions) and compute the $16 \times 16$ matrix of $E_{\alpha
+We choose as a starting point the finest income subdivision given by the Census
+Bureau ($16$ subdivisions) and compute the $16 \times 16$ matrix of $E_{\alpha
 \beta}$ values for all cities. We then perform a hierarchical clustering on this
-matrix, succesively aggregating the subdivisions with the highest $E_{\alpha
-\beta}$ values. we stop the aggregation process when the only classes left are
+matrix, successively aggregating the subdivisions with the highest $E_{\alpha
+\beta}$ values. We stop the aggregation process when the only classes left are
 indifferent ($E_{\alpha \beta} = 1$ with $99\%$ confidence) or
 repel one another ($E_{\alpha \beta} < 1$ with $99\%$
 confidence)~\cite{Louf:2015}. We obtain the dendrogram presented on
@@ -406,7 +412,7 @@ Figure~\ref{fig:classes_alluvial}.
 \begin{figure}
     \includegraphics[width=\textwidth]{./gfx/chapter-segregation/figure1.pdf}
     \caption{{\bf Emergent classes.} (Left) Alluvial diagram showing the successive aggregations
-      of different income categories in the clustering process, and
+      of income categories in the clustering process, and
       the value of the exposure at which the aggregation took
       place. The aggregation stops when there is no pair of category
       for which $E>1$, that is when all classes are at best
@@ -416,33 +422,35 @@ Figure~\ref{fig:classes_alluvial}.
       analysis, and their respective exposure and isolation values. The lower
       and higher income classes repel one another, while the middle
       income class is indifferent to either other classes.  The
-      higher-income class is more coherent than the lower-income,
+      higher-income class is slightly more coherent than the lower-income,
       which is more coherent than the middle-income class, as
       reflected by the isolation coefficient $I$.}
 \label{fig:classes_alluvial}
 \end{figure}
 
 Strikingly, the outcome of this method is the emergence of 3 distinct classes:
-the higher-income ($47\%$ of the US population) and the lower-income classes
-($42\%$ of the US population) -- which repel one another strongly while being
+the higher-income ($47\%$ of the US population) and the lower-income ($42\%$ of the US population) classes
+ -- which repel one another strongly while being
 respectively very coherent -- and a somewhat meagre middle-income class ($11\%$
 of the population) that is relatively indifferent to the other classes. This
 result implies that there is some truth in the conventional way of dividing
 populations into $3$ income classes, and that what we casually perceive as the
 social stratification in our cities actually emerges from the spatial
-interaction of people. 
+interaction of people. Surprisingly, however, the middle-income class as
+obtained here represents a significantly smaller part of the population than
+other definitions.
 
-Our method has several advantages over a casual, arbitrary definition: it is not
-arbitrary in the sense that it does not depend on a tunable parameter and on who
-performs the analysis. Its origins are tractable, and can be argued on a
+Our method has several advantages over a casual, arbitrary definition: it only
+depends on single tunable parameter, the size of the confidence interval.
+Although, once an agreement has been reached, the class structure does not
+depend on who is performing the analysis. Its origins are tractable, and can be argued on a
 quantitative basis. Because it is quantitative, it allows comparison of the
-stratification over different points in time, or between different countries. It
+stratification between different points in time, or between different countries. It
 can also be compared to other class divisions that would be obtained using a
 different medium for interaction, for instance mobile phone
 communications~\cite{Eagle:2010}. 
 
-In the following, we will systematically use the classes obtained above in our
-analyses.
+In the following, we will systematically use the classes thus obtained.
 
 
 
@@ -450,7 +458,7 @@ analyses.
 \label{sec:inter_urban}
 
 At the scale of an entire country, segregation can manifest itself in the
-unequal representation of the different income classes across the urban areas.
+unequal representation of the income classes in different urban areas.
 We plot on Figure~\ref{fig:inter-urban} the ratio $
 N_\alpha^{>}(H)/N^{>}(H)$ where $N^{>}(H)$ is the number of cities of
 population greater than $H$, and $N_\alpha^{>}(H)$ the number of cities of
@@ -475,8 +483,8 @@ category $\alpha$ tends to be overrepresented in larger urban areas.  The
 representation is measured with respect to the total population at the US level.
 
 There is a clear differentiation between cities: among the $276$ MSA in our
-dataset, no city exhibit a number of households of the three different classes
-that is representative from the US as a whole. Furthermore, the number of cities
+dataset, no city exhibits a number of households per class 
+that is representative of the US as a whole. Furthermore, the number of cities
 where higher-income households are overrepresented increases with the size of
 the cities, while the inverse trend is true for lower-income
 households. Therefore, larger cities are not richer in the sense that rich
@@ -484,7 +492,8 @@ households tend to be overrepresented in large cities, and underrepresented in
 small ones.
 
 Surprisingly, this effect is not visible using the Gini coefficient (see
-Figure~\ref{fig:inter-urban}).  
+Figure~\ref{fig:inter-urban}). This hints at the limitations of the Gini index
+to compare income inequalities across an entire country.
 
 
 \section{Delineating neighbourhoods}
@@ -500,18 +509,17 @@ Figure~\ref{fig:inter-urban}).
       income category. In black, the tracts where the corresponding
       class is overrepresented, in white where it is
       underrepresented and in grey where its value is
-      undistinguishable from the random distribution. All
+      indistinguishable from the random distribution. All
       MSA defined for the $2000$ Census exhibit a total exclusion between
       lower-income and higher-income
       neighbourhoods: the pictures for lower- and higher-income classes are the
       perfect negative of one another. In contrast, middle-income households
-      are scattered across the city and exhibit very little geographical coherence.}
+      are scattered across the city.}
 \label{fig:atlanta_neighbourhoods}
 \end{figure}
 
-Income segregation is a reality so rife that it has pervaded our everyday
-language through the expressions ``poor neighbourhood'' or ``rich
-neighbourhood''. How can we delineate such neighbourhoods?
+Now that we can identify the areal units where classes are overrepresented, how
+can we delineate neighbourhoods?
 
 Considering a category $\alpha$,  we first look for the areal units where the
 category is overrepresented. We then consider that two areal units in this set
@@ -520,7 +528,7 @@ approach has limitations (some remarks that sprung in the discussion on the diff
 activity centers in Chapter~\ref{chap:monocentric_introduction} are relevant in
 this context too), but it gives us a reasonable definition of neighbourhoods to
 work with.
-Le us now focus on the properties of these neighbourhoods.
+Let us now focus on the properties of these neighbourhoods.
 
 \subsection{Clustering}
 \label{sub:clustering}
@@ -528,7 +536,7 @@ Le us now focus on the properties of these neighbourhoods.
 Intra-tract measures such as the exposure are not enough to quantify
 segregation. Indeed, areal units where a given class is overrepresented can
 arrange themselves in different ways, without the intra-tract measures of
-seggregation being affected~\cite{White:1983}. In order to illustrate this, we
+segregation being affected~\cite{White:1983}. In order to illustrate this, we
 consider the schematic cases represented on Figure~\ref{fig:checkerboard}, and
 assume that  they are obtained by reshuffling the various squares around.
 Obviously, the checkerboard on the left depicts a very different segregation
@@ -595,7 +603,7 @@ that most of the individuals belonging to this class live in this neighbourhood.
 We compute the ratio of households of each income class that lives in a
 neighbourhood over the total number of individuals in the income class (for
 rich, poor, and middle class).  Results (Figure~\ref{fig:content}) indicate that
-essentially less than $50\%$ of each class live in their neighbourhood, while
+essentially less than $50\%$ of each class live in their respective neighbourhood, while
 the rest is dispatched over the rest of the city. The average concentration
 decreases from higher-income individuals ($50\%$), to lower-income ($48\%$) and
 middle-income individuals ($32\%$).\\
@@ -604,8 +612,8 @@ middle-income individuals ($32\%$).\\
     \centering
     \includegraphics[width=0.7\textwidth]{gfx/chapter-segregation/neighbourhoods_content.pdf}\\
     \caption{{\bf Concentration in neighbourhoods.} Distribution of the fraction of households belonging to a
-      given class and that live in a neighborhood where it is
-      over-represented (Middle, Lower, or Higher).} 
+      given class and that live in a neighbourhood where it is
+      overrepresented (Middle, Lower, or Higher).} 
         \label{fig:content} 
 \end{figure}
 
@@ -632,8 +640,8 @@ Figure~\ref{fig:polycentrism}, and again show a different behaviour for the
 middle-income on one side, and higher-income and lower-income on the other side.
 The size of the middle-income neighbourhoods are relatively balanced, with on average
 $P=0.62$.  Higher- and lower-income neighbourhoods, on the other hand, are
-dominated by one big neighbourhood, with respectively on average $P=0.22$ and
-$P=0.26$.
+dominated by one big neighbourhood, with respectively $P=0.22$ and
+$P=0.26$ on average. 
 
 \begin{figure} 
     \includegraphics[width=0.7\textwidth]{gfx/chapter-segregation/neighbourhoods_polycentrism.pdf}\\
@@ -739,7 +747,7 @@ meaningless in polycentric situations.\\
 
 We propose here a different approach that does not require the
 definition of a distance to the center. Instead, we plot the average
-representation computed over all areal units (census-blocks in this
+representation computed over all areal units (Census blockgroups in this
 dataset) with a given density population $\rho$, as a function of the density
 $\rho$. Indeed, what is usually meant by `center' of a city are the areas with
 the highest residential (or employment) densities. 
@@ -765,13 +773,13 @@ from differences in terms of densities.
     \includegraphics[width=\textwidth]{gfx/chapter-segregation/figure4.pdf}
     \caption{{\bf Representation and density.} Average representation of the higher-, middle- and
       lower-income classes over the $276$ MSA as a function of the
-      local density of households. On average, we find that low-density (the
+      local density of households. On average, we find that low-density regions (the
       suburbs) are rich, while high density regions (the center) are poor,
       confirming empirically on a large dataset a stylized facts that had previously
       emerged from local studies. Interestingly, we also
       find that  very large density areas ($\rho>20,000/km^2$) are rich on average,
-      suggesting that density may be one relevant factor in explaining the
-      differences between neighbourhoods~\cite{Jacobs:1961}.
+      suggesting that density may be one relevant element in an eventual
+      explanation of the differences between neighbourhoods~\cite{Jacobs:1961}.
       \label{fig:high_low_densities}
   } 
   \end{figure}
@@ -820,14 +828,3 @@ simplified description of spatial density. A problem yet to be solved, but that
 has a huge potential of applications. We note that the problem is tightly
 linked, if not identical, to the one we encountered while trying to describe the
 spatial distribution of density in Chapter~\ref{chap:monocentric_discussion}.
-
-Before closing this Chapter, let us note that the most widely-used measure,
-the dissimilarity~\cite{Duncan:1955m} index, suffers from two flaws. First, it
-is based on the concentration (Equation~\ref{eq:concentration}), and its usual
-interpretation in terms of proportion of a given class that should relocate to
-obtain a uniform pattern, is misguided. Furthermore, as we saw on
-Figure~\ref{fig:checkerboard}, intra-tract measures cannot distinguish between
-different spatial arrangements (hence different patterns of segregation). The
-dissimilarity, an intra-tract measure, therefore falls short of expectations. We
-therefore need to design a new index of segregation that addresses these
-shortcomings in future work.
